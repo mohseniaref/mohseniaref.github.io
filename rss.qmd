@@ -1,0 +1,9 @@
+---
+title: "RSS Feed"
+output: rss
+feed:
+  title: "Mohammad Mohseni Aref's Blog"
+  description: "Stay updated with my latest blog posts and articles."
+  author: "Mohammad Mohseni Aref"
+---
+

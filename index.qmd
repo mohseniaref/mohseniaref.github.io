@@ -1,0 +1,9 @@
+---
+title: "Welcome to My Academic Portfolio"
+image: images/mohammad.jpg
+---
+
+![Mohammad Mohseni Aref](images/mohammad.jpg){fig-align="center" width="200px"}
+
+Hi, I'm **Mohammad Mohseni Aref**, a Ph.D. candidate in Remote Sensing at Potsdam University, Germany. My research focuses on remote sensing, InSAR techniques, atmospheric corrections and deformation modeling.
+

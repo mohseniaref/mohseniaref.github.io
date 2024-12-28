@@ -1,0 +1,51 @@
+project:
+  type: website
+  title: "Mohammad Mohseni Aref"
+
+website:
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Publications
+        href: publications.qmd
+
+author:
+  name: "Mohammad Mohseni Aref"
+  affiliations:
+    - "Ph.D. Candidate, Geosciences, Potsdam University"
+  links:
+    - icon: twitter
+      icon_pack: fab
+      name: Twitter
+      url: https://twitter.com/mohseniaref
+    - icon: github
+      icon_pack: fab
+      name: GitHub
+      url: https://github.com/mohseniaref
+    - icon: envelope
+      name: Email
+      url: mailto:mohseniaref@uni-potsdam.de
+
+format:
+  html:
+    theme: default
+    include-in-header:
+      - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+    footer: |
+      <div style="text-align: center;">
+        <a href="https://twitter.com/mohseniaref" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter
+        </a> |
+        <a href="https://github.com/mohseniaref" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a> |
+        <a href="mailto:mohseniaref@uni-potsdam.de" target="_blank">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+

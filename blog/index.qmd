@@ -1,0 +1,11 @@
+---
+title: "Blog"
+listing:
+  contents: blog
+  sort: "date desc"
+  type: default
+  fields: [title, date, description]
+---
+
+Welcome to my blog! Here you’ll find insights and updates on my research in geosciences, remote sensing, and academic activities.
+

@@ -1,0 +1,9 @@
+---
+title: "About Me"
+---
+
+- **Research Interests**:
+  - Remote sensing (microwave and optical)
+  - InSAR techniques and time series analysis
+  - Hillslope processes and seismic cycles
+

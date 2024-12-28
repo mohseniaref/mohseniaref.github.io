@@ -1,0 +1,41 @@
+---
+title: "Publications"
+date: 2024-12-28
+description: "A list of peer-reviewed publications and conference contributions."
+---
+
+# Publications
+
+## 2024
+- **M. Mohseni Aref, B. Bookhagen, and R. Strecker**, "Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina," *EGU General Assembly*, Vienna, Austria, Apr. 2024. [[DOI](https://doi.org/10.5194/egusphere-egu24-12522)]
+
+## 2023
+- **M. Mohseni Aref, B. Bookhagen, and R. Strecker**, "Using InSAR time series to characterize landslide deformation dynamics in the south-central Andes," *EGU General Assembly*, Vienna, Austria, Apr. 2023. [[DOI](https://doi.org/10.5194/egusphere-egu23-11528)]
+- **M. Metz, B. Maleki Asayesh, M. Mohseni Aref**, et al., "The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran," *Seismica*, vol. 2, no. 2, Oct. 2023. [[DOI](https://doi.org/10.26443/seismica.v2i2.953)]
+
+## 2022
+- **M. Mohseni Aref, B. Bookhagen, and R. Strecker**, "Kinematics Characterization of Slow-Moving Landslide using InSAR Time Series Analysis in the South-Central Andes of NW Argentina," *EGU General Assembly*, Vienna, Austria, May 2022. [[DOI](https://doi.org/10.5194/egusphere-egu22-10716)]
+
+## 2021
+- **F.C. Çomut and M. Mohseni Aref**, "Interpretation of Mw 6.8 Elazığ Earthquake (24.01.2020) Crisis Management System in terms of Satellite Borne Radar Interferometry Observations," *Advances in the Science and Applications of SAR Interferometry*, Online Event, May-Jun. 2021.
+- **M. Mohseni Aref, B. Bookhagen, and R. Strecker**, "Evolution of Large Bedrock Landslides in the South-Central Andes of NW Argentina," *EGU General Assembly*, Online, Apr. 2021. [[DOI](https://doi.org/10.5194/egusphere-egu21-14234)]
+
+## 2020
+- **M. Mohseni Aref, B. Bookhagen, T. Smith, and R. Strecker**, "Seasonal active landsliding and hillslope activity in the southern Central Andes of NW Argentina," *EGU General Assembly*, 2020. [[DOI](https://doi.org/10.5194/egusphere-egu2020-19679)]
+- **M. Albayrak, M.T. Özlüdemir, M.M. Aref, and K. Halicioglu**, "Determination of Istanbul geoid using GNSS/levelling and valley cross levelling data," *Geod. Geodyn.*, vol. 11, 2020.
+- **M. Albayrak, K. Halicioğlu, M.T. Özlüdemir, B. Başoğlu, R. Deniz, A.R.B. Tyler, and M.M. Aref**, "The use of the automated digital zenith camera system in Istanbul for the determination of astrogeodetic vertical deflection," *Bol. Ciencias Geod.*, vol. 25, no. 4, 2020.
+
+## 2019
+- **M. Mohseni Aref and E. Tari**, "Geodetic Observation and Analysis of Land Deformation in Northwest of Iran," *EGU General Assembly Conference Abstracts*, vol. 21, 2019.
+
+## 2016
+- **M. Mohseni Aref, Z. Cakir, and S. Karimzadeh**, "Interseismic accumulation across the Khoy fault from InSAR measurement," *EGU General Assembly Conference Abstracts*, vol. 18, p. 828, 2016.
+
+## 2015
+- **T. Torres and M. Mohseni Aref**, "Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR)," *2015 Fall Meeting, AGU*, San Francisco, CA, 2015.
+- **E. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref**, "Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks," *ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci.*, vol. XL-1-W5, pp. 395-399, Dec. 2015.
+- **F. Comut, A. Ustun, M. Lazecky, and M. Mohseni Aref**, "Multi Band InSAR Analysis Of Subsidence Development Based On The Long Period Time Series," *ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci.*, vol. XL-1-W5, pp. 115-121, Dec. 2015.
+
+## 2011
+- **M. Mohseni Aref and M. Motagh**, "InSAR time series analysis of land deformation: northwest of Iran," *International on Advances in the Science and Applications of SAR Interferometry*, Frascati (Rome), Italy, Sep. 2011.
+
