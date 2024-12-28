@@ -1,7 +1,7 @@
 project:
   type: website
   title: "Mohammad Mohseni Aref"
-  output-dir: _site
+  output-dir: docs # Directory for GitHub Pages publishing
 
 website:
   navbar:
@@ -12,11 +12,11 @@ website:
         href: about.qmd
       - text: Blog
         href: blog/index.qmd
-      - text: Publications
-        href: publications.qmd
       - text: CV
         href: cv.qmd
-  sidebar: true
+      - text: Publications
+        href: publications.qmd
+  sidebar: true # Sidebar for easier navigation
 
 author:
   name: "Mohammad Mohseni Aref"
@@ -44,7 +44,10 @@ format:
     include-after-body:
       - |
         <script>
+          // Set dark mode as the default theme
           document.documentElement.setAttribute('data-bs-theme', 'dark');
+
+          // Add a theme toggle button
           const themeToggle = document.createElement('button');
           themeToggle.textContent = 'Toggle Theme';
           themeToggle.style.position = 'fixed';
@@ -77,4 +80,9 @@ format:
         <a href="mailto:mohseniaref@uni-potsdam.de" target="_blank">
           <i class="fas fa-envelope"></i> Email
         </a>
+
+publish:
+  gh-pages:
+    branch: gh-pages
+    dir: docs
 
