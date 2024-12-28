@@ -1,0 +1,35 @@
+project:
+  type: website
+  title: "Mohammad Mohseni Aref"
+  output-dir: docs
+
+website:
+  title: "Mohammad Mohseni Aref"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Blog
+        href: blog/index.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Contact
+        href: contact.qmd
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc_float: true
+    include-in-header:
+      text: |
+        <script>
+          console.log("Custom script loaded.");
+        </script>
+

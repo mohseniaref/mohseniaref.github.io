@@ -1,0 +1,21 @@
+---
+title: "2D+1D Decomposition of InSAR for Landslide Application"
+date: 2024-12-28
+description: "An exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis."
+categories: [InSAR, Landslide, Remote Sensing]
+image: images/a1.png
+---
+
+**Introduction**
+
+The 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables:
+- Resolving horizontal and vertical deformation.
+- Enhanced accuracy in complex terrains like high mountains.
+
+**Applications**
+- Monitoring slow-moving landslides.
+- Studying seismic cycles and fault dynamics.
+
+**Conclusion**
+The method is a transformative step for geohazard monitoring.
+

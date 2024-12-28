@@ -1,88 +1,36 @@
 project:
   type: website
   title: "Mohammad Mohseni Aref"
-  output-dir: docs # Directory for GitHub Pages publishing
+  output-dir: docs
 
 website:
+  title: "Mohammad Mohseni Aref"
   navbar:
     left:
       - text: Home
         href: index.qmd
-      - text: About
-        href: about.qmd
+      - text: Research
+        href: research.qmd
+      - text: Publications
+        href: publications.qmd
       - text: Blog
         href: blog/index.qmd
       - text: CV
         href: cv.qmd
-      - text: Publications
-        href: publications.qmd
-  sidebar: true # Sidebar for easier navigation
-
-author:
-  name: "Mohammad Mohseni Aref"
-  affiliations:
-    - "Ph.D. Candidate, Geosciences, Potsdam University"
-  links:
-    - icon: twitter
-      icon_pack: fab
-      name: Twitter
-      url: https://twitter.com/mohseniaref
-    - icon: github
-      icon_pack: fab
-      name: GitHub
-      url: https://github.com/mohseniaref
-    - icon: envelope
-      name: Email
-      url: mailto:mohseniaref@uni-potsdam.de
+      - text: Contact
+        href: contact.qmd
 
 format:
   html:
-    theme:
-      light: default
-      dark: darkly
+    theme: lux
     css: styles.css
-    include-after-body:
-      - |
+    toc: true
+    toc-depth: 3
+    toc_float: true
+    include-in-header:
+      text: |
         <script>
-          // Set dark mode as the default theme
-          document.documentElement.setAttribute('data-bs-theme', 'dark');
-
-          // Add a theme toggle button
-          const themeToggle = document.createElement('button');
-          themeToggle.textContent = 'Toggle Theme';
-          themeToggle.style.position = 'fixed';
-          themeToggle.style.bottom = '1rem';
-          themeToggle.style.right = '1rem';
-          themeToggle.style.padding = '0.5rem 1rem';
-          themeToggle.style.background = '#007bff';
-          themeToggle.style.color = 'white';
-          themeToggle.style.border = 'none';
-          themeToggle.style.borderRadius = '5px';
-          themeToggle.style.cursor = 'pointer';
-          themeToggle.style.zIndex = '1000';
-
-          themeToggle.onclick = () => {
-            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-bs-theme', newTheme);
-          };
-
-          document.body.appendChild(themeToggle);
+          console.log("Custom script loaded.");
         </script>
-    footer: |
-      <div style="text-align: center;">
-        <a href="https://twitter.com/mohseniaref" target="_blank">
-          <i class="fab fa-twitter"></i> Twitter
-        </a> |
-        <a href="https://github.com/mohseniaref" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a> |
-        <a href="mailto:mohseniaref@uni-potsdam.de" target="_blank">
-          <i class="fas fa-envelope"></i> Email
-        </a>
 
-publish:
-  gh-pages:
-    branch: gh-pages
-    dir: docs
 

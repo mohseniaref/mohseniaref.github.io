@@ -1,0 +1,27 @@
+name: Quarto Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+
+    - name: Render and Publish
+      run: |
+        quarto render
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+        git add docs/*
+        git commit -m "Automated render and deploy"
+        git push
+

@@ -1,9 +1,51 @@
 ---
-title: "Welcome to My Academic Portfolio"
-image: images/mohammad.jpg
+title: "Mohammad Mohseni Aref"
+about:
+  template: trestles
+  image: images/mohammad.jpg
+  links:
+    - icon: twitter
+      text: Twitter
+      url: https://twitter.com/mohseniaref
+    - icon: github
+      text: GitHub
+      url: https://github.com/mohseniaref
+    - icon: linkedin
+      text: LinkedIn
+      url: https://www.linkedin.com/in/mohseniaref/
+    - icon: bluesky
+      text: Bluesky
+      url: https://bsky.app/profile/mohseniaref.bsky.social
+    - icon: graduation-cap
+      text: Google Scholar
+      url: https://scholar.google.com.tr/citations?user=9_00Dy8AAAAJ&hl=en
 ---
 
-![Mohammad Mohseni Aref](images/mohammad.jpg){fig-align="center" width="200px"}
+## Mohammad Mohseni Aref
 
-Hi, I'm **Mohammad Mohseni Aref**, a Ph.D. candidate in Remote Sensing at Potsdam University, Germany. My research focuses on remote sensing, InSAR techniques, atmospheric corrections and deformation modeling.
+I am a Ph.D. candidate specializing in **radar remote sensing** and **InSAR time-series analysis**. My research focuses on understanding and monitoring slow-moving landslides, permafrost dynamics, and hydrological processes using advanced geodetic techniques.
+
+---
+
+### Research Interests
+
+- InSAR and Remote Sensing Applications: Atmospheric correction, deformation monitoring, and time-series analysis.
+- Geohazard Monitoring: Landslides, seismic activities, and fault systems.
+- Machine Learning in Geosciences: Data-driven approaches for environmental modeling.
+
+---
+
+### Latest Blog Posts
+
+Check out my blog for updates on radar remote sensing, academic life, and tips for researchers. [Visit the Blog →](blog/index.qmd)
+
+---
+
+### Contact
+
+Feel free to reach out to me for collaborations or discussions:
+- Email: [mohseniaref@uni-potsdam.de](mailto:mohseniaref@uni-potsdam.de)
+- Twitter: [@mohseniaref](https://twitter.com/mohseniaref)
+- GitHub: [mohseniaref](https://github.com/mohseniaref)
+- LinkedIn: [mohseniaref](https://www.linkedin.com/in/mohseniaref/)
 

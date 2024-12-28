@@ -1,0 +1,22 @@
+author:
+  - id: mma
+    number: 1
+    name:
+      given: Mohammad
+      family: Mohseni Aref
+      literal: Mohammad Mohseni Aref
+    orcid: 0000-0003-3735-178X
+    email: mohseni.aref@gmail.com
+format:
+  html:
+    df-print: paged
+    toc: true
+    lang: en
+    code-overflow: wrap
+    mermaid:
+      theme: neutral
+citation:
+  type: article
+reference-location: margin
+citation-location: margin
+
