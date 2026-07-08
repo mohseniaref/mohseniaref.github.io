@@ -2,8 +2,142 @@
 title: "About Me"
 ---
 
-- **Research Interests**:
-  - Remote sensing (microwave and optical)
-  - InSAR techniques and time series analysis
-  - Hillslope processes and seismic cycles
+## Professional Background
+
+I am a **Ph.D. candidate** at the University of Potsdam, specializing in **remote sensing engineering**, **InSAR time-series analysis**, and **geospatial data science**. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth's surface.
+
+With expertise spanning radar remote sensing, photogrammetry, GIS analysis, and high-performance computing, I transform complex multi-temporal satellite datasets into actionable information for understanding natural hazards, environmental change, and tectonic processes.
+
+---
+
+## What I Do
+
+### Remote Sensing & InSAR Analysis
+I specialize in processing and analyzing **Synthetic Aperture Radar (SAR)** data to monitor ground deformation at millimeter-scale precision. My work involves:
+
+- Developing automated Python workflows for InSAR time-series processing
+- Implementing advanced atmospheric correction techniques (tropospheric and ionospheric)
+- Applying phase-linking and covariance-based methods for signal enhancement
+- Processing multi-terabyte datasets using HPC clusters
+
+### Geospatial Data Science
+I bridge the gap between raw satellite data and interpretable geospatial insights:
+
+- Building reproducible analysis pipelines with Python (NumPy, pandas, GeoPandas, xarray)
+- Applying spatial statistics and machine learning for deformation pattern recognition
+- Creating GIS-ready products for environmental and engineering applications
+- Developing CLI tools for data quality control and validation
+
+### Applied Earth Observation
+My research has practical applications in:
+
+- **Landslide monitoring**: Characterizing slow-moving bedrock landslides in mountainous terrain
+- **Land subsidence**: Quantifying groundwater depletion impacts on coastal plains
+- **Seismic deformation**: Analyzing earthquake and fault system dynamics
+- **Infrastructure monitoring**: Supporting engineering assessments through automated deformation detection
+
+---
+
+## Current Position
+
+**Ph.D. Candidate in Remote Sensing**  
+*University of Potsdam, Germany (Expected 2026)*  
+Supervised by Prof. Dr. Bodo Bookhagen
+
+My dissertation focuses on understanding landslide dynamics in the south-central Andes through advanced InSAR time-series analysis, with emphasis on atmospheric correction methods and multi-sensor geodetic integration.
+
+**Data Science Analytics (Student Position)**  
+*Statista Strategy, Berlin (Apr 2025 - Aug 2025)*  
+Developing Python pipelines for automated data quality control, validation workflows, and reproducible analytics.
+
+---
+
+## Background & Experience
+
+### Academic Journey
+- **Ph.D. Candidate** in Remote Sensing - University of Potsdam, Germany
+- **M.Sc.** in Water Resources Engineering - Azad University, Shiraz, Iran (2011)
+- **B.Sc.** in Water Engineering - Bahonar University, Kerman, Iran (2007)
+
+### Professional Experience
+- **Student Research Assistant** - University of Potsdam (2020-2024)
+- **Scientific Researcher** - EFTAS Remote Sensing Technology, Münster, Germany (2020)
+- **Visiting Researcher** - University of Potsdam (2018-2019)
+- **Geospatial Research Assistant** - Istanbul Technical University (2015-2018)
+
+---
+
+## Research Philosophy
+
+I believe in:
+
+- **Open Science**: Developing reproducible workflows and sharing methodologies
+- **Interdisciplinary Collaboration**: Combining geodesy, geophysics, data science, and environmental science
+- **Practical Impact**: Translating research into tools that support hazard assessment and environmental monitoring
+- **Continuous Learning**: Staying current with emerging technologies in remote sensing, ML, and HPC
+
+---
+
+## Technical Skills
+
+**InSAR & SAR Processing**: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN
+
+**Programming**: Python (expert), MATLAB, R, IDL, C/C++, Bash
+
+**Python Ecosystem**: NumPy, pandas, GeoPandas, scikit-learn, xarray, rioxarray, Dask, PyTorch
+
+**GIS & Mapping**: ArcGIS Pro, QGIS, ENVI, GMT, PostgreSQL/PostGIS
+
+**Geodetic Tools**: GAMIT/GLOBK, GNSSRef, GNSS-IR
+
+**Geophysics**: Pyrocko, Kite, Grond, ObsPy
+
+**Software Engineering**: Git/GitHub, Linux, pytest, CLI development, API integration
+
+---
+
+## Languages
+
+- **Persian**: Native
+- **English**: Professional proficiency (C1)
+- **Arabic**: Intermediate (B1)
+- **German**: Elementary (A2)
+
+---
+
+## Professional Development
+
+I continuously expand my expertise through specialized training:
+
+- **GNSS Data Processing and Analysis** - EarthScope (2024)
+- **Computer Vision for Earth Observation** - IEEE GRSS IADF (2022)
+- **GNSS Interferometric Reflectometry** - UNAVCO (2021)
+- **Machine Learning with AMD GPUs/ROCm** - HLRS Stuttgart (2021)
+- **Techniques to Study Surface Deformation** - RWTH Aachen (2020)
+- **HPC for Computational Seismology** - HLRS Stuttgart (2020)
+- **Advanced Workshop on Earthquake Fault Mechanics** - ICTP Trieste (2019)
+- **Earth Surface Dynamics Summer School** - University of Potsdam (2018)
+
+---
+
+## Beyond Research
+
+When I'm not processing satellite data or writing Python code, I enjoy:
+
+- Exploring new developments in machine learning and computer vision
+- Contributing to open-source geospatial tools
+- Mentoring students in remote sensing and data science
+- Hiking and outdoor photography (especially in mountainous regions)
+
+---
+
+## Location & Availability
+
+📍 **Based in**: Berlin, Germany  
+🌍 **Open to**: Relocation and international collaborations  
+💼 **Seeking**: Opportunities in remote sensing, geospatial data science, and Earth observation
+
+---
+
+*"The best way to understand Earth's dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor."*
 

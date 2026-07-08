@@ -4,42 +4,91 @@
     "href": "blog/index.html",
     "title": "The Notebook",
     "section": "",
-    "text": "2D+1D Decomposition of InSAR for Landslide Application\n\n\n\n\n\n\nInSAR\n\n\nLandslide\n\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\nA brief introduction to my blog and what I plan to share here.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.”"
+    "text": "2D+1D Decomposition of InSAR for Landslide Application\n\n\n\n\n\n\nInSAR\n\n\nLandslide\n\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\nA brief introduction to my blog and what I plan to share here.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  url = {https://mohseniaref.github.io/blog/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.” https://mohseniaref.github.io/blog/."
   },
   {
     "objectID": "blog/first-post/first-post.html",
     "href": "blog/first-post/first-post.html",
     "title": "My First Blog Post",
     "section": "",
-    "text": "This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {My {First} {Blog} {Post}},\n  date = {2024-12-28},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “My First Blog Post.”"
+    "text": "This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {My {First} {Blog} {Post}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/first-post/first-post.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “My First Blog Post.” https://mohseniaref.github.io/blog/first-post/first-post.html."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Feel free to reach out via the following: - Email: mohseniaref@uni-potsdam.de - Twitter: @mohseniaref - LinkedIn: Mohammad Mohseni Aref"
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
   },
   {
-    "objectID": "contact.html#contact-me",
-    "href": "contact.html#contact-me",
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
     "title": "Contact",
     "section": "",
-    "text": "Feel free to reach out via the following: - Email: mohseniaref@uni-potsdam.de - Twitter: @mohseniaref - LinkedIn: Mohammad Mohseni Aref"
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Content coming soon…"
+    "objectID": "contact.html#professional-inquiries",
+    "href": "contact.html#professional-inquiries",
+    "title": "Contact",
+    "section": "Professional Inquiries",
+    "text": "Professional Inquiries\n📧 Email: mohseniaref@uni-potsdam.de\n📞 Phone: +49 1520 5241256\n📍 Location: Berlin, Germany"
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Education\n\nPh.D. student in Remote Sensing , Potsdam University, Germany\nM.Sc. in Water Resources Engineering, Azad University, Iran (2011)\nB.Sc. in Water and Irrigation Engineering, Bahoonar University, Iran (2007)"
+    "objectID": "contact.html#academic-affiliation",
+    "href": "contact.html#academic-affiliation",
+    "title": "Contact",
+    "section": "Academic Affiliation",
+    "text": "Academic Affiliation\nUniversity of Potsdam\nInstitute of Geosciences\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam, Germany\nSupervisor: Prof. Dr. Bodo Bookhagen\n📧 bodo.bookhagen@uni-potsdam.de\n☎️ +49 331 977 5779"
+  },
+  {
+    "objectID": "contact.html#connect-on-social-media",
+    "href": "contact.html#connect-on-social-media",
+    "title": "Contact",
+    "section": "Connect on Social Media",
+    "text": "Connect on Social Media\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💼 LinkedIn: Mohammad Mohseni Aref\n💻 GitHub: mohseniaref\n🎓 Google Scholar: Profile"
+  },
+  {
+    "objectID": "contact.html#collaboration-interests",
+    "href": "contact.html#collaboration-interests",
+    "title": "Contact",
+    "section": "Collaboration Interests",
+    "text": "Collaboration Interests\nI’m particularly interested in collaborating on:\n\nInSAR Applications: Deformation monitoring, atmospheric corrections, time-series analysis\nGeospatial Data Science: Large-scale satellite data processing, machine learning for Earth observation\nNatural Hazard Assessment: Landslide monitoring, subsidence analysis, earthquake deformation\nOpen Science: Reproducible workflows, open-source tool development, tutorials and training\nApplied Projects: Infrastructure monitoring, environmental assessment, climate change impacts"
+  },
+  {
+    "objectID": "contact.html#consulting-services",
+    "href": "contact.html#consulting-services",
+    "title": "Contact",
+    "section": "Consulting & Services",
+    "text": "Consulting & Services\nAvailable for:\n\nInSAR time-series analysis and interpretation\nGeospatial data processing and automation\nPython workflow development for remote sensing applications\nTechnical training and workshops on SAR interferometry\nData quality control and validation pipelines\nHPC optimization for satellite data processing"
+  },
+  {
+    "objectID": "contact.html#response-time",
+    "href": "contact.html#response-time",
+    "title": "Contact",
+    "section": "Response Time",
+    "text": "Response Time\nI typically respond to emails within 1-2 business days. For urgent matters, please indicate this in your subject line."
+  },
+  {
+    "objectID": "contact.html#office-hours",
+    "href": "contact.html#office-hours",
+    "title": "Contact",
+    "section": "Office Hours",
+    "text": "Office Hours\nFor students and collaborators at University of Potsdam:\n\nBy appointment - Please email to schedule a meeting\nVirtual meetings available via Zoom or Google Meet"
+  },
+  {
+    "objectID": "contact.html#mailing-address",
+    "href": "contact.html#mailing-address",
+    "title": "Contact",
+    "section": "Mailing Address",
+    "text": "Mailing Address\nMohammad Mohseni Aref\nInstitute of Geosciences\nUniversity of Potsdam\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam\nGermany"
+  },
+  {
+    "objectID": "contact.html#open-to-opportunities",
+    "href": "contact.html#open-to-opportunities",
+    "title": "Contact",
+    "section": "Open to Opportunities",
+    "text": "Open to Opportunities\nI am actively seeking positions in:\n\nRemote sensing and Earth observation\nGeospatial data science and analytics\nResearch and development (R&D) in geodesy and geophysics\nData engineering for environmental monitoring\nAcademic and industry positions worldwide\n\n📄 View my CV | 🔬 Research Overview | 💼 Projects & Tools\n\nLooking forward to hearing from you!"
   },
   {
     "objectID": "publications.html",
@@ -112,31 +161,318 @@
     "text": "M. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
   },
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Education\n\nPh.D. student in Remote Sensing , Potsdam University, Germany\nM.Sc. in Water Resources Engineering, Azad University, Iran (2011)\nB.Sc. in Water and Irrigation Engineering, Bahoonar University, Iran (2007)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
+  },
+  {
+    "objectID": "research.html#overview",
+    "href": "research.html#overview",
+    "title": "Research",
+    "section": "",
+    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
+  },
+  {
+    "objectID": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
+    "href": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
+    "title": "Research",
+    "section": "Ph.D. Research: Landslide Dynamics in the Central Andes",
+    "text": "Ph.D. Research: Landslide Dynamics in the Central Andes\nAs a Ph.D. candidate at the University of Potsdam (expected 2026), I investigate slow-moving landslides and hillslope processes in the south-central Andes of northwestern Argentina using advanced InSAR techniques.\n\nKey Research Areas:\n\n1. InSAR Time-Series Analysis for Landslide Monitoring\n\nDeveloped scalable Python workflows for processing multi-temporal SAR data (Sentinel-1, ALOS-2) using ISCE, MintPy, and MiaplPy\nImplemented phase-linking strategies to enhance deformation signal quality in challenging terrain\nApplied spatial statistics and clustering methods to identify and classify deformation regimes\nGenerated high-resolution ground-deformation maps for GIS-based environmental analysis\n\n\n\n2. Tropospheric Delay Correction\n\nCompared statistical and physics-based ray-tracing approaches for atmospheric correction\nIntegrated global weather models (ERA5, MERRA-2) to mitigate tropospheric noise\nSignificantly improved InSAR time-series reliability through advanced correction methods\nPresented findings at FRINGE 2026 and EGU conferences\n\n\n\n3. Multi-Source Geodetic Integration\n\nCombined InSAR, GNSS, and LiDAR datasets for comprehensive deformation analysis\nSupported earthquake and volcanic deformation inversion workflows\nProcessed large SAR and optical satellite datasets using HPC (SLURM) parallel computing"
+  },
+  {
+    "objectID": "research.html#current-research-projects",
+    "href": "research.html#current-research-projects",
+    "title": "Research",
+    "section": "Current Research Projects",
+    "text": "Current Research Projects\n\nGroundwater Depletion and Land Subsidence\nInvestigating subsidence in the Minab Coastal Plain (Iran) by integrating InSAR time-series with aquifer modeling to understand groundwater extraction impacts.\n\n\nEarthquake Sequence Analysis\nContributing to multi-sensor geodetic analysis of the 2022 earthquake sequence in the Zagros mountains, Iran (published in Seismica, 2023).\n\n\nSeasonal Landslide Activity\nAnalyzing seasonal patterns in landslide kinematics and their relationship to precipitation and hydrological processes in the Andes."
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nMicrowave and Optical Remote Sensing: SAR interferometry, optical offset tracking, spectral analysis\nGround Deformation Monitoring: Landslides, subsidence, tectonic motion, volcanic deformation\nAtmospheric Corrections: Tropospheric and ionospheric delay mitigation for InSAR and GNSS\nMachine Learning in Geosciences: Supervised and unsupervised learning for land cover classification and deformation pattern recognition\nGeospatial Data Science: Large-scale processing pipelines, spatial statistics, GIS-based interpretation\nHydrological Modeling: Surface and subsurface water dynamics, GRACE data analysis"
+  },
+  {
+    "objectID": "research.html#methodological-expertise",
+    "href": "research.html#methodological-expertise",
+    "title": "Research",
+    "section": "Methodological Expertise",
+    "text": "Methodological Expertise\n\nInSAR Processing Toolchains\nISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\n\n\nGeospatial Analysis\nArcGIS Pro, QGIS, ENVI, LAStools, MicMac, Ames Stereo Pipeline, PostgreSQL/PostGIS\n\n\nGeodetic Tools\nGAMIT/GLOBK, GNSSRef, GNSS-IR techniques\n\n\nProgramming & Data Science\nPython (NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask), MATLAB, R, Bash scripting\n\n\nHigh-Performance Computing\nSLURM-based parallel workflows for multi-terabyte SAR/optical data processing"
+  },
+  {
+    "objectID": "research.html#selected-publications-presentations",
+    "href": "research.html#selected-publications-presentations",
+    "title": "Research",
+    "section": "Selected Publications & Presentations",
+    "text": "Selected Publications & Presentations\n2026 - Mohseni Aref, M., Bookhagen, B. (2026). “Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis in the Southern Central Andes.” FRINGE 2026, Kraków, Poland.\n2025 - Mohseni Aref, M., Kamali, H. (2025). “Groundwater depletion and land subsidence in the Minab Coastal Plain: Insights from InSAR time-series and aquifer modeling.” 3rd ICCC Workshop, IAG.\n2024 - Mohseni Aref, M., Bookhagen, B., Strecker, M.R. (2024). “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina.” EGU General Assembly. DOI: 10.5194/egusphere-egu24-12522\n2023 - Metz, M., Maleki Asayesh, B., Mohseni Aref, M., et al. (2023). “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran.” Seismica. DOI: 10.26443/seismica.v2i2.953\nView all publications →"
+  },
+  {
+    "objectID": "research.html#collaborations",
+    "href": "research.html#collaborations",
+    "title": "Research",
+    "section": "Collaborations",
+    "text": "Collaborations\nI actively collaborate with researchers at: - University of Potsdam (Germany) - Geomorphology and remote sensing - EFTAS Remote Sensing Technology (Germany) - Applied InSAR monitoring - Istanbul Technical University (Turkey) - Geodesy and tectonic deformation - GFZ German Research Centre for Geosciences - Seismology and earthquake analysis"
+  },
+  {
+    "objectID": "research.html#research-impact",
+    "href": "research.html#research-impact",
+    "title": "Research",
+    "section": "Research Impact",
+    "text": "Research Impact\nMy work contributes to: - Natural Hazard Assessment: Improved landslide and subsidence monitoring for risk evaluation - Climate Change Research: Understanding permafrost dynamics and hydrological changes - Methodological Advances: Enhanced InSAR processing techniques for challenging environments - Open Science: Development of reproducible Python workflows for the remote sensing community"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects & Tools",
+    "section": "",
+    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
+  },
+  {
+    "objectID": "projects.html#overview",
+    "href": "projects.html#overview",
+    "title": "Projects & Tools",
+    "section": "",
+    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
+  },
+  {
+    "objectID": "projects.html#insar-processing-workflows",
+    "href": "projects.html#insar-processing-workflows",
+    "title": "Projects & Tools",
+    "section": "InSAR Processing Workflows",
+    "text": "InSAR Processing Workflows\n\nHPC-Scale InSAR Time-Series Processing Pipeline\nTechnologies: Python, ISCE, MintPy, SLURM, Dask\nDeveloped a scalable workflow for processing multi-terabyte SAR datasets on high-performance computing clusters:\n\nAutomated ISCE processing for Sentinel-1 and ALOS-2 data stacks\nParallel processing using SLURM job arrays for efficient compute resource utilization\nIntegration with MintPy/MiaplPy for advanced time-series analysis\nCovariance-aware phase linking for signal enhancement in challenging terrain\nAutomated quality control and validation pipelines\n\nApplications: Landslide monitoring in the Andes, subsidence studies, tectonic deformation analysis\n\n\n\nTropospheric Correction Framework\nTechnologies: Python, ERA5, MERRA-2, PyAPS, NumPy\nImplemented multiple atmospheric correction strategies for InSAR:\n\nStatistical approaches using empirical phase-elevation relationships\nPhysics-based ray-tracing with global weather models (ERA5, MERRA-2)\nComparative analysis of correction methods for different climate zones\nAutomated integration into time-series workflows\n\nImpact: Significantly improved deformation signal quality in high-relief mountainous terrain"
+  },
+  {
+    "objectID": "projects.html#geospatial-data-science-tools",
+    "href": "projects.html#geospatial-data-science-tools",
+    "title": "Projects & Tools",
+    "section": "Geospatial Data Science Tools",
+    "text": "Geospatial Data Science Tools\n\nInSAR Deformation Classification Pipeline\nTechnologies: Python, scikit-learn, GeoPandas, xarray\nDeveloped machine learning workflows for automated deformation pattern recognition:\n\nSpatial clustering of InSAR time-series velocities\nK-means and DBSCAN-based deformation regime classification\nAutomated landslide boundary detection and mapping\nGIS-ready output generation for ArcGIS Pro and QGIS\n\n\n\n\nData Quality Control & Validation Tools\nTechnologies: Python, pandas, pytest, CLI development\nBuilt automated pipelines for geospatial data validation:\n\nSchema and content consistency checks\nEncoding normalization and format validation\nFuzzy matching using TF-IDF and text similarity methods\nStructured logging and reproducible run reporting\nCLI tools for indexing and reliability scoring\n\nDeveloped at: Statista Strategy (2025)"
+  },
+  {
+    "objectID": "projects.html#multi-sensor-integration-projects",
+    "href": "projects.html#multi-sensor-integration-projects",
+    "title": "Projects & Tools",
+    "section": "Multi-Sensor Integration Projects",
+    "text": "Multi-Sensor Integration Projects\n\nMulti-Temporal LiDAR Differencing\nTechnologies: LAStools, Python, GDAL, CloudCompare\nImplemented workflows for terrain change detection:\n\nLiDAR point cloud processing and DEM generation\nMulti-temporal DEM differencing for displacement quantification\nIntegration with InSAR results for cross-validation\nAutomated change detection and volume calculations\n\n\n\n\nGNSS + InSAR Integration\nTechnologies: GAMIT/GLOBK, Python, NumPy\nDeveloped workflows for combining geodetic datasets:\n\nGNSS time-series processing and quality control\nCo-registration of GNSS and InSAR measurements\nJoint inversion for earthquake deformation modeling\nUncertainty propagation and error analysis"
+  },
+  {
+    "objectID": "projects.html#research-software-contributions",
+    "href": "projects.html#research-software-contributions",
+    "title": "Projects & Tools",
+    "section": "Research Software Contributions",
+    "text": "Research Software Contributions\n\nInSAR Processing Optimization\nContributed to improved processing efficiency for community tools:\n\nOptimized StaMPS and TRAIN workflows for parallel computing\nDeveloped Python wrappers for automated batch processing\nCreated documentation and tutorials for reproducible analysis\n\n\n\n\nOptical Offset Tracking\nTechnologies: COSI-Corr, Python, GDAL\nImplemented fast displacement mapping for rapid deformation events:\n\nAutomated offset tracking for landslide and glacier studies\nIntegration with optical satellite data (Sentinel-2, Landsat)\nMulti-scale analysis for different deformation rates"
+  },
+  {
+    "objectID": "projects.html#specialized-applications",
+    "href": "projects.html#specialized-applications",
+    "title": "Projects & Tools",
+    "section": "Specialized Applications",
+    "text": "Specialized Applications\n\nGroundwater Depletion Monitoring\nProject: Minab Coastal Plain, Iran\nTechnologies: InSAR, GRACE data, aquifer modeling, Python\nIntegrated satellite observations with hydrological modeling:\n\nInSAR-derived subsidence time series\nGRACE-based groundwater storage change analysis\nAquifer parameter estimation through inverse modeling\nSpatiotemporal correlation analysis\n\nStatus: Published at ICCC Workshop 2025\n\n\n\nEarthquake Sequence Analysis\nProject: 2022 Zagros Mountains, Iran\nTechnologies: InSAR, Pyrocko, Kite, Grond, ObsPy\nContributed to multi-sensor geodetic analysis:\n\nCo-seismic deformation mapping with Sentinel-1\nFault parameter inversion using InSAR observations\nIntegration with seismological data\nPublished in Seismica (2023)\n\n\n\n\nLandslide Kinematics Characterization\nProject: Central Andes, Argentina\nTechnologies: InSAR time-series, spatial statistics, Python\nComprehensive study of slow-moving landslides:\n\nMulti-temporal deformation analysis (2014-2024)\nSeasonal pattern recognition and hydrological correlation\n2D/3D decomposition of displacement fields\nLandslide classification based on kinematics\n\nStatus: Ph.D. dissertation research (ongoing)"
+  },
+  {
+    "objectID": "projects.html#open-source-community-contributions",
+    "href": "projects.html#open-source-community-contributions",
+    "title": "Projects & Tools",
+    "section": "Open Source & Community Contributions",
+    "text": "Open Source & Community Contributions\n\nGitHub Projects\nVisit my GitHub profile for code repositories and tutorials:\n\nInSAR processing scripts and workflows\nPython utilities for geospatial analysis\nTutorial notebooks for remote sensing applications\nDocumentation and best practices\n\n\n\n\nKnowledge Sharing\nBlog Posts: Technical tutorials on InSAR processing, atmospheric corrections, and Python workflows\nPresentations: Conference talks and workshop materials on InSAR analysis\nMentoring: Supporting students and early-career researchers in remote sensing"
+  },
+  {
+    "objectID": "projects.html#technical-stack",
+    "href": "projects.html#technical-stack",
+    "title": "Projects & Tools",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nPrimary Tools\n\nInSAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape\nProgramming: Python, MATLAB, R, Bash\nData Science: NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask\nGIS: ArcGIS Pro, QGIS, PostgreSQL/PostGIS\nVersion Control: Git, GitHub\nHPC: SLURM, parallel computing workflows\n\n\n\nDevelopment Practices\n\nReproducible research workflows\nTest-driven development (pytest)\nCLI tool development\nDocumentation and code commenting\nContinuous integration for data pipelines"
+  },
+  {
+    "objectID": "projects.html#future-projects",
+    "href": "projects.html#future-projects",
+    "title": "Projects & Tools",
+    "section": "Future Projects",
+    "text": "Future Projects\nI’m currently exploring:\n\nDeep Learning for InSAR: Applying CNNs for automated deformation detection and phase unwrapping\nCloud-Based Processing: Migrating workflows to Google Earth Engine and AWS for scalability\nReal-Time Monitoring: Developing near-real-time landslide warning systems\nMulti-Temporal Fusion: Combining SAR, optical, and LiDAR for comprehensive change detection"
+  },
+  {
+    "objectID": "projects.html#collaboration-opportunities",
+    "href": "projects.html#collaboration-opportunities",
+    "title": "Projects & Tools",
+    "section": "Collaboration Opportunities",
+    "text": "Collaboration Opportunities\nI’m interested in collaborating on:\n\nInSAR applications for natural hazard monitoring\nMachine learning for Earth observation\nGeospatial data science projects\nOpen-source tool development\n\n📧 Get in touch: mohseniaref@uni-potsdam.de"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Mohammad Mohseni Aref",
     "section": "",
-    "text": "I am a Ph.D. candidate specializing in radar remote sensing and InSAR time-series analysis. My research focuses on understanding and monitoring slow-moving landslides, permafrost dynamics, and hydrological processes using advanced geodetic techniques.\n\n\n\n\nInSAR and Remote Sensing Applications: Atmospheric correction, deformation monitoring, and time-series analysis.\nGeohazard Monitoring: Landslides, seismic activities, and fault systems.\nMachine Learning in Geosciences: Data-driven approaches for environmental modeling.\n\n\n\n\n\nCheck out my blog for updates on radar remote sensing, academic life, and tips for researchers. Visit the Blog →\n\n\n\n\nFeel free to reach out to me for collaborations or discussions: - Email: mohseniaref@uni-potsdam.de - Twitter: @mohseniaref - GitHub: mohseniaref - LinkedIn: mohseniaref"
+    "text": "I am a Ph.D. candidate at the University of Potsdam specializing in radar remote sensing, InSAR time-series analysis, and geospatial data science. My research focuses on understanding and monitoring slow-moving landslides, land subsidence, and tectonic deformation using advanced geodetic techniques.\nI develop scalable Python workflows and high-performance computing pipelines to extract meaningful insights from satellite observations, transforming complex radar and optical datasets into actionable information for natural hazard assessment and environmental monitoring."
   },
   {
-    "objectID": "index.html#mohammad-mohseni-aref",
-    "href": "index.html#mohammad-mohseni-aref",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
     "title": "Mohammad Mohseni Aref",
     "section": "",
-    "text": "I am a Ph.D. candidate specializing in radar remote sensing and InSAR time-series analysis. My research focuses on understanding and monitoring slow-moving landslides, permafrost dynamics, and hydrological processes using advanced geodetic techniques.\n\n\n\n\nInSAR and Remote Sensing Applications: Atmospheric correction, deformation monitoring, and time-series analysis.\nGeohazard Monitoring: Landslides, seismic activities, and fault systems.\nMachine Learning in Geosciences: Data-driven approaches for environmental modeling.\n\n\n\n\n\nCheck out my blog for updates on radar remote sensing, academic life, and tips for researchers. Visit the Blog →\n\n\n\n\nFeel free to reach out to me for collaborations or discussions: - Email: mohseniaref@uni-potsdam.de - Twitter: @mohseniaref - GitHub: mohseniaref - LinkedIn: mohseniaref"
+    "text": "I am a Ph.D. candidate at the University of Potsdam specializing in radar remote sensing, InSAR time-series analysis, and geospatial data science. My research focuses on understanding and monitoring slow-moving landslides, land subsidence, and tectonic deformation using advanced geodetic techniques.\nI develop scalable Python workflows and high-performance computing pipelines to extract meaningful insights from satellite observations, transforming complex radar and optical datasets into actionable information for natural hazard assessment and environmental monitoring."
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Mohammad Mohseni Aref",
+    "section": "What I Do",
+    "text": "What I Do\n🛰️ InSAR & Remote Sensing: Processing multi-temporal SAR data to monitor ground deformation at millimeter precision\n📊 Geospatial Data Science: Building automated Python pipelines for large-scale satellite data analysis\n🗺️ Geodetic Analysis: Integrating InSAR, GNSS, and LiDAR for comprehensive deformation studies\n🔬 Applied Research: Landslide monitoring, subsidence mapping, earthquake analysis, and atmospheric correction"
+  },
+  {
+    "objectID": "index.html#research-highlights",
+    "href": "index.html#research-highlights",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Research Highlights",
+    "text": "Research Highlights\nMy work sits at the intersection of geodesy, geophysics, and data science:\n\nAdvanced InSAR Processing: Implementing phase-linking and covariance-based methods for signal enhancement in challenging mountainous terrain\nAtmospheric Corrections: Developing tropospheric delay mitigation techniques using global weather models to improve InSAR accuracy\nMachine Learning Applications: Applying spatial clustering and pattern recognition for automated deformation classification\nHPC Workflows: Processing multi-terabyte SAR datasets using SLURM-based parallel computing on supercomputers"
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Current Research",
+    "text": "Current Research\n\nPh.D. Dissertation: Landslide Dynamics in the Central Andes\nUniversity of Potsdam, supervised by Prof. Dr. Bodo Bookhagen\nInvestigating slow-moving bedrock landslides in northwestern Argentina through multi-temporal InSAR analysis (2014-2026), with emphasis on: - Seasonal deformation patterns and hydrological controls - Tropospheric correction method evaluation - Multi-sensor geodetic integration - Scalable processing workflows for continental-scale monitoring\n\n\nRecent Projects\n\nGroundwater Depletion Monitoring: InSAR-based subsidence analysis in coastal Iran\nEarthquake Sequence Analysis: Geodetic investigation of the 2022 Zagros earthquakes (published in Seismica)\nData Quality Pipelines: Automated validation tools at Statista Strategy\n\nLearn more about my research →"
+  },
+  {
+    "objectID": "index.html#technical-expertise",
+    "href": "index.html#technical-expertise",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Technical Expertise",
+    "text": "Technical Expertise\nInSAR Tools: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR\nProgramming: Python (NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask), MATLAB, R, Bash\nGIS & Mapping: ArcGIS Pro, QGIS, ENVI, PostgreSQL/PostGIS\nGeodetic Analysis: GAMIT/GLOBK, GNSS-IR, Pyrocko, ObsPy\nComputing: High-Performance Computing (HPC), Linux, Git/GitHub, pytest\nView my projects & tools →"
+  },
+  {
+    "objectID": "index.html#recent-publications",
+    "href": "index.html#recent-publications",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Recent Publications",
+    "text": "Recent Publications\n2026 - Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis. FRINGE 2026, Kraków\n2025 - Groundwater depletion and land subsidence in the Minab Coastal Plain. ICCC Workshop, IAG\n2024 - Impact of Tropospheric Delay Correction on Landslide Mapping. EGU General Assembly, DOI: 10.5194/egusphere-egu24-12522\n2023 - The July-December 2022 earthquake sequence in Zagros mountains. Seismica, DOI: 10.26443/seismica.v2i2.953\nView all publications →"
+  },
+  {
+    "objectID": "index.html#latest-from-the-blog",
+    "href": "index.html#latest-from-the-blog",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Latest from the Blog",
+    "text": "Latest from the Blog\nExplore tutorials, research updates, and insights on radar remote sensing, InSAR processing, and academic life.\n\nInSAR Time-Series Analysis: Processing workflows and best practices\nAtmospheric Corrections: Tropospheric delay mitigation techniques\nPython for Remote Sensing: Code examples and tutorials\nAcademic Tips: Research strategies and career development\n\nVisit the blog →"
+  },
+  {
+    "objectID": "index.html#professional-experience",
+    "href": "index.html#professional-experience",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nCurrent Positions - Ph.D. Candidate, University of Potsdam (2020-2026) - Data Science Analytics, Statista Strategy, Berlin (2025)\nPrevious Roles - Student Research Assistant, University of Potsdam (2020-2024) - Scientific Researcher, EFTAS Remote Sensing Technology, Germany (2020) - Visiting Researcher, University of Potsdam (2018-2019) - Research Assistant, Istanbul Technical University (2015-2018)\nRead more about me →"
+  },
+  {
+    "objectID": "index.html#news-updates",
+    "href": "index.html#news-updates",
+    "title": "Mohammad Mohseni Aref",
+    "section": "News & Updates",
+    "text": "News & Updates\nJuly 2026 - Completed Ph.D. research on landslide dynamics in the Andes\nJune 2026 - Presented at FRINGE 2026 in Kraków, Poland on tropospheric correction methods\nApril 2025 - Started Data Science Analytics position at Statista Strategy in Berlin\nMarch 2025 - Published research on groundwater depletion and subsidence at ICCC Workshop"
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Get in Touch",
+    "text": "Get in Touch\nI’m always interested in collaborations on: - InSAR applications for natural hazard monitoring - Geospatial data science projects - Machine learning for Earth observation - Open-source tool development\n📧 Email: mohseniaref@uni-potsdam.de\n📍 Location: Berlin, Germany (Open to relocation)\n💼 Seeking: Opportunities in remote sensing, geospatial data science, and Earth observation\nContact me →"
+  },
+  {
+    "objectID": "index.html#connect",
+    "href": "index.html#connect",
+    "title": "Mohammad Mohseni Aref",
+    "section": "Connect",
+    "text": "Connect\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💻 GitHub: mohseniaref\n🔗 LinkedIn: mohseniaref\n🎓 Google Scholar"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Research Interests:\n\nRemote sensing (microwave and optical)\nInSAR techniques and time series analysis\nHillslope processes and seismic cycles"
+    "text": "I am a Ph.D. candidate at the University of Potsdam, specializing in remote sensing engineering, InSAR time-series analysis, and geospatial data science. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth’s surface.\nWith expertise spanning radar remote sensing, photogrammetry, GIS analysis, and high-performance computing, I transform complex multi-temporal satellite datasets into actionable information for understanding natural hazards, environmental change, and tectonic processes."
+  },
+  {
+    "objectID": "about.html#professional-background",
+    "href": "about.html#professional-background",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a Ph.D. candidate at the University of Potsdam, specializing in remote sensing engineering, InSAR time-series analysis, and geospatial data science. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth’s surface.\nWith expertise spanning radar remote sensing, photogrammetry, GIS analysis, and high-performance computing, I transform complex multi-temporal satellite datasets into actionable information for understanding natural hazards, environmental change, and tectonic processes."
+  },
+  {
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "About Me",
+    "section": "What I Do",
+    "text": "What I Do\n\nRemote Sensing & InSAR Analysis\nI specialize in processing and analyzing Synthetic Aperture Radar (SAR) data to monitor ground deformation at millimeter-scale precision. My work involves:\n\nDeveloping automated Python workflows for InSAR time-series processing\nImplementing advanced atmospheric correction techniques (tropospheric and ionospheric)\nApplying phase-linking and covariance-based methods for signal enhancement\nProcessing multi-terabyte datasets using HPC clusters\n\n\n\nGeospatial Data Science\nI bridge the gap between raw satellite data and interpretable geospatial insights:\n\nBuilding reproducible analysis pipelines with Python (NumPy, pandas, GeoPandas, xarray)\nApplying spatial statistics and machine learning for deformation pattern recognition\nCreating GIS-ready products for environmental and engineering applications\nDeveloping CLI tools for data quality control and validation\n\n\n\nApplied Earth Observation\nMy research has practical applications in:\n\nLandslide monitoring: Characterizing slow-moving bedrock landslides in mountainous terrain\nLand subsidence: Quantifying groundwater depletion impacts on coastal plains\nSeismic deformation: Analyzing earthquake and fault system dynamics\nInfrastructure monitoring: Supporting engineering assessments through automated deformation detection"
+  },
+  {
+    "objectID": "about.html#current-position",
+    "href": "about.html#current-position",
+    "title": "About Me",
+    "section": "Current Position",
+    "text": "Current Position\nPh.D. Candidate in Remote Sensing\nUniversity of Potsdam, Germany (Expected 2026)\nSupervised by Prof. Dr. Bodo Bookhagen\nMy dissertation focuses on understanding landslide dynamics in the south-central Andes through advanced InSAR time-series analysis, with emphasis on atmospheric correction methods and multi-sensor geodetic integration.\nData Science Analytics (Student Position)\nStatista Strategy, Berlin (Apr 2025 - Aug 2025)\nDeveloping Python pipelines for automated data quality control, validation workflows, and reproducible analytics."
+  },
+  {
+    "objectID": "about.html#background-experience",
+    "href": "about.html#background-experience",
+    "title": "About Me",
+    "section": "Background & Experience",
+    "text": "Background & Experience\n\nAcademic Journey\n\nPh.D. Candidate in Remote Sensing - University of Potsdam, Germany\nM.Sc. in Water Resources Engineering - Azad University, Shiraz, Iran (2011)\nB.Sc. in Water Engineering - Bahonar University, Kerman, Iran (2007)\n\n\n\nProfessional Experience\n\nStudent Research Assistant - University of Potsdam (2020-2024)\nScientific Researcher - EFTAS Remote Sensing Technology, Münster, Germany (2020)\nVisiting Researcher - University of Potsdam (2018-2019)\nGeospatial Research Assistant - Istanbul Technical University (2015-2018)"
+  },
+  {
+    "objectID": "about.html#research-philosophy",
+    "href": "about.html#research-philosophy",
+    "title": "About Me",
+    "section": "Research Philosophy",
+    "text": "Research Philosophy\nI believe in:\n\nOpen Science: Developing reproducible workflows and sharing methodologies\nInterdisciplinary Collaboration: Combining geodesy, geophysics, data science, and environmental science\nPractical Impact: Translating research into tools that support hazard assessment and environmental monitoring\nContinuous Learning: Staying current with emerging technologies in remote sensing, ML, and HPC"
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About Me",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nInSAR & SAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\nProgramming: Python (expert), MATLAB, R, IDL, C/C++, Bash\nPython Ecosystem: NumPy, pandas, GeoPandas, scikit-learn, xarray, rioxarray, Dask, PyTorch\nGIS & Mapping: ArcGIS Pro, QGIS, ENVI, GMT, PostgreSQL/PostGIS\nGeodetic Tools: GAMIT/GLOBK, GNSSRef, GNSS-IR\nGeophysics: Pyrocko, Kite, Grond, ObsPy\nSoftware Engineering: Git/GitHub, Linux, pytest, CLI development, API integration"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About Me",
+    "section": "Languages",
+    "text": "Languages\n\nPersian: Native\nEnglish: Professional proficiency (C1)\nArabic: Intermediate (B1)\nGerman: Elementary (A2)"
+  },
+  {
+    "objectID": "about.html#professional-development",
+    "href": "about.html#professional-development",
+    "title": "About Me",
+    "section": "Professional Development",
+    "text": "Professional Development\nI continuously expand my expertise through specialized training:\n\nGNSS Data Processing and Analysis - EarthScope (2024)\nComputer Vision for Earth Observation - IEEE GRSS IADF (2022)\nGNSS Interferometric Reflectometry - UNAVCO (2021)\nMachine Learning with AMD GPUs/ROCm - HLRS Stuttgart (2021)\nTechniques to Study Surface Deformation - RWTH Aachen (2020)\nHPC for Computational Seismology - HLRS Stuttgart (2020)\nAdvanced Workshop on Earthquake Fault Mechanics - ICTP Trieste (2019)\nEarth Surface Dynamics Summer School - University of Potsdam (2018)"
+  },
+  {
+    "objectID": "about.html#beyond-research",
+    "href": "about.html#beyond-research",
+    "title": "About Me",
+    "section": "Beyond Research",
+    "text": "Beyond Research\nWhen I’m not processing satellite data or writing Python code, I enjoy:\n\nExploring new developments in machine learning and computer vision\nContributing to open-source geospatial tools\nMentoring students in remote sensing and data science\nHiking and outdoor photography (especially in mountainous regions)"
+  },
+  {
+    "objectID": "about.html#location-availability",
+    "href": "about.html#location-availability",
+    "title": "About Me",
+    "section": "Location & Availability",
+    "text": "Location & Availability\n📍 Based in: Berlin, Germany\n🌍 Open to: Relocation and international collaborations\n💼 Seeking: Opportunities in remote sensing, geospatial data science, and Earth observation\n\n“The best way to understand Earth’s dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor.”"
   },
   {
     "objectID": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
     "href": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
     "title": "2D+1D Decomposition of InSAR for Landslide Application",
     "section": "",
-    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.”"
+    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.” https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html."
   }
 ]

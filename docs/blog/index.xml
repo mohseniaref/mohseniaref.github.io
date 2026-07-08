@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Mohammad Mohseni Aref</title>
+<link>https://mohseniaref.github.io/blog/</link>
+<atom:link href="https://mohseniaref.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.6.39</generator>
+<lastBuildDate>Fri, 27 Dec 2024 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>2D+1D Decomposition of InSAR for Landslide Application</title>
+  <dc:creator>Mohammad Mohseni Aref</dc:creator>
+  <link>https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><strong>Introduction</strong></p>
+<p>The 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.</p>
+<p><strong>Applications</strong> - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.</p>
+<p><strong>Conclusion</strong> The method is a transformative step for geohazard monitoring.</p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2024,
+  author = {{Mohammad Mohseni Aref}},
+  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}
+    {Application}},
+  date = {2024-12-28},
+  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
+Mohammad Mohseni Aref. 2024. <span>“2D+1D Decomposition of InSAR for
+Landslide Application.”</span> <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
+</div></div></section></div> ]]></description>
+  <category>InSAR</category>
+  <category>Landslide</category>
+  <category>Remote Sensing</category>
+  <guid>https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</guid>
+  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/images/a1.png" medium="image" type="image/png" height="102" width="144"/>
+</item>
+<item>
+  <title>My First Blog Post</title>
+  <dc:creator>Mohammad Mohseni Aref</dc:creator>
+  <link>https://mohseniaref.github.io/blog/first-post/first-post.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.</p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2024,
+  author = {{Mohammad Mohseni Aref}},
+  title = {My {First} {Blog} {Post}},
+  date = {2024-12-28},
+  url = {https://mohseniaref.github.io/blog/first-post/first-post.html},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
+Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span> <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
+</div></div></section></div> ]]></description>
+  <guid>https://mohseniaref.github.io/blog/first-post/first-post.html</guid>
+  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

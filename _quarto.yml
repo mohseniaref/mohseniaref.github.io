@@ -5,12 +5,17 @@ project:
 
 website:
   title: "Mohammad Mohseni Aref"
+  site-url: "https://mohseniaref.github.io"
   navbar:
     left:
       - text: Home
         href: index.qmd
+      - text: About
+        href: about.qmd
       - text: Research
         href: research.qmd
+      - text: Projects & Tools
+        href: projects.qmd
       - text: Publications
         href: publications.qmd
       - text: Blog

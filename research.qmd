@@ -2,5 +2,113 @@
 title: "Research"
 ---
 
-Content coming soon...
+## Overview
+
+My research focuses on **InSAR time-series analysis** and **satellite-based deformation monitoring** to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity.
+
+---
+
+## Ph.D. Research: Landslide Dynamics in the Central Andes
+
+As a Ph.D. candidate at the **University of Potsdam** (expected 2026), I investigate slow-moving landslides and hillslope processes in the south-central Andes of northwestern Argentina using advanced InSAR techniques.
+
+### Key Research Areas:
+
+#### 1. **InSAR Time-Series Analysis for Landslide Monitoring**
+- Developed scalable Python workflows for processing multi-temporal SAR data (Sentinel-1, ALOS-2) using ISCE, MintPy, and MiaplPy
+- Implemented phase-linking strategies to enhance deformation signal quality in challenging terrain
+- Applied spatial statistics and clustering methods to identify and classify deformation regimes
+- Generated high-resolution ground-deformation maps for GIS-based environmental analysis
+
+#### 2. **Tropospheric Delay Correction**
+- Compared statistical and physics-based ray-tracing approaches for atmospheric correction
+- Integrated global weather models (ERA5, MERRA-2) to mitigate tropospheric noise
+- Significantly improved InSAR time-series reliability through advanced correction methods
+- Presented findings at FRINGE 2026 and EGU conferences
+
+#### 3. **Multi-Source Geodetic Integration**
+- Combined InSAR, GNSS, and LiDAR datasets for comprehensive deformation analysis
+- Supported earthquake and volcanic deformation inversion workflows
+- Processed large SAR and optical satellite datasets using HPC (SLURM) parallel computing
+
+---
+
+## Current Research Projects
+
+### Groundwater Depletion and Land Subsidence
+Investigating subsidence in the Minab Coastal Plain (Iran) by integrating InSAR time-series with aquifer modeling to understand groundwater extraction impacts.
+
+### Earthquake Sequence Analysis
+Contributing to multi-sensor geodetic analysis of the 2022 earthquake sequence in the Zagros mountains, Iran (published in *Seismica*, 2023).
+
+### Seasonal Landslide Activity
+Analyzing seasonal patterns in landslide kinematics and their relationship to precipitation and hydrological processes in the Andes.
+
+---
+
+## Research Interests
+
+- **Microwave and Optical Remote Sensing**: SAR interferometry, optical offset tracking, spectral analysis
+- **Ground Deformation Monitoring**: Landslides, subsidence, tectonic motion, volcanic deformation
+- **Atmospheric Corrections**: Tropospheric and ionospheric delay mitigation for InSAR and GNSS
+- **Machine Learning in Geosciences**: Supervised and unsupervised learning for land cover classification and deformation pattern recognition
+- **Geospatial Data Science**: Large-scale processing pipelines, spatial statistics, GIS-based interpretation
+- **Hydrological Modeling**: Surface and subsurface water dynamics, GRACE data analysis
+
+---
+
+## Methodological Expertise
+
+### InSAR Processing Toolchains
+ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN
+
+### Geospatial Analysis
+ArcGIS Pro, QGIS, ENVI, LAStools, MicMac, Ames Stereo Pipeline, PostgreSQL/PostGIS
+
+### Geodetic Tools
+GAMIT/GLOBK, GNSSRef, GNSS-IR techniques
+
+### Programming & Data Science
+Python (NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask), MATLAB, R, Bash scripting
+
+### High-Performance Computing
+SLURM-based parallel workflows for multi-terabyte SAR/optical data processing
+
+---
+
+## Selected Publications & Presentations
+
+**2026**
+- Mohseni Aref, M., Bookhagen, B. (2026). "Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis in the Southern Central Andes." *FRINGE 2026*, Kraków, Poland.
+
+**2025**
+- Mohseni Aref, M., Kamali, H. (2025). "Groundwater depletion and land subsidence in the Minab Coastal Plain: Insights from InSAR time-series and aquifer modeling." *3rd ICCC Workshop*, IAG.
+
+**2024**
+- Mohseni Aref, M., Bookhagen, B., Strecker, M.R. (2024). "Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina." *EGU General Assembly*. [DOI: 10.5194/egusphere-egu24-12522](https://doi.org/10.5194/egusphere-egu24-12522)
+
+**2023**
+- Metz, M., Maleki Asayesh, B., **Mohseni Aref, M.**, et al. (2023). "The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran." *Seismica*. [DOI: 10.26443/seismica.v2i2.953](https://doi.org/10.26443/seismica.v2i2.953)
+
+[View all publications →](publications.qmd)
+
+---
+
+## Collaborations
+
+I actively collaborate with researchers at:
+- **University of Potsdam** (Germany) - Geomorphology and remote sensing
+- **EFTAS Remote Sensing Technology** (Germany) - Applied InSAR monitoring
+- **Istanbul Technical University** (Turkey) - Geodesy and tectonic deformation
+- **GFZ German Research Centre for Geosciences** - Seismology and earthquake analysis
+
+---
+
+## Research Impact
+
+My work contributes to:
+- **Natural Hazard Assessment**: Improved landslide and subsidence monitoring for risk evaluation
+- **Climate Change Research**: Understanding permafrost dynamics and hydrological changes
+- **Methodological Advances**: Enhanced InSAR processing techniques for challenging environments
+- **Open Science**: Development of reproducible Python workflows for the remote sensing community
 

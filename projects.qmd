@@ -1,0 +1,223 @@
+---
+title: "Projects & Tools"
+---
+
+## Overview
+
+This page showcases computational tools, workflows, and research projects I've developed for InSAR analysis, geospatial data processing, and Earth observation applications.
+
+---
+
+## InSAR Processing Workflows
+
+### HPC-Scale InSAR Time-Series Processing Pipeline
+**Technologies**: Python, ISCE, MintPy, SLURM, Dask
+
+Developed a scalable workflow for processing multi-terabyte SAR datasets on high-performance computing clusters:
+
+- Automated ISCE processing for Sentinel-1 and ALOS-2 data stacks
+- Parallel processing using SLURM job arrays for efficient compute resource utilization
+- Integration with MintPy/MiaplPy for advanced time-series analysis
+- Covariance-aware phase linking for signal enhancement in challenging terrain
+- Automated quality control and validation pipelines
+
+**Applications**: Landslide monitoring in the Andes, subsidence studies, tectonic deformation analysis
+
+---
+
+### Tropospheric Correction Framework
+**Technologies**: Python, ERA5, MERRA-2, PyAPS, NumPy
+
+Implemented multiple atmospheric correction strategies for InSAR:
+
+- Statistical approaches using empirical phase-elevation relationships
+- Physics-based ray-tracing with global weather models (ERA5, MERRA-2)
+- Comparative analysis of correction methods for different climate zones
+- Automated integration into time-series workflows
+
+**Impact**: Significantly improved deformation signal quality in high-relief mountainous terrain
+
+---
+
+## Geospatial Data Science Tools
+
+### InSAR Deformation Classification Pipeline
+**Technologies**: Python, scikit-learn, GeoPandas, xarray
+
+Developed machine learning workflows for automated deformation pattern recognition:
+
+- Spatial clustering of InSAR time-series velocities
+- K-means and DBSCAN-based deformation regime classification
+- Automated landslide boundary detection and mapping
+- GIS-ready output generation for ArcGIS Pro and QGIS
+
+---
+
+### Data Quality Control & Validation Tools
+**Technologies**: Python, pandas, pytest, CLI development
+
+Built automated pipelines for geospatial data validation:
+
+- Schema and content consistency checks
+- Encoding normalization and format validation
+- Fuzzy matching using TF-IDF and text similarity methods
+- Structured logging and reproducible run reporting
+- CLI tools for indexing and reliability scoring
+
+**Developed at**: Statista Strategy (2025)
+
+---
+
+## Multi-Sensor Integration Projects
+
+### Multi-Temporal LiDAR Differencing
+**Technologies**: LAStools, Python, GDAL, CloudCompare
+
+Implemented workflows for terrain change detection:
+
+- LiDAR point cloud processing and DEM generation
+- Multi-temporal DEM differencing for displacement quantification
+- Integration with InSAR results for cross-validation
+- Automated change detection and volume calculations
+
+---
+
+### GNSS + InSAR Integration
+**Technologies**: GAMIT/GLOBK, Python, NumPy
+
+Developed workflows for combining geodetic datasets:
+
+- GNSS time-series processing and quality control
+- Co-registration of GNSS and InSAR measurements
+- Joint inversion for earthquake deformation modeling
+- Uncertainty propagation and error analysis
+
+---
+
+## Research Software Contributions
+
+### InSAR Processing Optimization
+Contributed to improved processing efficiency for community tools:
+
+- Optimized StaMPS and TRAIN workflows for parallel computing
+- Developed Python wrappers for automated batch processing
+- Created documentation and tutorials for reproducible analysis
+
+---
+
+### Optical Offset Tracking
+**Technologies**: COSI-Corr, Python, GDAL
+
+Implemented fast displacement mapping for rapid deformation events:
+
+- Automated offset tracking for landslide and glacier studies
+- Integration with optical satellite data (Sentinel-2, Landsat)
+- Multi-scale analysis for different deformation rates
+
+---
+
+## Specialized Applications
+
+### Groundwater Depletion Monitoring
+**Project**: Minab Coastal Plain, Iran  
+**Technologies**: InSAR, GRACE data, aquifer modeling, Python
+
+Integrated satellite observations with hydrological modeling:
+
+- InSAR-derived subsidence time series
+- GRACE-based groundwater storage change analysis
+- Aquifer parameter estimation through inverse modeling
+- Spatiotemporal correlation analysis
+
+**Status**: Published at ICCC Workshop 2025
+
+---
+
+### Earthquake Sequence Analysis
+**Project**: 2022 Zagros Mountains, Iran  
+**Technologies**: InSAR, Pyrocko, Kite, Grond, ObsPy
+
+Contributed to multi-sensor geodetic analysis:
+
+- Co-seismic deformation mapping with Sentinel-1
+- Fault parameter inversion using InSAR observations
+- Integration with seismological data
+- Published in *Seismica* (2023)
+
+---
+
+### Landslide Kinematics Characterization
+**Project**: Central Andes, Argentina  
+**Technologies**: InSAR time-series, spatial statistics, Python
+
+Comprehensive study of slow-moving landslides:
+
+- Multi-temporal deformation analysis (2014-2024)
+- Seasonal pattern recognition and hydrological correlation
+- 2D/3D decomposition of displacement fields
+- Landslide classification based on kinematics
+
+**Status**: Ph.D. dissertation research (ongoing)
+
+---
+
+## Open Source & Community Contributions
+
+### GitHub Projects
+Visit my [GitHub profile](https://github.com/mohseniaref) for code repositories and tutorials:
+
+- InSAR processing scripts and workflows
+- Python utilities for geospatial analysis
+- Tutorial notebooks for remote sensing applications
+- Documentation and best practices
+
+---
+
+### Knowledge Sharing
+
+**Blog Posts**: Technical tutorials on InSAR processing, atmospheric corrections, and Python workflows  
+**Presentations**: Conference talks and workshop materials on InSAR analysis  
+**Mentoring**: Supporting students and early-career researchers in remote sensing
+
+---
+
+## Technical Stack
+
+### Primary Tools
+- **InSAR Processing**: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape
+- **Programming**: Python, MATLAB, R, Bash
+- **Data Science**: NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask
+- **GIS**: ArcGIS Pro, QGIS, PostgreSQL/PostGIS
+- **Version Control**: Git, GitHub
+- **HPC**: SLURM, parallel computing workflows
+
+### Development Practices
+- Reproducible research workflows
+- Test-driven development (pytest)
+- CLI tool development
+- Documentation and code commenting
+- Continuous integration for data pipelines
+
+---
+
+## Future Projects
+
+I'm currently exploring:
+
+- **Deep Learning for InSAR**: Applying CNNs for automated deformation detection and phase unwrapping
+- **Cloud-Based Processing**: Migrating workflows to Google Earth Engine and AWS for scalability
+- **Real-Time Monitoring**: Developing near-real-time landslide warning systems
+- **Multi-Temporal Fusion**: Combining SAR, optical, and LiDAR for comprehensive change detection
+
+---
+
+## Collaboration Opportunities
+
+I'm interested in collaborating on:
+
+- InSAR applications for natural hazard monitoring
+- Machine learning for Earth observation
+- Geospatial data science projects
+- Open-source tool development
+
+📧 **Get in touch**: [mohseniaref@uni-potsdam.de](mailto:mohseniaref@uni-potsdam.de)

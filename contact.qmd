@@ -2,10 +2,107 @@
 title: "Contact"
 ---
 
-## Contact Me
+## Get in Touch
 
-Feel free to reach out via the following:
-- **Email**: [mohseniaref@uni-potsdam.de](mailto:mohseniaref@uni-potsdam.de)
-- **Twitter**: [@mohseniaref](https://twitter.com/mohseniaref)
-- **LinkedIn**: [Mohammad Mohseni Aref](https://www.linkedin.com/in/mohseniaref/)
+I'm always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science.
+
+---
+
+## Professional Inquiries
+
+📧 **Email**: [mohseniaref@uni-potsdam.de](mailto:mohseniaref@uni-potsdam.de)  
+📞 **Phone**: +49 1520 5241256  
+📍 **Location**: Berlin, Germany
+
+---
+
+## Academic Affiliation
+
+**University of Potsdam**  
+Institute of Geosciences  
+Karl-Liebknecht-Str. 24-25  
+14476 Potsdam, Germany
+
+**Supervisor**: Prof. Dr. Bodo Bookhagen  
+📧 bodo.bookhagen@uni-potsdam.de  
+☎️ +49 331 977 5779
+
+---
+
+## Connect on Social Media
+
+- 🐦 **Twitter**: [@mohseniaref](https://twitter.com/mohseniaref)
+- 🦋 **Bluesky**: [@mohseniaref](https://bsky.app/profile/mohseniaref.bsky.social)
+- 💼 **LinkedIn**: [Mohammad Mohseni Aref](https://www.linkedin.com/in/mohseniaref/)
+- 💻 **GitHub**: [mohseniaref](https://github.com/mohseniaref)
+- 🎓 **Google Scholar**: [Profile](https://scholar.google.com.tr/citations?user=9_00Dy8AAAAJ&hl=en)
+
+---
+
+## Collaboration Interests
+
+I'm particularly interested in collaborating on:
+
+- **InSAR Applications**: Deformation monitoring, atmospheric corrections, time-series analysis
+- **Geospatial Data Science**: Large-scale satellite data processing, machine learning for Earth observation
+- **Natural Hazard Assessment**: Landslide monitoring, subsidence analysis, earthquake deformation
+- **Open Science**: Reproducible workflows, open-source tool development, tutorials and training
+- **Applied Projects**: Infrastructure monitoring, environmental assessment, climate change impacts
+
+---
+
+## Consulting & Services
+
+Available for:
+
+- InSAR time-series analysis and interpretation
+- Geospatial data processing and automation
+- Python workflow development for remote sensing applications
+- Technical training and workshops on SAR interferometry
+- Data quality control and validation pipelines
+- HPC optimization for satellite data processing
+
+---
+
+## Response Time
+
+I typically respond to emails within **1-2 business days**. For urgent matters, please indicate this in your subject line.
+
+---
+
+## Office Hours
+
+For students and collaborators at University of Potsdam:
+
+- **By appointment** - Please email to schedule a meeting
+- **Virtual meetings** available via Zoom or Google Meet
+
+---
+
+## Mailing Address
+
+Mohammad Mohseni Aref  
+Institute of Geosciences  
+University of Potsdam  
+Karl-Liebknecht-Str. 24-25  
+14476 Potsdam  
+Germany
+
+---
+
+## Open to Opportunities
+
+I am actively seeking positions in:
+
+- Remote sensing and Earth observation
+- Geospatial data science and analytics
+- Research and development (R&D) in geodesy and geophysics
+- Data engineering for environmental monitoring
+- Academic and industry positions worldwide
+
+📄 [View my CV](cv.qmd) | 🔬 [Research Overview](research.qmd) | 💼 [Projects & Tools](projects.qmd)
+
+---
+
+*Looking forward to hearing from you!*
 
