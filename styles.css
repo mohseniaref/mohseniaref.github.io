@@ -6,6 +6,15 @@ h1, h2, h3 {
   color: black;
 }
 
+/* Override any uppercase text transformation */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+}
+
+.quarto-title-meta-heading {
+  text-transform: none !important;
+}
+
 .sidebar {
   background-color: #f8f9fa;
 }
