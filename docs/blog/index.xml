@@ -9,8 +9,8 @@
 <link>https://mohseniaref.github.io/blog/</link>
 <atom:link href="https://mohseniaref.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 27 Dec 2024 23:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sat, 28 Dec 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>2D+1D Decomposition of InSAR for Landslide Application</title>
   <dc:creator>Mohammad Mohseni Aref</dc:creator>
@@ -37,13 +37,13 @@
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
 Mohammad Mohseni Aref. 2024. <span>“2D+1D Decomposition of InSAR for
-Landslide Application.”</span> <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
+Landslide Application.”</span> Preprint, December 28. <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
 </div></div></section></div> ]]></description>
   <category>InSAR</category>
   <category>Landslide</category>
   <category>Remote Sensing</category>
   <guid>https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</guid>
-  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
   <media:content url="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/images/a1.png" medium="image" type="image/png" height="102" width="144"/>
 </item>
 <item>
@@ -67,10 +67,11 @@ Landslide Application.”</span> <a href="https://mohseniaref.github.io/blog/2d-
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
-Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span> <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
+Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span>
+Preprint, December 28. <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
 </div></div></section></div> ]]></description>
   <guid>https://mohseniaref.github.io/blog/first-post/first-post.html</guid>
-  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
+  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
