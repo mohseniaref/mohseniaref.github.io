@@ -37,5 +37,7 @@ format:
         <script>
           console.log("Custom script loaded.");
         </script>
-
+        <!-- Cloudflare Web Analytics -->
+        <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "77ab1328fe434b648cedce00c25a2d22"}'></script>
+        <!-- End Cloudflare Web Analytics -->
 

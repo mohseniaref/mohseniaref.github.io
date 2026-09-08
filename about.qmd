@@ -2,6 +2,8 @@
 title: "About Me"
 ---
 
+![Mohammad Mohseni Aref](images/CV_photo_alternative_3.jpg){width=240}
+
 ## Professional Background
 
 I am a **Ph.D. candidate** at the University of Potsdam, specializing in **remote sensing engineering**, **InSAR time-series analysis**, and **geospatial data science**. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth's surface.
@@ -140,4 +142,3 @@ When I'm not processing satellite data or writing Python code, I enjoy:
 ---
 
 *"The best way to understand Earth's dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor."*
-

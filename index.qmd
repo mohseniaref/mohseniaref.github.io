@@ -2,7 +2,7 @@
 title: "Mohammad Mohseni Aref"
 about:
   template: trestles
-  image: images/mohammad.jpg
+  image: images/CV_photo_alternative_3.jpg
   links:
     - icon: twitter
       text: Twitter
@@ -172,4 +172,3 @@ I'm always interested in collaborations on:
 - 💻 [GitHub: mohseniaref](https://github.com/mohseniaref)
 - 🔗 [LinkedIn: mohseniaref](https://www.linkedin.com/in/mohseniaref/)
 - 🎓 [Google Scholar](https://scholar.google.com.tr/citations?user=9_00Dy8AAAAJ&hl=en)
-
