@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -24,4 +27,3 @@ jobs:
         git add docs/*
         git commit -m "Automated render and deploy"
         git push
-
