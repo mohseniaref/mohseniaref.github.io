@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
@@ -22,8 +22,10 @@ jobs:
     - name: Render and Publish
       run: |
         quarto render
-        git config --global user.name "Your Name"
-        git config --global user.email "your.email@example.com"
-        git add docs/*
-        git commit -m "Automated render and deploy"
-        git push
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add docs/
+        if ! git diff --cached --quiet; then
+          git commit -m "Render website"
+          git push
+        fi

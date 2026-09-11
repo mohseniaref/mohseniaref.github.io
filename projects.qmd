@@ -96,6 +96,23 @@ Developed workflows for combining geodetic datasets:
 
 ## Research Software Contributions
 
+### NavaSAR
+**Technologies**: Python, NumPy, SciPy, Matplotlib, pytest
+
+NavaSAR is an open-source physics library for reproducible radar remote-sensing experiments:
+
+- Natural-material dielectric and mixture models
+- Complex SAR, multilook, speckle, and polarimetric simulation
+- InSAR coherence, phase triplets, and closure-phase time series
+- Experimental soil-moisture inversion and retrieval workflows
+- Curated notebooks, API documentation, and automated tests
+
+**Status**: Public alpha 0.1.0a1
+
+**Links**: [Source code](https://github.com/mohseniaref/NavaSAR) · [Launch post](blog/introducing-navasar/index.qmd)
+
+---
+
 ### InSAR Processing Optimization
 Contributed to improved processing efficiency for community tools:
 

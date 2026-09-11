@@ -112,6 +112,7 @@ Investigating slow-moving bedrock landslides in northwestern Argentina through m
 
 Explore tutorials, research updates, and insights on radar remote sensing, InSAR processing, and academic life.
 
+- **[Introducing NavaSAR](blog/introducing-navasar/index.qmd)**: The first public alpha of my physics-based Python library for SAR and InSAR modeling
 - **InSAR Time-Series Analysis**: Processing workflows and best practices
 - **Atmospheric Corrections**: Tropospheric delay mitigation techniques
 - **Python for Remote Sensing**: Code examples and tutorials

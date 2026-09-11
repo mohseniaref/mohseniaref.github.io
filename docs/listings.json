@@ -2,6 +2,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/introducing-navasar/index.html",
       "/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
       "/blog/first-post/first-post.html"
     ]

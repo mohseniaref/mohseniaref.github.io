@@ -9,8 +9,103 @@
 <link>https://mohseniaref.github.io/blog/</link>
 <atom:link href="https://mohseniaref.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.10.18</generator>
-<lastBuildDate>Sat, 28 Dec 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.39</generator>
+<lastBuildDate>Thu, 10 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling</title>
+  <dc:creator>Mohammad Mohseni Aref</dc:creator>
+  <link>https://mohseniaref.github.io/blog/introducing-navasar/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Today I am releasing <strong>NavaSAR 0.1.0a1</strong>, the first public alpha of a Python library for physics-based radar remote-sensing experiments.</p>
+<p>The project grew from a practical need: many useful microwave and interferometric models are scattered across papers, books, and one-off research scripts. NavaSAR brings a focused selection of those models into a documented, testable package that can support teaching, reproducible experiments, and early-stage method development.</p>
+<section id="what-is-included-in-the-alpha" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-included-in-the-alpha">What is included in the alpha?</h2>
+<p>The initial release connects several parts of the radar modeling chain:</p>
+<ul>
+<li>dielectric models for water, soil, vegetation, snow, ice, and material mixtures;</li>
+<li>complex SAR single-look-complex simulation and multilooking;</li>
+<li>interferometric coherence, phase triplets, and closure-phase time series;</li>
+<li>polarimetric scattering, covariance, fading, and speckle tools;</li>
+<li>land-backscatter and detected-image simulations; and</li>
+<li>experimental soil-moisture inversion and retrieval workflows.</li>
+</ul>
+<p>The emphasis is on transparent scientific functions rather than a black-box processing system. Inputs, assumptions, and units remain visible so that a result can be inspected and challenged.</p>
+</section>
+<section id="from-moisture-change-to-an-interferometric-signal" class="level2">
+<h2 class="anchored" data-anchor-id="from-moisture-change-to-an-interferometric-signal">From moisture change to an interferometric signal</h2>
+<p>The figure below summarizes one simulation workflow. A temporary soil-moisture increase changes the dielectric response and the simulated SLC amplitude. The corresponding interferometric network develops a phase response and a non-zero closure-phase step.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mohseniaref.github.io/blog/introducing-navasar/images/closure-phase-workflow.png" class="img-fluid figure-img" alt="Four panels showing soil moisture input, mean SLC amplitude, interferometric phase, and closure phase through time."></p>
+<figcaption>A NavaSAR simulation linking a soil-moisture event to SLC amplitude, interferometric phase, and closure phase.</figcaption>
+</figure>
+</div>
+<p>Closure phase is particularly interesting because it cancels phase terms that are strictly additive around a closed interferometric loop. A remaining signal can therefore reveal non-linear changes in the scattering medium. In the soil-moisture model used here, the phase triplet depends on the ordering and magnitude of the moisture states.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mohseniaref.github.io/blog/introducing-navasar/images/phase-triplet-nonlinearity.png" class="img-fluid figure-img" alt="Line plot and contour map showing non-zero phase triplets for asymmetric soil-moisture states."></p>
+<figcaption>Non-linear phase-triplet response for asymmetric soil-moisture states.</figcaption>
+</figure>
+</div>
+<p>These plots are simulations, not field validation. The alpha release is intended to make assumptions reproducible and provide a foundation for comparison with observations.</p>
+</section>
+<section id="reproducibility-and-scope" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-and-scope">Reproducibility and scope</h2>
+<p>NavaSAR is released under the MIT License. The public repository contains source code, documentation, tests, and curated notebooks. Copyrighted reference PDFs and local build artifacts are deliberately excluded.</p>
+<p>The package version is marked as an alpha because the API and numerical behavior may still evolve as more validation cases are added. Users should independently verify results before applying them to operational or decision-critical work.</p>
+</section>
+<section id="try-it" class="level2">
+<h2 class="anchored" data-anchor-id="try-it">Try it</h2>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">git</span> clone https://github.com/mohseniaref/NavaSAR.git</span>
+<span id="cb1-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> NavaSAR</span>
+<span id="cb1-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">python</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> pip install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-e</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".[notebooks,test]"</span></span>
+<span id="cb1-4"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">python</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-m</span> pytest</span></code></pre></div>
+<p>The source code and documentation are available on <a href="https://github.com/mohseniaref/NavaSAR">GitHub</a>. Feedback, reproducible test cases, and carefully scoped contributions are welcome.</p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2026,
+  author = {{Mohammad Mohseni Aref}},
+  title = {Introducing {NavaSAR:} {An} {Open} {Alpha} for
+    {Physics-Based} {SAR} {Modeling}},
+  date = {2026-09-11},
+  url = {https://mohseniaref.github.io/blog/introducing-navasar/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas">
+Mohammad Mohseni Aref. 2026. <span>“Introducing NavaSAR: An Open Alpha
+for Physics-Based SAR Modeling.”</span> <a href="https://mohseniaref.github.io/blog/introducing-navasar/">https://mohseniaref.github.io/blog/introducing-navasar/</a>.
+</div></div></section></div> ]]></description>
+  <category>SAR</category>
+  <category>InSAR</category>
+  <category>Python</category>
+  <category>Open Source</category>
+  <category>Remote Sensing</category>
+  <guid>https://mohseniaref.github.io/blog/introducing-navasar/</guid>
+  <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://mohseniaref.github.io/blog/introducing-navasar/images/closure-phase-workflow.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>2D+1D Decomposition of InSAR for Landslide Application</title>
   <dc:creator>Mohammad Mohseni Aref</dc:creator>
@@ -37,13 +132,13 @@
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
 Mohammad Mohseni Aref. 2024. <span>“2D+1D Decomposition of InSAR for
-Landslide Application.”</span> Preprint, December 28. <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
+Landslide Application.”</span> <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
 </div></div></section></div> ]]></description>
   <category>InSAR</category>
   <category>Landslide</category>
   <category>Remote Sensing</category>
   <guid>https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</guid>
-  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
   <media:content url="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/images/a1.png" medium="image" type="image/png" height="102" width="144"/>
 </item>
 <item>
@@ -67,11 +162,10 @@ Landslide Application.”</span> Preprint, December 28. <a href="https://mohseni
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
-Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span>
-Preprint, December 28. <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
+Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span> <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
 </div></div></section></div> ]]></description>
   <guid>https://mohseniaref.github.io/blog/first-post/first-post.html</guid>
-  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
