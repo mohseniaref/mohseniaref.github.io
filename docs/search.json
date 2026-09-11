@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "blog/introducing-navasar/index.html",
-    "href": "blog/introducing-navasar/index.html",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "",
-    "text": "Today I am releasing NavaSAR 0.1.0a1, the first public alpha of a Python library for physics-based radar remote-sensing experiments.\nThe project grew from a practical need: many useful microwave and interferometric models are scattered across papers, books, and one-off research scripts. NavaSAR brings a focused selection of those models into a documented, testable package that can support teaching, reproducible experiments, and early-stage method development."
-  },
-  {
-    "objectID": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
-    "href": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "What is included in the alpha?",
-    "text": "What is included in the alpha?\nThe initial release connects several parts of the radar modeling chain:\n\ndielectric models for water, soil, vegetation, snow, ice, and material mixtures;\ncomplex SAR single-look-complex simulation and multilooking;\ninterferometric coherence, phase triplets, and closure-phase time series;\npolarimetric scattering, covariance, fading, and speckle tools;\nland-backscatter and detected-image simulations; and\nexperimental soil-moisture inversion and retrieval workflows.\n\nThe emphasis is on transparent scientific functions rather than a black-box processing system. Inputs, assumptions, and units remain visible so that a result can be inspected and challenged."
-  },
-  {
-    "objectID": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
-    "href": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "From moisture change to an interferometric signal",
-    "text": "From moisture change to an interferometric signal\nThe figure below summarizes one simulation workflow. A temporary soil-moisture increase changes the dielectric response and the simulated SLC amplitude. The corresponding interferometric network develops a phase response and a non-zero closure-phase step.\n\n\n\nA NavaSAR simulation linking a soil-moisture event to SLC amplitude, interferometric phase, and closure phase.\n\n\nClosure phase is particularly interesting because it cancels phase terms that are strictly additive around a closed interferometric loop. A remaining signal can therefore reveal non-linear changes in the scattering medium. In the soil-moisture model used here, the phase triplet depends on the ordering and magnitude of the moisture states.\n\n\n\nNon-linear phase-triplet response for asymmetric soil-moisture states.\n\n\nThese plots are simulations, not field validation. The alpha release is intended to make assumptions reproducible and provide a foundation for comparison with observations."
-  },
-  {
-    "objectID": "blog/introducing-navasar/index.html#reproducibility-and-scope",
-    "href": "blog/introducing-navasar/index.html#reproducibility-and-scope",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "Reproducibility and scope",
-    "text": "Reproducibility and scope\nNavaSAR is released under the MIT License. The public repository contains source code, documentation, tests, and curated notebooks. Copyrighted reference PDFs and local build artifacts are deliberately excluded.\nThe package version is marked as an alpha because the API and numerical behavior may still evolve as more validation cases are added. Users should independently verify results before applying them to operational or decision-critical work."
-  },
-  {
-    "objectID": "blog/introducing-navasar/index.html#try-it",
-    "href": "blog/introducing-navasar/index.html#try-it",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "Try it",
-    "text": "Try it\ngit clone https://github.com/mohseniaref/NavaSAR.git\ncd NavaSAR\npython -m pip install -e \".[notebooks,test]\"\npython -m pytest\nThe source code and documentation are available on GitHub. Feedback, reproducible test cases, and carefully scoped contributions are welcome."
-  },
-  {
-    "objectID": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
-    "href": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
-    "title": "2D+1D Decomposition of InSAR for Landslide Application",
-    "section": "",
-    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.” https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
@@ -117,6 +75,244 @@
     "title": "About Me",
     "section": "Location & Availability",
     "text": "Location & Availability\n📍 Based in: Berlin, Germany\n🌍 Open to: Relocation and international collaborations\n💼 Seeking: Opportunities in remote sensing, geospatial data science, and Earth observation\n\n“The best way to understand Earth’s dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor.”"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
+  },
+  {
+    "objectID": "contact.html#professional-inquiries",
+    "href": "contact.html#professional-inquiries",
+    "title": "Contact",
+    "section": "Professional Inquiries",
+    "text": "Professional Inquiries\n📧 Email: mohseniaref@uni-potsdam.de\n📞 Phone: +49 1520 5241256\n📍 Location: Berlin, Germany"
+  },
+  {
+    "objectID": "contact.html#academic-affiliation",
+    "href": "contact.html#academic-affiliation",
+    "title": "Contact",
+    "section": "Academic Affiliation",
+    "text": "Academic Affiliation\nUniversity of Potsdam\nInstitute of Geosciences\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam, Germany\nSupervisor: Prof. Dr. Bodo Bookhagen\n📧 bodo.bookhagen@uni-potsdam.de\n☎️ +49 331 977 5779"
+  },
+  {
+    "objectID": "contact.html#connect-on-social-media",
+    "href": "contact.html#connect-on-social-media",
+    "title": "Contact",
+    "section": "Connect on Social Media",
+    "text": "Connect on Social Media\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💼 LinkedIn: Mohammad Mohseni Aref\n💻 GitHub: mohseniaref\n🎓 Google Scholar: Profile"
+  },
+  {
+    "objectID": "contact.html#collaboration-interests",
+    "href": "contact.html#collaboration-interests",
+    "title": "Contact",
+    "section": "Collaboration Interests",
+    "text": "Collaboration Interests\nI’m particularly interested in collaborating on:\n\nInSAR Applications: Deformation monitoring, atmospheric corrections, time-series analysis\nGeospatial Data Science: Large-scale satellite data processing, machine learning for Earth observation\nNatural Hazard Assessment: Landslide monitoring, subsidence analysis, earthquake deformation\nOpen Science: Reproducible workflows, open-source tool development, tutorials and training\nApplied Projects: Infrastructure monitoring, environmental assessment, climate change impacts"
+  },
+  {
+    "objectID": "contact.html#consulting-services",
+    "href": "contact.html#consulting-services",
+    "title": "Contact",
+    "section": "Consulting & Services",
+    "text": "Consulting & Services\nAvailable for:\n\nInSAR time-series analysis and interpretation\nGeospatial data processing and automation\nPython workflow development for remote sensing applications\nTechnical training and workshops on SAR interferometry\nData quality control and validation pipelines\nHPC optimization for satellite data processing"
+  },
+  {
+    "objectID": "contact.html#response-time",
+    "href": "contact.html#response-time",
+    "title": "Contact",
+    "section": "Response Time",
+    "text": "Response Time\nI typically respond to emails within 1-2 business days. For urgent matters, please indicate this in your subject line."
+  },
+  {
+    "objectID": "contact.html#office-hours",
+    "href": "contact.html#office-hours",
+    "title": "Contact",
+    "section": "Office Hours",
+    "text": "Office Hours\nFor students and collaborators at University of Potsdam:\n\nBy appointment - Please email to schedule a meeting\nVirtual meetings available via Zoom or Google Meet"
+  },
+  {
+    "objectID": "contact.html#mailing-address",
+    "href": "contact.html#mailing-address",
+    "title": "Contact",
+    "section": "Mailing Address",
+    "text": "Mailing Address\nMohammad Mohseni Aref\nInstitute of Geosciences\nUniversity of Potsdam\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam\nGermany"
+  },
+  {
+    "objectID": "contact.html#open-to-opportunities",
+    "href": "contact.html#open-to-opportunities",
+    "title": "Contact",
+    "section": "Open to Opportunities",
+    "text": "Open to Opportunities\nI am actively seeking positions in:\n\nRemote sensing and Earth observation\nGeospatial data science and analytics\nResearch and development (R&D) in geodesy and geophysics\nData engineering for environmental monitoring\nAcademic and industry positions worldwide\n\n📄 View my CV | 🔬 Research Overview | 💼 Projects & Tools\n\nLooking forward to hearing from you!"
+  },
+  {
+    "objectID": "blog/first-post/first-post.html",
+    "href": "blog/first-post/first-post.html",
+    "title": "My First Blog Post",
+    "section": "",
+    "text": "This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {My {First} {Blog} {Post}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/first-post/first-post.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “My First Blog Post.”\nPreprint, December 28. https://mohseniaref.github.io/blog/first-post/first-post.html."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "The Notebook",
+    "section": "",
+    "text": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling\n\n\n\nSAR\n\nInSAR\n\nPython\n\nOpen Source\n\nRemote Sensing\n\n\n\nNavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.\n\n\n\n\n\nSep 11, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\n2D+1D Decomposition of InSAR for Landslide Application\n\n\n\nInSAR\n\nLandslide\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\nA brief introduction to my blog and what I plan to share here.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\nNo matching items\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  url = {https://mohseniaref.github.io/blog/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.” Preprint. https://mohseniaref.github.io/blog/."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects & Tools",
+    "section": "",
+    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
+  },
+  {
+    "objectID": "projects.html#overview",
+    "href": "projects.html#overview",
+    "title": "Projects & Tools",
+    "section": "",
+    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
+  },
+  {
+    "objectID": "projects.html#insar-processing-workflows",
+    "href": "projects.html#insar-processing-workflows",
+    "title": "Projects & Tools",
+    "section": "InSAR Processing Workflows",
+    "text": "InSAR Processing Workflows\n\nHPC-Scale InSAR Time-Series Processing Pipeline\nTechnologies: Python, ISCE, MintPy, SLURM, Dask\nDeveloped a scalable workflow for processing multi-terabyte SAR datasets on high-performance computing clusters:\n\nAutomated ISCE processing for Sentinel-1 and ALOS-2 data stacks\nParallel processing using SLURM job arrays for efficient compute resource utilization\nIntegration with MintPy/MiaplPy for advanced time-series analysis\nCovariance-aware phase linking for signal enhancement in challenging terrain\nAutomated quality control and validation pipelines\n\nApplications: Landslide monitoring in the Andes, subsidence studies, tectonic deformation analysis\n\n\n\nTropospheric Correction Framework\nTechnologies: Python, ERA5, MERRA-2, PyAPS, NumPy\nImplemented multiple atmospheric correction strategies for InSAR:\n\nStatistical approaches using empirical phase-elevation relationships\nPhysics-based ray-tracing with global weather models (ERA5, MERRA-2)\nComparative analysis of correction methods for different climate zones\nAutomated integration into time-series workflows\n\nImpact: Significantly improved deformation signal quality in high-relief mountainous terrain"
+  },
+  {
+    "objectID": "projects.html#geospatial-data-science-tools",
+    "href": "projects.html#geospatial-data-science-tools",
+    "title": "Projects & Tools",
+    "section": "Geospatial Data Science Tools",
+    "text": "Geospatial Data Science Tools\n\nInSAR Deformation Classification Pipeline\nTechnologies: Python, scikit-learn, GeoPandas, xarray\nDeveloped machine learning workflows for automated deformation pattern recognition:\n\nSpatial clustering of InSAR time-series velocities\nK-means and DBSCAN-based deformation regime classification\nAutomated landslide boundary detection and mapping\nGIS-ready output generation for ArcGIS Pro and QGIS\n\n\n\n\nData Quality Control & Validation Tools\nTechnologies: Python, pandas, pytest, CLI development\nBuilt automated pipelines for geospatial data validation:\n\nSchema and content consistency checks\nEncoding normalization and format validation\nFuzzy matching using TF-IDF and text similarity methods\nStructured logging and reproducible run reporting\nCLI tools for indexing and reliability scoring\n\nDeveloped at: Statista Strategy (2025)"
+  },
+  {
+    "objectID": "projects.html#multi-sensor-integration-projects",
+    "href": "projects.html#multi-sensor-integration-projects",
+    "title": "Projects & Tools",
+    "section": "Multi-Sensor Integration Projects",
+    "text": "Multi-Sensor Integration Projects\n\nMulti-Temporal LiDAR Differencing\nTechnologies: LAStools, Python, GDAL, CloudCompare\nImplemented workflows for terrain change detection:\n\nLiDAR point cloud processing and DEM generation\nMulti-temporal DEM differencing for displacement quantification\nIntegration with InSAR results for cross-validation\nAutomated change detection and volume calculations\n\n\n\n\nGNSS + InSAR Integration\nTechnologies: GAMIT/GLOBK, Python, NumPy\nDeveloped workflows for combining geodetic datasets:\n\nGNSS time-series processing and quality control\nCo-registration of GNSS and InSAR measurements\nJoint inversion for earthquake deformation modeling\nUncertainty propagation and error analysis"
+  },
+  {
+    "objectID": "projects.html#research-software-contributions",
+    "href": "projects.html#research-software-contributions",
+    "title": "Projects & Tools",
+    "section": "Research Software Contributions",
+    "text": "Research Software Contributions\n\nNavaSAR\nTechnologies: Python, NumPy, SciPy, Matplotlib, pytest\nNavaSAR is an open-source physics library for reproducible radar remote-sensing experiments:\n\nNatural-material dielectric and mixture models\nComplex SAR, multilook, speckle, and polarimetric simulation\nInSAR coherence, phase triplets, and closure-phase time series\nExperimental soil-moisture inversion and retrieval workflows\nCurated notebooks, API documentation, and automated tests\n\nStatus: Public alpha 0.1.0a1\nLinks: Source code · Launch post\n\n\n\nInSAR Processing Optimization\nContributed to improved processing efficiency for community tools:\n\nOptimized StaMPS and TRAIN workflows for parallel computing\nDeveloped Python wrappers for automated batch processing\nCreated documentation and tutorials for reproducible analysis\n\n\n\n\nOptical Offset Tracking\nTechnologies: COSI-Corr, Python, GDAL\nImplemented fast displacement mapping for rapid deformation events:\n\nAutomated offset tracking for landslide and glacier studies\nIntegration with optical satellite data (Sentinel-2, Landsat)\nMulti-scale analysis for different deformation rates"
+  },
+  {
+    "objectID": "projects.html#specialized-applications",
+    "href": "projects.html#specialized-applications",
+    "title": "Projects & Tools",
+    "section": "Specialized Applications",
+    "text": "Specialized Applications\n\nGroundwater Depletion Monitoring\nProject: Minab Coastal Plain, Iran\nTechnologies: InSAR, GRACE data, aquifer modeling, Python\nIntegrated satellite observations with hydrological modeling:\n\nInSAR-derived subsidence time series\nGRACE-based groundwater storage change analysis\nAquifer parameter estimation through inverse modeling\nSpatiotemporal correlation analysis\n\nStatus: Published at ICCC Workshop 2025\n\n\n\nEarthquake Sequence Analysis\nProject: 2022 Zagros Mountains, Iran\nTechnologies: InSAR, Pyrocko, Kite, Grond, ObsPy\nContributed to multi-sensor geodetic analysis:\n\nCo-seismic deformation mapping with Sentinel-1\nFault parameter inversion using InSAR observations\nIntegration with seismological data\nPublished in Seismica (2023)\n\n\n\n\nLandslide Kinematics Characterization\nProject: Central Andes, Argentina\nTechnologies: InSAR time-series, spatial statistics, Python\nComprehensive study of slow-moving landslides:\n\nMulti-temporal deformation analysis (2014-2024)\nSeasonal pattern recognition and hydrological correlation\n2D/3D decomposition of displacement fields\nLandslide classification based on kinematics\n\nStatus: Ph.D. dissertation research (ongoing)"
+  },
+  {
+    "objectID": "projects.html#open-source-community-contributions",
+    "href": "projects.html#open-source-community-contributions",
+    "title": "Projects & Tools",
+    "section": "Open Source & Community Contributions",
+    "text": "Open Source & Community Contributions\n\nGitHub Projects\nVisit my GitHub profile for code repositories and tutorials:\n\nInSAR processing scripts and workflows\nPython utilities for geospatial analysis\nTutorial notebooks for remote sensing applications\nDocumentation and best practices\n\n\n\n\nKnowledge Sharing\nBlog Posts: Technical tutorials on InSAR processing, atmospheric corrections, and Python workflows\nPresentations: Conference talks and workshop materials on InSAR analysis\nMentoring: Supporting students and early-career researchers in remote sensing"
+  },
+  {
+    "objectID": "projects.html#technical-stack",
+    "href": "projects.html#technical-stack",
+    "title": "Projects & Tools",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nPrimary Tools\n\nInSAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape\nProgramming: Python, MATLAB, R, Bash\nData Science: NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask\nGIS: ArcGIS Pro, QGIS, PostgreSQL/PostGIS\nVersion Control: Git, GitHub\nHPC: SLURM, parallel computing workflows\n\n\n\nDevelopment Practices\n\nReproducible research workflows\nTest-driven development (pytest)\nCLI tool development\nDocumentation and code commenting\nContinuous integration for data pipelines"
+  },
+  {
+    "objectID": "projects.html#future-projects",
+    "href": "projects.html#future-projects",
+    "title": "Projects & Tools",
+    "section": "Future Projects",
+    "text": "Future Projects\nI’m currently exploring:\n\nDeep Learning for InSAR: Applying CNNs for automated deformation detection and phase unwrapping\nCloud-Based Processing: Migrating workflows to Google Earth Engine and AWS for scalability\nReal-Time Monitoring: Developing near-real-time landslide warning systems\nMulti-Temporal Fusion: Combining SAR, optical, and LiDAR for comprehensive change detection"
+  },
+  {
+    "objectID": "projects.html#collaboration-opportunities",
+    "href": "projects.html#collaboration-opportunities",
+    "title": "Projects & Tools",
+    "section": "Collaboration Opportunities",
+    "text": "Collaboration Opportunities\nI’m interested in collaborating on:\n\nInSAR applications for natural hazard monitoring\nMachine learning for Earth observation\nGeospatial data science projects\nOpen-source tool development\n\n📧 Get in touch: mohseniaref@uni-potsdam.de"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina,” EGU General Assembly, Vienna, Austria, Apr. 2024. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Using InSAR time series to characterize landslide deformation dynamics in the south-central Andes,” EGU General Assembly, Vienna, Austria, Apr. 2023. [DOI]\nM. Metz, B. Maleki Asayesh, M. Mohseni Aref, et al., “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran,” Seismica, vol. 2, no. 2, Oct. 2023. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Kinematics Characterization of Slow-Moving Landslide using InSAR Time Series Analysis in the South-Central Andes of NW Argentina,” EGU General Assembly, Vienna, Austria, May 2022. [DOI]\n\n\n\n\n\nF.C. Çomut and M. Mohseni Aref, “Interpretation of Mw 6.8 Elazığ Earthquake (24.01.2020) Crisis Management System in terms of Satellite Borne Radar Interferometry Observations,” Advances in the Science and Applications of SAR Interferometry, Online Event, May-Jun. 2021.\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Evolution of Large Bedrock Landslides in the South-Central Andes of NW Argentina,” EGU General Assembly, Online, Apr. 2021. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, T. Smith, and R. Strecker, “Seasonal active landsliding and hillslope activity in the southern Central Andes of NW Argentina,” EGU General Assembly, 2020. [DOI]\nM. Albayrak, M.T. Özlüdemir, M.M. Aref, and K. Halicioglu, “Determination of Istanbul geoid using GNSS/levelling and valley cross levelling data,” Geod. Geodyn., vol. 11, 2020.\nM. Albayrak, K. Halicioğlu, M.T. Özlüdemir, B. Başoğlu, R. Deniz, A.R.B. Tyler, and M.M. Aref, “The use of the automated digital zenith camera system in Istanbul for the determination of astrogeodetic vertical deflection,” Bol. Ciencias Geod., vol. 25, no. 4, 2020.\n\n\n\n\n\nM. Mohseni Aref and E. Tari, “Geodetic Observation and Analysis of Land Deformation in Northwest of Iran,” EGU General Assembly Conference Abstracts, vol. 21, 2019.\n\n\n\n\n\nM. Mohseni Aref, Z. Cakir, and S. Karimzadeh, “Interseismic accumulation across the Khoy fault from InSAR measurement,” EGU General Assembly Conference Abstracts, vol. 18, p. 828, 2016.\n\n\n\n\n\nT. Torres and M. Mohseni Aref, “Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR),” 2015 Fall Meeting, AGU, San Francisco, CA, 2015.\nE. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref, “Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 395-399, Dec. 2015.\nF. Comut, A. Ustun, M. Lazecky, and M. Mohseni Aref, “Multi Band InSAR Analysis Of Subsidence Development Based On The Long Period Time Series,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 115-121, Dec. 2015.\n\n\n\n\n\nM. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina,” EGU General Assembly, Vienna, Austria, Apr. 2024. [DOI]"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Using InSAR time series to characterize landslide deformation dynamics in the south-central Andes,” EGU General Assembly, Vienna, Austria, Apr. 2023. [DOI]\nM. Metz, B. Maleki Asayesh, M. Mohseni Aref, et al., “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran,” Seismica, vol. 2, no. 2, Oct. 2023. [DOI]"
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Kinematics Characterization of Slow-Moving Landslide using InSAR Time Series Analysis in the South-Central Andes of NW Argentina,” EGU General Assembly, Vienna, Austria, May 2022. [DOI]"
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
+    "title": "Publications",
+    "section": "",
+    "text": "F.C. Çomut and M. Mohseni Aref, “Interpretation of Mw 6.8 Elazığ Earthquake (24.01.2020) Crisis Management System in terms of Satellite Borne Radar Interferometry Observations,” Advances in the Science and Applications of SAR Interferometry, Online Event, May-Jun. 2021.\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Evolution of Large Bedrock Landslides in the South-Central Andes of NW Argentina,” EGU General Assembly, Online, Apr. 2021. [DOI]"
+  },
+  {
+    "objectID": "publications.html#section-4",
+    "href": "publications.html#section-4",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, B. Bookhagen, T. Smith, and R. Strecker, “Seasonal active landsliding and hillslope activity in the southern Central Andes of NW Argentina,” EGU General Assembly, 2020. [DOI]\nM. Albayrak, M.T. Özlüdemir, M.M. Aref, and K. Halicioglu, “Determination of Istanbul geoid using GNSS/levelling and valley cross levelling data,” Geod. Geodyn., vol. 11, 2020.\nM. Albayrak, K. Halicioğlu, M.T. Özlüdemir, B. Başoğlu, R. Deniz, A.R.B. Tyler, and M.M. Aref, “The use of the automated digital zenith camera system in Istanbul for the determination of astrogeodetic vertical deflection,” Bol. Ciencias Geod., vol. 25, no. 4, 2020."
+  },
+  {
+    "objectID": "publications.html#section-5",
+    "href": "publications.html#section-5",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref and E. Tari, “Geodetic Observation and Analysis of Land Deformation in Northwest of Iran,” EGU General Assembly Conference Abstracts, vol. 21, 2019."
+  },
+  {
+    "objectID": "publications.html#section-6",
+    "href": "publications.html#section-6",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref, Z. Cakir, and S. Karimzadeh, “Interseismic accumulation across the Khoy fault from InSAR measurement,” EGU General Assembly Conference Abstracts, vol. 18, p. 828, 2016."
+  },
+  {
+    "objectID": "publications.html#section-7",
+    "href": "publications.html#section-7",
+    "title": "Publications",
+    "section": "",
+    "text": "T. Torres and M. Mohseni Aref, “Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR),” 2015 Fall Meeting, AGU, San Francisco, CA, 2015.\nE. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref, “Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 395-399, Dec. 2015.\nF. Comut, A. Ustun, M. Lazecky, and M. Mohseni Aref, “Multi Band InSAR Analysis Of Subsidence Development Based On The Long Period Time Series,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 115-121, Dec. 2015."
+  },
+  {
+    "objectID": "publications.html#section-8",
+    "href": "publications.html#section-8",
+    "title": "Publications",
+    "section": "",
+    "text": "M. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
   },
   {
     "objectID": "index.html",
@@ -203,83 +399,6 @@
     "text": "Connect\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💻 GitHub: mohseniaref\n🔗 LinkedIn: mohseniaref\n🎓 Google Scholar"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects & Tools",
-    "section": "",
-    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
-  },
-  {
-    "objectID": "projects.html#overview",
-    "href": "projects.html#overview",
-    "title": "Projects & Tools",
-    "section": "",
-    "text": "This page showcases computational tools, workflows, and research projects I’ve developed for InSAR analysis, geospatial data processing, and Earth observation applications."
-  },
-  {
-    "objectID": "projects.html#insar-processing-workflows",
-    "href": "projects.html#insar-processing-workflows",
-    "title": "Projects & Tools",
-    "section": "InSAR Processing Workflows",
-    "text": "InSAR Processing Workflows\n\nHPC-Scale InSAR Time-Series Processing Pipeline\nTechnologies: Python, ISCE, MintPy, SLURM, Dask\nDeveloped a scalable workflow for processing multi-terabyte SAR datasets on high-performance computing clusters:\n\nAutomated ISCE processing for Sentinel-1 and ALOS-2 data stacks\nParallel processing using SLURM job arrays for efficient compute resource utilization\nIntegration with MintPy/MiaplPy for advanced time-series analysis\nCovariance-aware phase linking for signal enhancement in challenging terrain\nAutomated quality control and validation pipelines\n\nApplications: Landslide monitoring in the Andes, subsidence studies, tectonic deformation analysis\n\n\n\nTropospheric Correction Framework\nTechnologies: Python, ERA5, MERRA-2, PyAPS, NumPy\nImplemented multiple atmospheric correction strategies for InSAR:\n\nStatistical approaches using empirical phase-elevation relationships\nPhysics-based ray-tracing with global weather models (ERA5, MERRA-2)\nComparative analysis of correction methods for different climate zones\nAutomated integration into time-series workflows\n\nImpact: Significantly improved deformation signal quality in high-relief mountainous terrain"
-  },
-  {
-    "objectID": "projects.html#geospatial-data-science-tools",
-    "href": "projects.html#geospatial-data-science-tools",
-    "title": "Projects & Tools",
-    "section": "Geospatial Data Science Tools",
-    "text": "Geospatial Data Science Tools\n\nInSAR Deformation Classification Pipeline\nTechnologies: Python, scikit-learn, GeoPandas, xarray\nDeveloped machine learning workflows for automated deformation pattern recognition:\n\nSpatial clustering of InSAR time-series velocities\nK-means and DBSCAN-based deformation regime classification\nAutomated landslide boundary detection and mapping\nGIS-ready output generation for ArcGIS Pro and QGIS\n\n\n\n\nData Quality Control & Validation Tools\nTechnologies: Python, pandas, pytest, CLI development\nBuilt automated pipelines for geospatial data validation:\n\nSchema and content consistency checks\nEncoding normalization and format validation\nFuzzy matching using TF-IDF and text similarity methods\nStructured logging and reproducible run reporting\nCLI tools for indexing and reliability scoring\n\nDeveloped at: Statista Strategy (2025)"
-  },
-  {
-    "objectID": "projects.html#multi-sensor-integration-projects",
-    "href": "projects.html#multi-sensor-integration-projects",
-    "title": "Projects & Tools",
-    "section": "Multi-Sensor Integration Projects",
-    "text": "Multi-Sensor Integration Projects\n\nMulti-Temporal LiDAR Differencing\nTechnologies: LAStools, Python, GDAL, CloudCompare\nImplemented workflows for terrain change detection:\n\nLiDAR point cloud processing and DEM generation\nMulti-temporal DEM differencing for displacement quantification\nIntegration with InSAR results for cross-validation\nAutomated change detection and volume calculations\n\n\n\n\nGNSS + InSAR Integration\nTechnologies: GAMIT/GLOBK, Python, NumPy\nDeveloped workflows for combining geodetic datasets:\n\nGNSS time-series processing and quality control\nCo-registration of GNSS and InSAR measurements\nJoint inversion for earthquake deformation modeling\nUncertainty propagation and error analysis"
-  },
-  {
-    "objectID": "projects.html#research-software-contributions",
-    "href": "projects.html#research-software-contributions",
-    "title": "Projects & Tools",
-    "section": "Research Software Contributions",
-    "text": "Research Software Contributions\n\nNavaSAR\nTechnologies: Python, NumPy, SciPy, Matplotlib, pytest\nNavaSAR is an open-source physics library for reproducible radar remote-sensing experiments:\n\nNatural-material dielectric and mixture models\nComplex SAR, multilook, speckle, and polarimetric simulation\nInSAR coherence, phase triplets, and closure-phase time series\nExperimental soil-moisture inversion and retrieval workflows\nCurated notebooks, API documentation, and automated tests\n\nStatus: Public alpha 0.1.0a1\nLinks: Source code · Launch post\n\n\n\nInSAR Processing Optimization\nContributed to improved processing efficiency for community tools:\n\nOptimized StaMPS and TRAIN workflows for parallel computing\nDeveloped Python wrappers for automated batch processing\nCreated documentation and tutorials for reproducible analysis\n\n\n\n\nOptical Offset Tracking\nTechnologies: COSI-Corr, Python, GDAL\nImplemented fast displacement mapping for rapid deformation events:\n\nAutomated offset tracking for landslide and glacier studies\nIntegration with optical satellite data (Sentinel-2, Landsat)\nMulti-scale analysis for different deformation rates"
-  },
-  {
-    "objectID": "projects.html#specialized-applications",
-    "href": "projects.html#specialized-applications",
-    "title": "Projects & Tools",
-    "section": "Specialized Applications",
-    "text": "Specialized Applications\n\nGroundwater Depletion Monitoring\nProject: Minab Coastal Plain, Iran\nTechnologies: InSAR, GRACE data, aquifer modeling, Python\nIntegrated satellite observations with hydrological modeling:\n\nInSAR-derived subsidence time series\nGRACE-based groundwater storage change analysis\nAquifer parameter estimation through inverse modeling\nSpatiotemporal correlation analysis\n\nStatus: Published at ICCC Workshop 2025\n\n\n\nEarthquake Sequence Analysis\nProject: 2022 Zagros Mountains, Iran\nTechnologies: InSAR, Pyrocko, Kite, Grond, ObsPy\nContributed to multi-sensor geodetic analysis:\n\nCo-seismic deformation mapping with Sentinel-1\nFault parameter inversion using InSAR observations\nIntegration with seismological data\nPublished in Seismica (2023)\n\n\n\n\nLandslide Kinematics Characterization\nProject: Central Andes, Argentina\nTechnologies: InSAR time-series, spatial statistics, Python\nComprehensive study of slow-moving landslides:\n\nMulti-temporal deformation analysis (2014-2024)\nSeasonal pattern recognition and hydrological correlation\n2D/3D decomposition of displacement fields\nLandslide classification based on kinematics\n\nStatus: Ph.D. dissertation research (ongoing)"
-  },
-  {
-    "objectID": "projects.html#open-source-community-contributions",
-    "href": "projects.html#open-source-community-contributions",
-    "title": "Projects & Tools",
-    "section": "Open Source & Community Contributions",
-    "text": "Open Source & Community Contributions\n\nGitHub Projects\nVisit my GitHub profile for code repositories and tutorials:\n\nInSAR processing scripts and workflows\nPython utilities for geospatial analysis\nTutorial notebooks for remote sensing applications\nDocumentation and best practices\n\n\n\n\nKnowledge Sharing\nBlog Posts: Technical tutorials on InSAR processing, atmospheric corrections, and Python workflows\nPresentations: Conference talks and workshop materials on InSAR analysis\nMentoring: Supporting students and early-career researchers in remote sensing"
-  },
-  {
-    "objectID": "projects.html#technical-stack",
-    "href": "projects.html#technical-stack",
-    "title": "Projects & Tools",
-    "section": "Technical Stack",
-    "text": "Technical Stack\n\nPrimary Tools\n\nInSAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape\nProgramming: Python, MATLAB, R, Bash\nData Science: NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask\nGIS: ArcGIS Pro, QGIS, PostgreSQL/PostGIS\nVersion Control: Git, GitHub\nHPC: SLURM, parallel computing workflows\n\n\n\nDevelopment Practices\n\nReproducible research workflows\nTest-driven development (pytest)\nCLI tool development\nDocumentation and code commenting\nContinuous integration for data pipelines"
-  },
-  {
-    "objectID": "projects.html#future-projects",
-    "href": "projects.html#future-projects",
-    "title": "Projects & Tools",
-    "section": "Future Projects",
-    "text": "Future Projects\nI’m currently exploring:\n\nDeep Learning for InSAR: Applying CNNs for automated deformation detection and phase unwrapping\nCloud-Based Processing: Migrating workflows to Google Earth Engine and AWS for scalability\nReal-Time Monitoring: Developing near-real-time landslide warning systems\nMulti-Temporal Fusion: Combining SAR, optical, and LiDAR for comprehensive change detection"
-  },
-  {
-    "objectID": "projects.html#collaboration-opportunities",
-    "href": "projects.html#collaboration-opportunities",
-    "title": "Projects & Tools",
-    "section": "Collaboration Opportunities",
-    "text": "Collaboration Opportunities\nI’m interested in collaborating on:\n\nInSAR applications for natural hazard monitoring\nMachine learning for Earth observation\nGeospatial data science projects\nOpen-source tool development\n\n📧 Get in touch: mohseniaref@uni-potsdam.de"
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -343,171 +462,52 @@
     "text": "Research Impact\nMy work contributes to: - Natural Hazard Assessment: Improved landslide and subsidence monitoring for risk evaluation - Climate Change Research: Understanding permafrost dynamics and hydrological changes - Methodological Advances: Enhanced InSAR processing techniques for challenging environments - Open Science: Development of reproducible Python workflows for the remote sensing community"
   },
   {
+    "objectID": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
+    "href": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
+    "title": "2D+1D Decomposition of InSAR for Landslide Application",
+    "section": "",
+    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.” Preprint, December 28. https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html",
+    "href": "blog/introducing-navasar/index.html",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "",
+    "text": "Today I am releasing NavaSAR 0.1.0a1, the first public alpha of a Python library for physics-based radar remote-sensing experiments.\nThe project grew from a practical need: many useful microwave and interferometric models are scattered across papers, books, and one-off research scripts. NavaSAR brings a focused selection of those models into a documented, testable package that can support teaching, reproducible experiments, and early-stage method development."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
+    "href": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "What is included in the alpha?",
+    "text": "What is included in the alpha?\nThe initial release connects several parts of the radar modeling chain:\n\ndielectric models for water, soil, vegetation, snow, ice, and material mixtures;\ncomplex SAR single-look-complex simulation and multilooking;\ninterferometric coherence, phase triplets, and closure-phase time series;\npolarimetric scattering, covariance, fading, and speckle tools;\nland-backscatter and detected-image simulations; and\nexperimental soil-moisture inversion and retrieval workflows.\n\nThe emphasis is on transparent scientific functions rather than a black-box processing system. Inputs, assumptions, and units remain visible so that a result can be inspected and challenged."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
+    "href": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "From moisture change to an interferometric signal",
+    "text": "From moisture change to an interferometric signal\nThe figure below summarizes one simulation workflow. A temporary soil-moisture increase changes the dielectric response and the simulated SLC amplitude. The corresponding interferometric network develops a phase response and a non-zero closure-phase step.\n\n\n\nA NavaSAR simulation linking a soil-moisture event to SLC amplitude, interferometric phase, and closure phase.\n\n\nClosure phase is particularly interesting because it cancels phase terms that are strictly additive around a closed interferometric loop. A remaining signal can therefore reveal non-linear changes in the scattering medium. In the soil-moisture model used here, the phase triplet depends on the ordering and magnitude of the moisture states.\n\n\n\nNon-linear phase-triplet response for asymmetric soil-moisture states.\n\n\nThese plots are simulations, not field validation. The alpha release is intended to make assumptions reproducible and provide a foundation for comparison with observations."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#reproducibility-and-scope",
+    "href": "blog/introducing-navasar/index.html#reproducibility-and-scope",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "Reproducibility and scope",
+    "text": "Reproducibility and scope\nNavaSAR is released under the MIT License. The public repository contains source code, documentation, tests, and curated notebooks. Copyrighted reference PDFs and local build artifacts are deliberately excluded.\nThe package version is marked as an alpha because the API and numerical behavior may still evolve as more validation cases are added. Users should independently verify results before applying them to operational or decision-critical work."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#try-it",
+    "href": "blog/introducing-navasar/index.html#try-it",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "Try it",
+    "text": "Try it\ngit clone https://github.com/mohseniaref/NavaSAR.git\ncd NavaSAR\npython -m pip install -e \".[notebooks,test]\"\npython -m pytest\nThe source code and documentation are available on GitHub. Feedback, reproducible test cases, and carefully scoped contributions are welcome."
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Curriculum Vitae",
     "section": "",
     "text": "Education\n\nPh.D. student in Remote Sensing , Potsdam University, Germany\nM.Sc. in Water Resources Engineering, Azad University, Iran (2011)\nB.Sc. in Water and Irrigation Engineering, Bahoonar University, Iran (2007)"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina,” EGU General Assembly, Vienna, Austria, Apr. 2024. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Using InSAR time series to characterize landslide deformation dynamics in the south-central Andes,” EGU General Assembly, Vienna, Austria, Apr. 2023. [DOI]\nM. Metz, B. Maleki Asayesh, M. Mohseni Aref, et al., “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran,” Seismica, vol. 2, no. 2, Oct. 2023. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Kinematics Characterization of Slow-Moving Landslide using InSAR Time Series Analysis in the South-Central Andes of NW Argentina,” EGU General Assembly, Vienna, Austria, May 2022. [DOI]\n\n\n\n\n\nF.C. Çomut and M. Mohseni Aref, “Interpretation of Mw 6.8 Elazığ Earthquake (24.01.2020) Crisis Management System in terms of Satellite Borne Radar Interferometry Observations,” Advances in the Science and Applications of SAR Interferometry, Online Event, May-Jun. 2021.\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Evolution of Large Bedrock Landslides in the South-Central Andes of NW Argentina,” EGU General Assembly, Online, Apr. 2021. [DOI]\n\n\n\n\n\nM. Mohseni Aref, B. Bookhagen, T. Smith, and R. Strecker, “Seasonal active landsliding and hillslope activity in the southern Central Andes of NW Argentina,” EGU General Assembly, 2020. [DOI]\nM. Albayrak, M.T. Özlüdemir, M.M. Aref, and K. Halicioglu, “Determination of Istanbul geoid using GNSS/levelling and valley cross levelling data,” Geod. Geodyn., vol. 11, 2020.\nM. Albayrak, K. Halicioğlu, M.T. Özlüdemir, B. Başoğlu, R. Deniz, A.R.B. Tyler, and M.M. Aref, “The use of the automated digital zenith camera system in Istanbul for the determination of astrogeodetic vertical deflection,” Bol. Ciencias Geod., vol. 25, no. 4, 2020.\n\n\n\n\n\nM. Mohseni Aref and E. Tari, “Geodetic Observation and Analysis of Land Deformation in Northwest of Iran,” EGU General Assembly Conference Abstracts, vol. 21, 2019.\n\n\n\n\n\nM. Mohseni Aref, Z. Cakir, and S. Karimzadeh, “Interseismic accumulation across the Khoy fault from InSAR measurement,” EGU General Assembly Conference Abstracts, vol. 18, p. 828, 2016.\n\n\n\n\n\nT. Torres and M. Mohseni Aref, “Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR),” 2015 Fall Meeting, AGU, San Francisco, CA, 2015.\nE. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref, “Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 395-399, Dec. 2015.\nF. Comut, A. Ustun, M. Lazecky, and M. Mohseni Aref, “Multi Band InSAR Analysis Of Subsidence Development Based On The Long Period Time Series,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 115-121, Dec. 2015.\n\n\n\n\n\nM. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
-  },
-  {
-    "objectID": "publications.html#section",
-    "href": "publications.html#section",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina,” EGU General Assembly, Vienna, Austria, Apr. 2024. [DOI]"
-  },
-  {
-    "objectID": "publications.html#section-1",
-    "href": "publications.html#section-1",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Using InSAR time series to characterize landslide deformation dynamics in the south-central Andes,” EGU General Assembly, Vienna, Austria, Apr. 2023. [DOI]\nM. Metz, B. Maleki Asayesh, M. Mohseni Aref, et al., “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran,” Seismica, vol. 2, no. 2, Oct. 2023. [DOI]"
-  },
-  {
-    "objectID": "publications.html#section-2",
-    "href": "publications.html#section-2",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, B. Bookhagen, and R. Strecker, “Kinematics Characterization of Slow-Moving Landslide using InSAR Time Series Analysis in the South-Central Andes of NW Argentina,” EGU General Assembly, Vienna, Austria, May 2022. [DOI]"
-  },
-  {
-    "objectID": "publications.html#section-3",
-    "href": "publications.html#section-3",
-    "title": "Publications",
-    "section": "",
-    "text": "F.C. Çomut and M. Mohseni Aref, “Interpretation of Mw 6.8 Elazığ Earthquake (24.01.2020) Crisis Management System in terms of Satellite Borne Radar Interferometry Observations,” Advances in the Science and Applications of SAR Interferometry, Online Event, May-Jun. 2021.\nM. Mohseni Aref, B. Bookhagen, and R. Strecker, “Evolution of Large Bedrock Landslides in the South-Central Andes of NW Argentina,” EGU General Assembly, Online, Apr. 2021. [DOI]"
-  },
-  {
-    "objectID": "publications.html#section-4",
-    "href": "publications.html#section-4",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, B. Bookhagen, T. Smith, and R. Strecker, “Seasonal active landsliding and hillslope activity in the southern Central Andes of NW Argentina,” EGU General Assembly, 2020. [DOI]\nM. Albayrak, M.T. Özlüdemir, M.M. Aref, and K. Halicioglu, “Determination of Istanbul geoid using GNSS/levelling and valley cross levelling data,” Geod. Geodyn., vol. 11, 2020.\nM. Albayrak, K. Halicioğlu, M.T. Özlüdemir, B. Başoğlu, R. Deniz, A.R.B. Tyler, and M.M. Aref, “The use of the automated digital zenith camera system in Istanbul for the determination of astrogeodetic vertical deflection,” Bol. Ciencias Geod., vol. 25, no. 4, 2020."
-  },
-  {
-    "objectID": "publications.html#section-5",
-    "href": "publications.html#section-5",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref and E. Tari, “Geodetic Observation and Analysis of Land Deformation in Northwest of Iran,” EGU General Assembly Conference Abstracts, vol. 21, 2019."
-  },
-  {
-    "objectID": "publications.html#section-6",
-    "href": "publications.html#section-6",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref, Z. Cakir, and S. Karimzadeh, “Interseismic accumulation across the Khoy fault from InSAR measurement,” EGU General Assembly Conference Abstracts, vol. 18, p. 828, 2016."
-  },
-  {
-    "objectID": "publications.html#section-7",
-    "href": "publications.html#section-7",
-    "title": "Publications",
-    "section": "",
-    "text": "T. Torres and M. Mohseni Aref, “Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR),” 2015 Fall Meeting, AGU, San Francisco, CA, 2015.\nE. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref, “Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 395-399, Dec. 2015.\nF. Comut, A. Ustun, M. Lazecky, and M. Mohseni Aref, “Multi Band InSAR Analysis Of Subsidence Development Based On The Long Period Time Series,” ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci., vol. XL-1-W5, pp. 115-121, Dec. 2015."
-  },
-  {
-    "objectID": "publications.html#section-8",
-    "href": "publications.html#section-8",
-    "title": "Publications",
-    "section": "",
-    "text": "M. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
-  },
-  {
-    "objectID": "contact.html#get-in-touch",
-    "href": "contact.html#get-in-touch",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
-  },
-  {
-    "objectID": "contact.html#professional-inquiries",
-    "href": "contact.html#professional-inquiries",
-    "title": "Contact",
-    "section": "Professional Inquiries",
-    "text": "Professional Inquiries\n📧 Email: mohseniaref@uni-potsdam.de\n📞 Phone: +49 1520 5241256\n📍 Location: Berlin, Germany"
-  },
-  {
-    "objectID": "contact.html#academic-affiliation",
-    "href": "contact.html#academic-affiliation",
-    "title": "Contact",
-    "section": "Academic Affiliation",
-    "text": "Academic Affiliation\nUniversity of Potsdam\nInstitute of Geosciences\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam, Germany\nSupervisor: Prof. Dr. Bodo Bookhagen\n📧 bodo.bookhagen@uni-potsdam.de\n☎️ +49 331 977 5779"
-  },
-  {
-    "objectID": "contact.html#connect-on-social-media",
-    "href": "contact.html#connect-on-social-media",
-    "title": "Contact",
-    "section": "Connect on Social Media",
-    "text": "Connect on Social Media\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💼 LinkedIn: Mohammad Mohseni Aref\n💻 GitHub: mohseniaref\n🎓 Google Scholar: Profile"
-  },
-  {
-    "objectID": "contact.html#collaboration-interests",
-    "href": "contact.html#collaboration-interests",
-    "title": "Contact",
-    "section": "Collaboration Interests",
-    "text": "Collaboration Interests\nI’m particularly interested in collaborating on:\n\nInSAR Applications: Deformation monitoring, atmospheric corrections, time-series analysis\nGeospatial Data Science: Large-scale satellite data processing, machine learning for Earth observation\nNatural Hazard Assessment: Landslide monitoring, subsidence analysis, earthquake deformation\nOpen Science: Reproducible workflows, open-source tool development, tutorials and training\nApplied Projects: Infrastructure monitoring, environmental assessment, climate change impacts"
-  },
-  {
-    "objectID": "contact.html#consulting-services",
-    "href": "contact.html#consulting-services",
-    "title": "Contact",
-    "section": "Consulting & Services",
-    "text": "Consulting & Services\nAvailable for:\n\nInSAR time-series analysis and interpretation\nGeospatial data processing and automation\nPython workflow development for remote sensing applications\nTechnical training and workshops on SAR interferometry\nData quality control and validation pipelines\nHPC optimization for satellite data processing"
-  },
-  {
-    "objectID": "contact.html#response-time",
-    "href": "contact.html#response-time",
-    "title": "Contact",
-    "section": "Response Time",
-    "text": "Response Time\nI typically respond to emails within 1-2 business days. For urgent matters, please indicate this in your subject line."
-  },
-  {
-    "objectID": "contact.html#office-hours",
-    "href": "contact.html#office-hours",
-    "title": "Contact",
-    "section": "Office Hours",
-    "text": "Office Hours\nFor students and collaborators at University of Potsdam:\n\nBy appointment - Please email to schedule a meeting\nVirtual meetings available via Zoom or Google Meet"
-  },
-  {
-    "objectID": "contact.html#mailing-address",
-    "href": "contact.html#mailing-address",
-    "title": "Contact",
-    "section": "Mailing Address",
-    "text": "Mailing Address\nMohammad Mohseni Aref\nInstitute of Geosciences\nUniversity of Potsdam\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam\nGermany"
-  },
-  {
-    "objectID": "contact.html#open-to-opportunities",
-    "href": "contact.html#open-to-opportunities",
-    "title": "Contact",
-    "section": "Open to Opportunities",
-    "text": "Open to Opportunities\nI am actively seeking positions in:\n\nRemote sensing and Earth observation\nGeospatial data science and analytics\nResearch and development (R&D) in geodesy and geophysics\nData engineering for environmental monitoring\nAcademic and industry positions worldwide\n\n📄 View my CV | 🔬 Research Overview | 💼 Projects & Tools\n\nLooking forward to hearing from you!"
-  },
-  {
-    "objectID": "blog/first-post/first-post.html",
-    "href": "blog/first-post/first-post.html",
-    "title": "My First Blog Post",
-    "section": "",
-    "text": "This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {My {First} {Blog} {Post}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/first-post/first-post.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “My First Blog Post.” https://mohseniaref.github.io/blog/first-post/first-post.html."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "The Notebook",
-    "section": "",
-    "text": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling\n\n\n\n\n\n\nSAR\n\n\nInSAR\n\n\nPython\n\n\nOpen Source\n\n\nRemote Sensing\n\n\n\nNavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.\n\n\n\n\n\nSep 11, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\n2D+1D Decomposition of InSAR for Landslide Application\n\n\n\n\n\n\nInSAR\n\n\nLandslide\n\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\nA brief introduction to my blog and what I plan to share here.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  url = {https://mohseniaref.github.io/blog/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.” https://mohseniaref.github.io/blog/."
   }
 ]
