@@ -1,122 +1,80 @@
 [
   {
-    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html",
-    "href": "blog/phase-unwrapping-from-the-ground-up/index.html",
-    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "An interferometric phase is an angle, so an instrument reports only its value modulo one turn. If the underlying phase is \\(\\phi\\), the measured wrapped phase is\n\\[w = \\operatorname{wrap}(\\phi) \\in [-\\pi,\\pi).\\]\nThe unwrapping problem is to recover a continuous phase field by estimating the missing integer \\(n\\) in\n\\[\\phi = w + 2\\pi n.\\]\nThe notebooks in Parvaneh make this idea concrete with small synthetic examples before applying the same reasoning to larger scenes."
+    "text": "Mohammad Mohseni Aref"
   },
   {
-    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#why-local-decisions-can-disagree",
-    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#why-local-decisions-can-disagree",
-    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
-    "section": "Why local decisions can disagree",
-    "text": "Why local decisions can disagree\nFor neighboring pixels \\(a\\) and \\(b\\), the shortest wrapped difference is\n\\[g_{ab}=W(w_b-w_a).\\]\nIf every measured difference came from a smooth scalar phase, integrating these differences around a closed cell would return zero. In practice, noise and steep gradients can produce a non-zero residue:\n\\[r = \\frac{g_{\\mathrm{top}}+g_{\\mathrm{right}}-g_{\\mathrm{bottom}}-g_{\\mathrm{left}}}{2\\pi}.\\]\nThe integer \\(r\\) is a useful diagnostic: it says that at least one edge in the loop needs an integer correction. Goldstein branch cuts isolate incompatible regions, while minimum-cost-flow methods distribute integer corrections so that the residue balance is respected."
+    "objectID": "about.html#professional-background",
+    "href": "about.html#professional-background",
+    "title": "About Me",
+    "section": "Professional Background",
+    "text": "Professional Background\nI am a Ph.D. candidate at the University of Potsdam, specializing in remote sensing engineering, InSAR time-series analysis, and geospatial data science. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth’s surface.\nWith expertise spanning radar remote sensing, photogrammetry, GIS analysis, and high-performance computing, I transform complex multi-temporal satellite datasets into actionable information for understanding natural hazards, environmental change, and tectonic processes."
   },
   {
-    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#a-global-least-squares-view",
-    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#a-global-least-squares-view",
-    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
-    "section": "A global least-squares view",
-    "text": "A global least-squares view\nLet \\(D\\) be the edge-to-pixel incidence matrix and let \\(u\\) be the unknown unwrapped phase. A weighted least-squares reconstruction solves\n\\[\\hat u=\\arg\\min_u (Du-g)^TQ(Du-g),\\]\nwith normal equations\n\\[D^TQD\\,\\hat u=D^TQg.\\]\nThe least_squares_and_weights and minimum_cost_flow notebooks use four pixels so that every sign, residual, and loop can be checked by hand. This is useful because a visually plausible surface can still contain a hidden \\(2\\pi\\) offset or a path-dependent error."
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "About Me",
+    "section": "What I Do",
+    "text": "What I Do\n\nRemote Sensing & InSAR Analysis\nI specialize in processing and analyzing Synthetic Aperture Radar (SAR) data to monitor ground deformation at millimeter-scale precision. My work involves:\n\nDeveloping automated Python workflows for InSAR time-series processing\nImplementing advanced atmospheric correction techniques (tropospheric and ionospheric)\nApplying phase-linking and covariance-based methods for signal enhancement\nProcessing multi-terabyte datasets using HPC clusters\n\n\n\nGeospatial Data Science\nI bridge the gap between raw satellite data and interpretable geospatial insights:\n\nBuilding reproducible analysis pipelines with Python (NumPy, pandas, GeoPandas, xarray)\nApplying spatial statistics and machine learning for deformation pattern recognition\nCreating GIS-ready products for environmental and engineering applications\nDeveloping CLI tools for data quality control and validation\n\n\n\nApplied Earth Observation\nMy research has practical applications in:\n\nLandslide monitoring: Characterizing slow-moving bedrock landslides in mountainous terrain\nLand subsidence: Quantifying groundwater depletion impacts on coastal plains\nSeismic deformation: Analyzing earthquake and fault system dynamics\nInfrastructure monitoring: Supporting engineering assessments through automated deformation detection"
   },
   {
-    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#reliability-is-part-of-the-solution",
-    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#reliability-is-part-of-the-solution",
-    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
-    "section": "Reliability is part of the solution",
-    "text": "Reliability is part of the solution\nParvaneh also demonstrates why edge ordering matters. A simple pixel reliability score is\n\\[S_p=\\sum_{q\\in N(p)}\\left|W(w_q-w_p)\\right|,\\qquad R_p=\\frac{1}{1+S_p}.\\]\nSmooth neighborhoods have larger reliability, so a quality-guided method expands from trustworthy pixels first. The reliability_sorting notebook then shows a four-pixel example where two paths imply incompatible integer choices. The lesson is practical: phase unwrapping is not only “adding multiples of \\(2\\pi\\)”; it is deciding which observations deserve influence and how contradictions should be paid for.\nThe companion notebooks cover branch cuts, graph cuts, robust \\(L_p\\) fitting, multigrid correction, space-time priors, and three-dimensional cycle flows. Together they connect the geometry of wrapped angles to reproducible numerical experiments."
+    "objectID": "about.html#current-position",
+    "href": "about.html#current-position",
+    "title": "About Me",
+    "section": "Current Position",
+    "text": "Current Position\nPh.D. Candidate in Remote Sensing\nUniversity of Potsdam, Germany (Expected 2026)\nSupervised by Prof. Dr. Bodo Bookhagen\nMy dissertation focuses on understanding landslide dynamics in the south-central Andes through advanced InSAR time-series analysis, with emphasis on atmospheric correction methods and multi-sensor geodetic integration.\nData Science Analytics (Student Position)\nStatista Strategy, Berlin (Apr 2025 - Aug 2025)\nDeveloping Python pipelines for automated data quality control, validation workflows, and reproducible analytics."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "The Notebook",
-    "section": "",
-    "text": "From Fuzzy Strings to Reliable Geographic Entity Resolution\n\n\n\n\n\n\nPython\n\n\nData Quality\n\n\nEntity Resolution\n\n\nGeospatial\n\n\n\nAn example of combining string similarity, uncertainty, language-model review, and geographic proximity.\n\n\n\n\n\nSep 23, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nPhase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency\n\n\n\n\n\n\nInSAR\n\n\nPhase Unwrapping\n\n\nMathematics\n\n\nPython\n\n\n\nA mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.\n\n\n\n\n\nSep 23, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling\n\n\n\n\n\n\nSAR\n\n\nInSAR\n\n\nPython\n\n\nOpen Source\n\n\nRemote Sensing\n\n\n\nNavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.\n\n\n\n\n\nSep 11, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\n2D+1D Decomposition of InSAR for Landslide Application\n\n\n\n\n\n\nInSAR\n\n\nLandslide\n\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\nNo matching items\n\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  url = {https://mohseniaref.github.io/blog/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.” https://mohseniaref.github.io/blog/."
+    "objectID": "about.html#background-experience",
+    "href": "about.html#background-experience",
+    "title": "About Me",
+    "section": "Background & Experience",
+    "text": "Background & Experience\n\nAcademic Journey\n\nPh.D. Candidate in Remote Sensing - University of Potsdam, Germany\nM.Sc. in Water Resources Engineering - Azad University, Shiraz, Iran (2011)\nB.Sc. in Water Engineering - Bahonar University, Kerman, Iran (2007)\n\n\n\nProfessional Experience\n\nStudent Research Assistant - University of Potsdam (2020-2024)\nScientific Researcher - EFTAS Remote Sensing Technology, Münster, Germany (2020)\nVisiting Researcher - University of Potsdam (2018-2019)\nGeospatial Research Assistant - Istanbul Technical University (2015-2018)"
   },
   {
-    "objectID": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
-    "href": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
-    "title": "2D+1D Decomposition of InSAR for Landslide Application",
-    "section": "",
-    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.” https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html."
+    "objectID": "about.html#research-philosophy",
+    "href": "about.html#research-philosophy",
+    "title": "About Me",
+    "section": "Research Philosophy",
+    "text": "Research Philosophy\nI believe in:\n\nOpen Science: Developing reproducible workflows and sharing methodologies\nInterdisciplinary Collaboration: Combining geodesy, geophysics, data science, and environmental science\nPractical Impact: Translating research into tools that support hazard assessment and environmental monitoring\nContinuous Learning: Staying current with emerging technologies in remote sensing, ML, and HPC"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "About Me",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nInSAR & SAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\nProgramming: Python (expert), MATLAB, R, IDL, C/C++, Bash\nPython Ecosystem: NumPy, pandas, GeoPandas, scikit-learn, xarray, rioxarray, Dask, PyTorch\nGIS & Mapping: ArcGIS Pro, QGIS, ENVI, GMT, PostgreSQL/PostGIS\nGeodetic Tools: GAMIT/GLOBK, GNSSRef, GNSS-IR\nGeophysics: Pyrocko, Kite, Grond, ObsPy\nSoftware Engineering: Git/GitHub, Linux, pytest, CLI development, API integration"
   },
   {
-    "objectID": "contact.html#get-in-touch",
-    "href": "contact.html#get-in-touch",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About Me",
+    "section": "Languages",
+    "text": "Languages\n\nPersian: Native\nEnglish: Professional proficiency (C1)\nArabic: Intermediate (B1)\nGerman: Elementary (A2)"
   },
   {
-    "objectID": "contact.html#professional-inquiries",
-    "href": "contact.html#professional-inquiries",
-    "title": "Contact",
-    "section": "Professional Inquiries",
-    "text": "Professional Inquiries\n📧 Email: mohseniaref@uni-potsdam.de\n📞 Phone: +49 1520 5241256\n📍 Location: Berlin, Germany"
+    "objectID": "about.html#professional-development",
+    "href": "about.html#professional-development",
+    "title": "About Me",
+    "section": "Professional Development",
+    "text": "Professional Development\nI continuously expand my expertise through specialized training:\n\nGNSS Data Processing and Analysis - EarthScope (2024)\nComputer Vision for Earth Observation - IEEE GRSS IADF (2022)\nGNSS Interferometric Reflectometry - UNAVCO (2021)\nMachine Learning with AMD GPUs/ROCm - HLRS Stuttgart (2021)\nTechniques to Study Surface Deformation - RWTH Aachen (2020)\nHPC for Computational Seismology - HLRS Stuttgart (2020)\nAdvanced Workshop on Earthquake Fault Mechanics - ICTP Trieste (2019)\nEarth Surface Dynamics Summer School - University of Potsdam (2018)"
   },
   {
-    "objectID": "contact.html#academic-affiliation",
-    "href": "contact.html#academic-affiliation",
-    "title": "Contact",
-    "section": "Academic Affiliation",
-    "text": "Academic Affiliation\nUniversity of Potsdam\nInstitute of Geosciences\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam, Germany\nSupervisor: Prof. Dr. Bodo Bookhagen\n📧 bodo.bookhagen@uni-potsdam.de\n☎️ +49 331 977 5779"
+    "objectID": "about.html#beyond-research",
+    "href": "about.html#beyond-research",
+    "title": "About Me",
+    "section": "Beyond Research",
+    "text": "Beyond Research\nWhen I’m not processing satellite data or writing Python code, I enjoy:\n\nExploring new developments in machine learning and computer vision\nContributing to open-source geospatial tools\nMentoring students in remote sensing and data science\nHiking and outdoor photography (especially in mountainous regions)"
   },
   {
-    "objectID": "contact.html#connect-on-social-media",
-    "href": "contact.html#connect-on-social-media",
-    "title": "Contact",
-    "section": "Connect on Social Media",
-    "text": "Connect on Social Media\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💼 LinkedIn: Mohammad Mohseni Aref\n💻 GitHub: mohseniaref\n🎓 Google Scholar: Profile"
-  },
-  {
-    "objectID": "contact.html#collaboration-interests",
-    "href": "contact.html#collaboration-interests",
-    "title": "Contact",
-    "section": "Collaboration Interests",
-    "text": "Collaboration Interests\nI’m particularly interested in collaborating on:\n\nInSAR Applications: Deformation monitoring, atmospheric corrections, time-series analysis\nGeospatial Data Science: Large-scale satellite data processing, machine learning for Earth observation\nNatural Hazard Assessment: Landslide monitoring, subsidence analysis, earthquake deformation\nOpen Science: Reproducible workflows, open-source tool development, tutorials and training\nApplied Projects: Infrastructure monitoring, environmental assessment, climate change impacts"
-  },
-  {
-    "objectID": "contact.html#consulting-services",
-    "href": "contact.html#consulting-services",
-    "title": "Contact",
-    "section": "Consulting & Services",
-    "text": "Consulting & Services\nAvailable for:\n\nInSAR time-series analysis and interpretation\nGeospatial data processing and automation\nPython workflow development for remote sensing applications\nTechnical training and workshops on SAR interferometry\nData quality control and validation pipelines\nHPC optimization for satellite data processing"
-  },
-  {
-    "objectID": "contact.html#response-time",
-    "href": "contact.html#response-time",
-    "title": "Contact",
-    "section": "Response Time",
-    "text": "Response Time\nI typically respond to emails within 1-2 business days. For urgent matters, please indicate this in your subject line."
-  },
-  {
-    "objectID": "contact.html#office-hours",
-    "href": "contact.html#office-hours",
-    "title": "Contact",
-    "section": "Office Hours",
-    "text": "Office Hours\nFor students and collaborators at University of Potsdam:\n\nBy appointment - Please email to schedule a meeting\nVirtual meetings available via Zoom or Google Meet"
-  },
-  {
-    "objectID": "contact.html#mailing-address",
-    "href": "contact.html#mailing-address",
-    "title": "Contact",
-    "section": "Mailing Address",
-    "text": "Mailing Address\nMohammad Mohseni Aref\nInstitute of Geosciences\nUniversity of Potsdam\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam\nGermany"
-  },
-  {
-    "objectID": "contact.html#open-to-opportunities",
-    "href": "contact.html#open-to-opportunities",
-    "title": "Contact",
-    "section": "Open to Opportunities",
-    "text": "Open to Opportunities\nI am actively seeking positions in:\n\nRemote sensing and Earth observation\nGeospatial data science and analytics\nResearch and development (R&D) in geodesy and geophysics\nData engineering for environmental monitoring\nAcademic and industry positions worldwide\n\n📄 View my CV | 🔬 Research Overview | 💼 Projects & Tools\n\nLooking forward to hearing from you!"
+    "objectID": "about.html#location-availability",
+    "href": "about.html#location-availability",
+    "title": "About Me",
+    "section": "Location & Availability",
+    "text": "Location & Availability\n📍 Based in: Berlin, Germany\n🌍 Open to: Relocation and international collaborations\n💼 Seeking: Opportunities in remote sensing, geospatial data science, and Earth observation\n\n“The best way to understand Earth’s dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor.”"
   },
   {
     "objectID": "publications.html",
@@ -210,76 +168,6 @@
     "text": "M. Mohseni Aref and M. Motagh, “InSAR time series analysis of land deformation: northwest of Iran,” International on Advances in the Science and Applications of SAR Interferometry, Frascati (Rome), Italy, Sep. 2011."
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Education\n\nPh.D. student in Remote Sensing , Potsdam University, Germany\nM.Sc. in Water Resources Engineering, Azad University, Iran (2011)\nB.Sc. in Water and Irrigation Engineering, Bahoonar University, Iran (2007)"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
-  },
-  {
-    "objectID": "research.html#overview",
-    "href": "research.html#overview",
-    "title": "Research",
-    "section": "",
-    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
-  },
-  {
-    "objectID": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
-    "href": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
-    "title": "Research",
-    "section": "Ph.D. Research: Landslide Dynamics in the Central Andes",
-    "text": "Ph.D. Research: Landslide Dynamics in the Central Andes\nAs a Ph.D. candidate at the University of Potsdam (expected 2026), I investigate slow-moving landslides and hillslope processes in the south-central Andes of northwestern Argentina using advanced InSAR techniques.\n\nKey Research Areas:\n\n1. InSAR Time-Series Analysis for Landslide Monitoring\n\nDeveloped scalable Python workflows for processing multi-temporal SAR data (Sentinel-1, ALOS-2) using ISCE, MintPy, and MiaplPy\nImplemented phase-linking strategies to enhance deformation signal quality in challenging terrain\nApplied spatial statistics and clustering methods to identify and classify deformation regimes\nGenerated high-resolution ground-deformation maps for GIS-based environmental analysis\n\n\n\n2. Tropospheric Delay Correction\n\nCompared statistical and physics-based ray-tracing approaches for atmospheric correction\nIntegrated global weather models (ERA5, MERRA-2) to mitigate tropospheric noise\nSignificantly improved InSAR time-series reliability through advanced correction methods\nPresented findings at FRINGE 2026 and EGU conferences\n\n\n\n3. Multi-Source Geodetic Integration\n\nCombined InSAR, GNSS, and LiDAR datasets for comprehensive deformation analysis\nSupported earthquake and volcanic deformation inversion workflows\nProcessed large SAR and optical satellite datasets using HPC (SLURM) parallel computing"
-  },
-  {
-    "objectID": "research.html#current-research-projects",
-    "href": "research.html#current-research-projects",
-    "title": "Research",
-    "section": "Current Research Projects",
-    "text": "Current Research Projects\n\nGroundwater Depletion and Land Subsidence\nInvestigating subsidence in the Minab Coastal Plain (Iran) by integrating InSAR time-series with aquifer modeling to understand groundwater extraction impacts.\n\n\nEarthquake Sequence Analysis\nContributing to multi-sensor geodetic analysis of the 2022 earthquake sequence in the Zagros mountains, Iran (published in Seismica, 2023).\n\n\nSeasonal Landslide Activity\nAnalyzing seasonal patterns in landslide kinematics and their relationship to precipitation and hydrological processes in the Andes."
-  },
-  {
-    "objectID": "research.html#research-interests",
-    "href": "research.html#research-interests",
-    "title": "Research",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nMicrowave and Optical Remote Sensing: SAR interferometry, optical offset tracking, spectral analysis\nGround Deformation Monitoring: Landslides, subsidence, tectonic motion, volcanic deformation\nAtmospheric Corrections: Tropospheric and ionospheric delay mitigation for InSAR and GNSS\nMachine Learning in Geosciences: Supervised and unsupervised learning for land cover classification and deformation pattern recognition\nGeospatial Data Science: Large-scale processing pipelines, spatial statistics, GIS-based interpretation\nHydrological Modeling: Surface and subsurface water dynamics, GRACE data analysis"
-  },
-  {
-    "objectID": "research.html#methodological-expertise",
-    "href": "research.html#methodological-expertise",
-    "title": "Research",
-    "section": "Methodological Expertise",
-    "text": "Methodological Expertise\n\nInSAR Processing Toolchains\nISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\n\n\nGeospatial Analysis\nArcGIS Pro, QGIS, ENVI, LAStools, MicMac, Ames Stereo Pipeline, PostgreSQL/PostGIS\n\n\nGeodetic Tools\nGAMIT/GLOBK, GNSSRef, GNSS-IR techniques\n\n\nProgramming & Data Science\nPython (NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask), MATLAB, R, Bash scripting\n\n\nHigh-Performance Computing\nSLURM-based parallel workflows for multi-terabyte SAR/optical data processing"
-  },
-  {
-    "objectID": "research.html#selected-publications-presentations",
-    "href": "research.html#selected-publications-presentations",
-    "title": "Research",
-    "section": "Selected Publications & Presentations",
-    "text": "Selected Publications & Presentations\n2026 - Mohseni Aref, M., Bookhagen, B. (2026). “Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis in the Southern Central Andes.” FRINGE 2026, Kraków, Poland.\n2025 - Mohseni Aref, M., Kamali, H. (2025). “Groundwater depletion and land subsidence in the Minab Coastal Plain: Insights from InSAR time-series and aquifer modeling.” 3rd ICCC Workshop, IAG.\n2024 - Mohseni Aref, M., Bookhagen, B., Strecker, M.R. (2024). “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina.” EGU General Assembly. DOI: 10.5194/egusphere-egu24-12522\n2023 - Metz, M., Maleki Asayesh, B., Mohseni Aref, M., et al. (2023). “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran.” Seismica. DOI: 10.26443/seismica.v2i2.953\nView all publications →"
-  },
-  {
-    "objectID": "research.html#collaborations",
-    "href": "research.html#collaborations",
-    "title": "Research",
-    "section": "Collaborations",
-    "text": "Collaborations\nI actively collaborate with researchers at: - University of Potsdam (Germany) - Geomorphology and remote sensing - EFTAS Remote Sensing Technology (Germany) - Applied InSAR monitoring - Istanbul Technical University (Turkey) - Geodesy and tectonic deformation - GFZ German Research Centre for Geosciences - Seismology and earthquake analysis"
-  },
-  {
-    "objectID": "research.html#research-impact",
-    "href": "research.html#research-impact",
-    "title": "Research",
-    "section": "Research Impact",
-    "text": "Research Impact\nMy work contributes to: - Natural Hazard Assessment: Improved landslide and subsidence monitoring for risk evaluation - Climate Change Research: Understanding permafrost dynamics and hydrological changes - Methodological Advances: Enhanced InSAR processing techniques for challenging environments - Open Science: Development of reproducible Python workflows for the remote sensing community"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects & Tools",
@@ -355,6 +243,118 @@
     "title": "Projects & Tools",
     "section": "Collaboration Opportunities",
     "text": "Collaboration Opportunities\nI’m interested in collaborating on:\n\nInSAR applications for natural hazard monitoring\nMachine learning for Earth observation\nGeospatial data science projects\nOpen-source tool development\n\n📧 Get in touch: mohseniaref@uni-potsdam.de"
+  },
+  {
+    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html",
+    "href": "blog/phase-unwrapping-from-the-ground-up/index.html",
+    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
+    "section": "",
+    "text": "An interferometric phase is an angle, so an instrument reports only its value modulo one turn. If the underlying phase is \\(\\phi\\), the measured wrapped phase is\n\\[w = \\operatorname{wrap}(\\phi) \\in [-\\pi,\\pi).\\]\nThe unwrapping problem is to recover a continuous phase field by estimating the missing integer \\(n\\) in\n\\[\\phi = w + 2\\pi n.\\]\nThe notebooks in Parvaneh make this idea concrete with small synthetic examples before applying the same reasoning to larger scenes."
+  },
+  {
+    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#why-local-decisions-can-disagree",
+    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#why-local-decisions-can-disagree",
+    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
+    "section": "Why local decisions can disagree",
+    "text": "Why local decisions can disagree\nFor neighboring pixels \\(a\\) and \\(b\\), the shortest wrapped difference is\n\\[g_{ab}=W(w_b-w_a).\\]\nIf every measured difference came from a smooth scalar phase, integrating these differences around a closed cell would return zero. In practice, noise and steep gradients can produce a non-zero residue:\n\\[r = \\frac{g_{\\mathrm{top}}+g_{\\mathrm{right}}-g_{\\mathrm{bottom}}-g_{\\mathrm{left}}}{2\\pi}.\\]\nThe integer \\(r\\) is a useful diagnostic: it says that at least one edge in the loop needs an integer correction. Goldstein branch cuts isolate incompatible regions, while minimum-cost-flow methods distribute integer corrections so that the residue balance is respected."
+  },
+  {
+    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#a-global-least-squares-view",
+    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#a-global-least-squares-view",
+    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
+    "section": "A global least-squares view",
+    "text": "A global least-squares view\nLet \\(D\\) be the edge-to-pixel incidence matrix and let \\(u\\) be the unknown unwrapped phase. A weighted least-squares reconstruction solves\n\\[\\hat u=\\arg\\min_u (Du-g)^TQ(Du-g),\\]\nwith normal equations\n\\[D^TQD\\,\\hat u=D^TQg.\\]\nThe least_squares_and_weights and minimum_cost_flow notebooks use four pixels so that every sign, residual, and loop can be checked by hand. This is useful because a visually plausible surface can still contain a hidden \\(2\\pi\\) offset or a path-dependent error."
+  },
+  {
+    "objectID": "blog/phase-unwrapping-from-the-ground-up/index.html#reliability-is-part-of-the-solution",
+    "href": "blog/phase-unwrapping-from-the-ground-up/index.html#reliability-is-part-of-the-solution",
+    "title": "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency",
+    "section": "Reliability is part of the solution",
+    "text": "Reliability is part of the solution\nParvaneh also demonstrates why edge ordering matters. A simple pixel reliability score is\n\\[S_p=\\sum_{q\\in N(p)}\\left|W(w_q-w_p)\\right|,\\qquad R_p=\\frac{1}{1+S_p}.\\]\nSmooth neighborhoods have larger reliability, so a quality-guided method expands from trustworthy pixels first. The reliability_sorting notebook then shows a four-pixel example where two paths imply incompatible integer choices. The lesson is practical: phase unwrapping is not only “adding multiples of \\(2\\pi\\)”; it is deciding which observations deserve influence and how contradictions should be paid for.\nThe companion notebooks cover branch cuts, graph cuts, robust \\(L_p\\) fitting, multigrid correction, space-time priors, and three-dimensional cycle flows. Together they connect the geometry of wrapped angles to reproducible numerical experiments."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "The Notebook",
+    "section": "",
+    "text": "From Fuzzy Strings to Reliable Geographic Entity Resolution\n\n\n\nPython\n\nData Quality\n\nEntity Resolution\n\nGeospatial\n\n\n\nAn example of combining string similarity, uncertainty, language-model review, and geographic proximity.\n\n\n\n\n\nSep 23, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nPhase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency\n\n\n\nInSAR\n\nPhase Unwrapping\n\nMathematics\n\nPython\n\n\n\nA mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.\n\n\n\n\n\nSep 23, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\nIntroducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling\n\n\n\nSAR\n\nInSAR\n\nPython\n\nOpen Source\n\nRemote Sensing\n\n\n\nNavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.\n\n\n\n\n\nSep 11, 2026\n\n\nMohammad Mohseni Aref\n\n\n\n\n\n\n\n\n\n\n\n\n2D+1D Decomposition of InSAR for Landslide Application\n\n\n\nInSAR\n\nLandslide\n\nRemote Sensing\n\n\n\nAn exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.\n\n\n\n\n\nDec 28, 2024\n\n\nMohammad Mohseni Aref\n\n\n\n\n\nNo matching items\nCitationBibTeX citation:@misc{mohseni_aref,\n  author = {{Mohammad Mohseni Aref}},\n  title = {The {Notebook}},\n  url = {https://mohseniaref.github.io/blog/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. n.d. “The Notebook.” Preprint. https://mohseniaref.github.io/blog/."
+  },
+  {
+    "objectID": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
+    "href": "blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
+    "title": "2D+1D Decomposition of InSAR for Landslide Application",
+    "section": "",
+    "text": "Introduction\nThe 2D+1D decomposition technique is revolutionizing landslide research with InSAR. This approach enables: - Resolving horizontal and vertical deformation. - Enhanced accuracy in complex terrains like high mountains.\nApplications - Monitoring slow-moving landslides. - Studying seismic cycles and fault dynamics.\nConclusion The method is a transformative step for geohazard monitoring.\n\n\n\nCitationBibTeX citation:@misc{mohseni_aref2024,\n  author = {{Mohammad Mohseni Aref}},\n  title = {2D+1D {Decomposition} of {InSAR} for {Landslide}\n    {Application}},\n  date = {2024-12-28},\n  url = {https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nMohammad Mohseni Aref. 2024. “2D+1D Decomposition of InSAR for\nLandslide Application.” Preprint, December 28. https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html."
+  },
+  {
+    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html",
+    "href": "blog/fuzzy-matching-with-geographic-context/index.html",
+    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
+    "section": "",
+    "text": "Two records can refer to the same place even when spelling, transliteration, punctuation, or administrative naming differs. The challenge is that a high string score is not proof of identity. fuzzy_llm_matcher treats matching as a confidence problem rather than a single similarity calculation."
+  },
+  {
+    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#a-small-example",
+    "href": "blog/fuzzy-matching-with-geographic-context/index.html#a-small-example",
+    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
+    "section": "A small example",
+    "text": "A small example\nSuppose a reference table contains Berlin Hauptbahnhof, while an incoming table contains Berlin Hbf. A token-based fuzzy score may identify the right candidate. But for two records named Springfield, the best text match can still be wrong if the coordinates are thousands of kilometres apart.\nThe matcher therefore combines several signals:\n\\[S_{\\mathrm{text}}=\\operatorname{WRatio}(x,y),\\]\nand, when coordinates are available, a distance score that declines to zero at a chosen maximum distance \\(d_{\\max}\\):\n\\[S_{\\mathrm{geo}}=100\\max\\left(0,1-\\frac{d(x,y)}{d_{\\max}}\\right).\\]\nThe final decision is supported by the score margin to the second-best candidate, reliability rules, and—only for ambiguous cases—an optional LLM review. This separation is important: the language model can explain an uncertain pair, but deterministic scores and coordinates keep the bulk workflow inspectable."
+  },
+  {
+    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#why-the-reliability-layer-matters",
+    "href": "blog/fuzzy-matching-with-geographic-context/index.html#why-the-reliability-layer-matters",
+    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
+    "section": "Why the reliability layer matters",
+    "text": "Why the reliability layer matters\nFor each left-hand record, the package returns the best candidates, fuzzy_score, the margin to the next candidate, geographic proximity, and a label such as high, medium_review, low, or reject. A match with score 96 and a large margin is different from a score 96 where three alternatives score 95.5.\nThe notebooks include synthetic benchmarks, company-name matching, multilingual place names, OpenStreetMap/Wikidata examples, and Iran administrative divisions. They also produce maps and reports so that accepted matches can be audited spatially instead of being trusted as an opaque join."
+  },
+  {
+    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#a-useful-application",
+    "href": "blog/fuzzy-matching-with-geographic-context/index.html#a-useful-application",
+    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
+    "section": "A useful application",
+    "text": "A useful application\nHistorical gazetteers often contain inconsistent names across years: abbreviations, Persian/Latin transliterations, renamed districts, and changed administrative boundaries. A practical workflow is to generate a small candidate set with fuzzy text matching, block candidates spatially, use distance and score margins to assign reliability, and send only the ambiguous remainder for review. This makes the expensive part proportional to uncertainty rather than to the size of the whole table.\nThe broader principle is simple: similarity proposes; evidence decides."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html",
+    "href": "blog/introducing-navasar/index.html",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "",
+    "text": "Today I am releasing NavaSAR 0.1.0a1, the first public alpha of a Python library for physics-based radar remote-sensing experiments.\nThe project grew from a practical need: many useful microwave and interferometric models are scattered across papers, books, and one-off research scripts. NavaSAR brings a focused selection of those models into a documented, testable package that can support teaching, reproducible experiments, and early-stage method development."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
+    "href": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "What is included in the alpha?",
+    "text": "What is included in the alpha?\nThe initial release connects several parts of the radar modeling chain:\n\ndielectric models for water, soil, vegetation, snow, ice, and material mixtures;\ncomplex SAR single-look-complex simulation and multilooking;\ninterferometric coherence, phase triplets, and closure-phase time series;\npolarimetric scattering, covariance, fading, and speckle tools;\nland-backscatter and detected-image simulations; and\nexperimental soil-moisture inversion and retrieval workflows.\n\nThe emphasis is on transparent scientific functions rather than a black-box processing system. Inputs, assumptions, and units remain visible so that a result can be inspected and challenged."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
+    "href": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "From moisture change to an interferometric signal",
+    "text": "From moisture change to an interferometric signal\nThe figure below summarizes one simulation workflow. A temporary soil-moisture increase changes the dielectric response and the simulated SLC amplitude. The corresponding interferometric network develops a phase response and a non-zero closure-phase step.\n\n\n\nA NavaSAR simulation linking a soil-moisture event to SLC amplitude, interferometric phase, and closure phase.\n\n\nClosure phase is particularly interesting because it cancels phase terms that are strictly additive around a closed interferometric loop. A remaining signal can therefore reveal non-linear changes in the scattering medium. In the soil-moisture model used here, the phase triplet depends on the ordering and magnitude of the moisture states.\n\n\n\nNon-linear phase-triplet response for asymmetric soil-moisture states.\n\n\nThese plots are simulations, not field validation. The alpha release is intended to make assumptions reproducible and provide a foundation for comparison with observations."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#reproducibility-and-scope",
+    "href": "blog/introducing-navasar/index.html#reproducibility-and-scope",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "Reproducibility and scope",
+    "text": "Reproducibility and scope\nNavaSAR is released under the MIT License. The public repository contains source code, documentation, tests, and curated notebooks. Copyrighted reference PDFs and local build artifacts are deliberately excluded.\nThe package version is marked as an alpha because the API and numerical behavior may still evolve as more validation cases are added. Users should independently verify results before applying them to operational or decision-critical work."
+  },
+  {
+    "objectID": "blog/introducing-navasar/index.html#try-it",
+    "href": "blog/introducing-navasar/index.html#try-it",
+    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "section": "Try it",
+    "text": "Try it\ngit clone https://github.com/mohseniaref/NavaSAR.git\ncd NavaSAR\npython -m pip install -e \".[notebooks,test]\"\npython -m pytest\nThe source code and documentation are available on GitHub. Feedback, reproducible test cases, and carefully scoped contributions are welcome."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Education\n\nPh.D. student in Remote Sensing , Potsdam University, Germany\nM.Sc. in Water Resources Engineering, Azad University, Iran (2011)\nB.Sc. in Water and Irrigation Engineering, Bahoonar University, Iran (2007)"
   },
   {
     "objectID": "index.html",
@@ -441,143 +441,143 @@
     "text": "Connect\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💻 GitHub: mohseniaref\n🔗 LinkedIn: mohseniaref\n🎓 Google Scholar"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "Mohammad Mohseni Aref"
+    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
   },
   {
-    "objectID": "about.html#professional-background",
-    "href": "about.html#professional-background",
-    "title": "About Me",
-    "section": "Professional Background",
-    "text": "Professional Background\nI am a Ph.D. candidate at the University of Potsdam, specializing in remote sensing engineering, InSAR time-series analysis, and geospatial data science. My work sits at the intersection of geodesy, geophysics, and data science, where I develop scalable workflows to extract meaningful insights from satellite observations of Earth’s surface.\nWith expertise spanning radar remote sensing, photogrammetry, GIS analysis, and high-performance computing, I transform complex multi-temporal satellite datasets into actionable information for understanding natural hazards, environmental change, and tectonic processes."
-  },
-  {
-    "objectID": "about.html#what-i-do",
-    "href": "about.html#what-i-do",
-    "title": "About Me",
-    "section": "What I Do",
-    "text": "What I Do\n\nRemote Sensing & InSAR Analysis\nI specialize in processing and analyzing Synthetic Aperture Radar (SAR) data to monitor ground deformation at millimeter-scale precision. My work involves:\n\nDeveloping automated Python workflows for InSAR time-series processing\nImplementing advanced atmospheric correction techniques (tropospheric and ionospheric)\nApplying phase-linking and covariance-based methods for signal enhancement\nProcessing multi-terabyte datasets using HPC clusters\n\n\n\nGeospatial Data Science\nI bridge the gap between raw satellite data and interpretable geospatial insights:\n\nBuilding reproducible analysis pipelines with Python (NumPy, pandas, GeoPandas, xarray)\nApplying spatial statistics and machine learning for deformation pattern recognition\nCreating GIS-ready products for environmental and engineering applications\nDeveloping CLI tools for data quality control and validation\n\n\n\nApplied Earth Observation\nMy research has practical applications in:\n\nLandslide monitoring: Characterizing slow-moving bedrock landslides in mountainous terrain\nLand subsidence: Quantifying groundwater depletion impacts on coastal plains\nSeismic deformation: Analyzing earthquake and fault system dynamics\nInfrastructure monitoring: Supporting engineering assessments through automated deformation detection"
-  },
-  {
-    "objectID": "about.html#current-position",
-    "href": "about.html#current-position",
-    "title": "About Me",
-    "section": "Current Position",
-    "text": "Current Position\nPh.D. Candidate in Remote Sensing\nUniversity of Potsdam, Germany (Expected 2026)\nSupervised by Prof. Dr. Bodo Bookhagen\nMy dissertation focuses on understanding landslide dynamics in the south-central Andes through advanced InSAR time-series analysis, with emphasis on atmospheric correction methods and multi-sensor geodetic integration.\nData Science Analytics (Student Position)\nStatista Strategy, Berlin (Apr 2025 - Aug 2025)\nDeveloping Python pipelines for automated data quality control, validation workflows, and reproducible analytics."
-  },
-  {
-    "objectID": "about.html#background-experience",
-    "href": "about.html#background-experience",
-    "title": "About Me",
-    "section": "Background & Experience",
-    "text": "Background & Experience\n\nAcademic Journey\n\nPh.D. Candidate in Remote Sensing - University of Potsdam, Germany\nM.Sc. in Water Resources Engineering - Azad University, Shiraz, Iran (2011)\nB.Sc. in Water Engineering - Bahonar University, Kerman, Iran (2007)\n\n\n\nProfessional Experience\n\nStudent Research Assistant - University of Potsdam (2020-2024)\nScientific Researcher - EFTAS Remote Sensing Technology, Münster, Germany (2020)\nVisiting Researcher - University of Potsdam (2018-2019)\nGeospatial Research Assistant - Istanbul Technical University (2015-2018)"
-  },
-  {
-    "objectID": "about.html#research-philosophy",
-    "href": "about.html#research-philosophy",
-    "title": "About Me",
-    "section": "Research Philosophy",
-    "text": "Research Philosophy\nI believe in:\n\nOpen Science: Developing reproducible workflows and sharing methodologies\nInterdisciplinary Collaboration: Combining geodesy, geophysics, data science, and environmental science\nPractical Impact: Translating research into tools that support hazard assessment and environmental monitoring\nContinuous Learning: Staying current with emerging technologies in remote sensing, ML, and HPC"
-  },
-  {
-    "objectID": "about.html#technical-skills",
-    "href": "about.html#technical-skills",
-    "title": "About Me",
-    "section": "Technical Skills",
-    "text": "Technical Skills\nInSAR & SAR Processing: ISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\nProgramming: Python (expert), MATLAB, R, IDL, C/C++, Bash\nPython Ecosystem: NumPy, pandas, GeoPandas, scikit-learn, xarray, rioxarray, Dask, PyTorch\nGIS & Mapping: ArcGIS Pro, QGIS, ENVI, GMT, PostgreSQL/PostGIS\nGeodetic Tools: GAMIT/GLOBK, GNSSRef, GNSS-IR\nGeophysics: Pyrocko, Kite, Grond, ObsPy\nSoftware Engineering: Git/GitHub, Linux, pytest, CLI development, API integration"
-  },
-  {
-    "objectID": "about.html#languages",
-    "href": "about.html#languages",
-    "title": "About Me",
-    "section": "Languages",
-    "text": "Languages\n\nPersian: Native\nEnglish: Professional proficiency (C1)\nArabic: Intermediate (B1)\nGerman: Elementary (A2)"
-  },
-  {
-    "objectID": "about.html#professional-development",
-    "href": "about.html#professional-development",
-    "title": "About Me",
-    "section": "Professional Development",
-    "text": "Professional Development\nI continuously expand my expertise through specialized training:\n\nGNSS Data Processing and Analysis - EarthScope (2024)\nComputer Vision for Earth Observation - IEEE GRSS IADF (2022)\nGNSS Interferometric Reflectometry - UNAVCO (2021)\nMachine Learning with AMD GPUs/ROCm - HLRS Stuttgart (2021)\nTechniques to Study Surface Deformation - RWTH Aachen (2020)\nHPC for Computational Seismology - HLRS Stuttgart (2020)\nAdvanced Workshop on Earthquake Fault Mechanics - ICTP Trieste (2019)\nEarth Surface Dynamics Summer School - University of Potsdam (2018)"
-  },
-  {
-    "objectID": "about.html#beyond-research",
-    "href": "about.html#beyond-research",
-    "title": "About Me",
-    "section": "Beyond Research",
-    "text": "Beyond Research\nWhen I’m not processing satellite data or writing Python code, I enjoy:\n\nExploring new developments in machine learning and computer vision\nContributing to open-source geospatial tools\nMentoring students in remote sensing and data science\nHiking and outdoor photography (especially in mountainous regions)"
-  },
-  {
-    "objectID": "about.html#location-availability",
-    "href": "about.html#location-availability",
-    "title": "About Me",
-    "section": "Location & Availability",
-    "text": "Location & Availability\n📍 Based in: Berlin, Germany\n🌍 Open to: Relocation and international collaborations\n💼 Seeking: Opportunities in remote sensing, geospatial data science, and Earth observation\n\n“The best way to understand Earth’s dynamic processes is to observe them from space, process them with code, and interpret them with scientific rigor.”"
-  },
-  {
-    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html",
-    "href": "blog/fuzzy-matching-with-geographic-context/index.html",
-    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
+    "objectID": "research.html#overview",
+    "href": "research.html#overview",
+    "title": "Research",
     "section": "",
-    "text": "Two records can refer to the same place even when spelling, transliteration, punctuation, or administrative naming differs. The challenge is that a high string score is not proof of identity. fuzzy_llm_matcher treats matching as a confidence problem rather than a single similarity calculation."
+    "text": "My research focuses on InSAR time-series analysis and satellite-based deformation monitoring to investigate geophysical and environmental processes. I specialize in extracting meaningful signals from large, noisy radar and optical datasets to study landslides, land subsidence, earthquakes, and volcanic activity."
   },
   {
-    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#a-small-example",
-    "href": "blog/fuzzy-matching-with-geographic-context/index.html#a-small-example",
-    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
-    "section": "A small example",
-    "text": "A small example\nSuppose a reference table contains Berlin Hauptbahnhof, while an incoming table contains Berlin Hbf. A token-based fuzzy score may identify the right candidate. But for two records named Springfield, the best text match can still be wrong if the coordinates are thousands of kilometres apart.\nThe matcher therefore combines several signals:\n\\[S_{\\mathrm{text}}=\\operatorname{WRatio}(x,y),\\]\nand, when coordinates are available, a distance score that declines to zero at a chosen maximum distance \\(d_{\\max}\\):\n\\[S_{\\mathrm{geo}}=100\\max\\left(0,1-\\frac{d(x,y)}{d_{\\max}}\\right).\\]\nThe final decision is supported by the score margin to the second-best candidate, reliability rules, and—only for ambiguous cases—an optional LLM review. This separation is important: the language model can explain an uncertain pair, but deterministic scores and coordinates keep the bulk workflow inspectable."
+    "objectID": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
+    "href": "research.html#ph.d.-research-landslide-dynamics-in-the-central-andes",
+    "title": "Research",
+    "section": "Ph.D. Research: Landslide Dynamics in the Central Andes",
+    "text": "Ph.D. Research: Landslide Dynamics in the Central Andes\nAs a Ph.D. candidate at the University of Potsdam (expected 2026), I investigate slow-moving landslides and hillslope processes in the south-central Andes of northwestern Argentina using advanced InSAR techniques.\n\nKey Research Areas:\n\n1. InSAR Time-Series Analysis for Landslide Monitoring\n\nDeveloped scalable Python workflows for processing multi-temporal SAR data (Sentinel-1, ALOS-2) using ISCE, MintPy, and MiaplPy\nImplemented phase-linking strategies to enhance deformation signal quality in challenging terrain\nApplied spatial statistics and clustering methods to identify and classify deformation regimes\nGenerated high-resolution ground-deformation maps for GIS-based environmental analysis\n\n\n\n2. Tropospheric Delay Correction\n\nCompared statistical and physics-based ray-tracing approaches for atmospheric correction\nIntegrated global weather models (ERA5, MERRA-2) to mitigate tropospheric noise\nSignificantly improved InSAR time-series reliability through advanced correction methods\nPresented findings at FRINGE 2026 and EGU conferences\n\n\n\n3. Multi-Source Geodetic Integration\n\nCombined InSAR, GNSS, and LiDAR datasets for comprehensive deformation analysis\nSupported earthquake and volcanic deformation inversion workflows\nProcessed large SAR and optical satellite datasets using HPC (SLURM) parallel computing"
   },
   {
-    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#why-the-reliability-layer-matters",
-    "href": "blog/fuzzy-matching-with-geographic-context/index.html#why-the-reliability-layer-matters",
-    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
-    "section": "Why the reliability layer matters",
-    "text": "Why the reliability layer matters\nFor each left-hand record, the package returns the best candidates, fuzzy_score, the margin to the next candidate, geographic proximity, and a label such as high, medium_review, low, or reject. A match with score 96 and a large margin is different from a score 96 where three alternatives score 95.5.\nThe notebooks include synthetic benchmarks, company-name matching, multilingual place names, OpenStreetMap/Wikidata examples, and Iran administrative divisions. They also produce maps and reports so that accepted matches can be audited spatially instead of being trusted as an opaque join."
+    "objectID": "research.html#current-research-projects",
+    "href": "research.html#current-research-projects",
+    "title": "Research",
+    "section": "Current Research Projects",
+    "text": "Current Research Projects\n\nGroundwater Depletion and Land Subsidence\nInvestigating subsidence in the Minab Coastal Plain (Iran) by integrating InSAR time-series with aquifer modeling to understand groundwater extraction impacts.\n\n\nEarthquake Sequence Analysis\nContributing to multi-sensor geodetic analysis of the 2022 earthquake sequence in the Zagros mountains, Iran (published in Seismica, 2023).\n\n\nSeasonal Landslide Activity\nAnalyzing seasonal patterns in landslide kinematics and their relationship to precipitation and hydrological processes in the Andes."
   },
   {
-    "objectID": "blog/fuzzy-matching-with-geographic-context/index.html#a-useful-application",
-    "href": "blog/fuzzy-matching-with-geographic-context/index.html#a-useful-application",
-    "title": "From Fuzzy Strings to Reliable Geographic Entity Resolution",
-    "section": "A useful application",
-    "text": "A useful application\nHistorical gazetteers often contain inconsistent names across years: abbreviations, Persian/Latin transliterations, renamed districts, and changed administrative boundaries. A practical workflow is to generate a small candidate set with fuzzy text matching, block candidates spatially, use distance and score margins to assign reliability, and send only the ambiguous remainder for review. This makes the expensive part proportional to uncertainty rather than to the size of the whole table.\nThe broader principle is simple: similarity proposes; evidence decides."
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nMicrowave and Optical Remote Sensing: SAR interferometry, optical offset tracking, spectral analysis\nGround Deformation Monitoring: Landslides, subsidence, tectonic motion, volcanic deformation\nAtmospheric Corrections: Tropospheric and ionospheric delay mitigation for InSAR and GNSS\nMachine Learning in Geosciences: Supervised and unsupervised learning for land cover classification and deformation pattern recognition\nGeospatial Data Science: Large-scale processing pipelines, spatial statistics, GIS-based interpretation\nHydrological Modeling: Surface and subsurface water dynamics, GRACE data analysis"
   },
   {
-    "objectID": "blog/introducing-navasar/index.html",
-    "href": "blog/introducing-navasar/index.html",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
+    "objectID": "research.html#methodological-expertise",
+    "href": "research.html#methodological-expertise",
+    "title": "Research",
+    "section": "Methodological Expertise",
+    "text": "Methodological Expertise\n\nInSAR Processing Toolchains\nISCE, MintPy, MiaplPy, Dolphin, StaMPS, SARscape, SNAP, GMTSAR, TRAIN\n\n\nGeospatial Analysis\nArcGIS Pro, QGIS, ENVI, LAStools, MicMac, Ames Stereo Pipeline, PostgreSQL/PostGIS\n\n\nGeodetic Tools\nGAMIT/GLOBK, GNSSRef, GNSS-IR techniques\n\n\nProgramming & Data Science\nPython (NumPy, pandas, GeoPandas, scikit-learn, xarray, Dask), MATLAB, R, Bash scripting\n\n\nHigh-Performance Computing\nSLURM-based parallel workflows for multi-terabyte SAR/optical data processing"
+  },
+  {
+    "objectID": "research.html#selected-publications-presentations",
+    "href": "research.html#selected-publications-presentations",
+    "title": "Research",
+    "section": "Selected Publications & Presentations",
+    "text": "Selected Publications & Presentations\n2026 - Mohseni Aref, M., Bookhagen, B. (2026). “Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis in the Southern Central Andes.” FRINGE 2026, Kraków, Poland.\n2025 - Mohseni Aref, M., Kamali, H. (2025). “Groundwater depletion and land subsidence in the Minab Coastal Plain: Insights from InSAR time-series and aquifer modeling.” 3rd ICCC Workshop, IAG.\n2024 - Mohseni Aref, M., Bookhagen, B., Strecker, M.R. (2024). “Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina.” EGU General Assembly. DOI: 10.5194/egusphere-egu24-12522\n2023 - Metz, M., Maleki Asayesh, B., Mohseni Aref, M., et al. (2023). “The July-December 2022 earthquake sequence in the southeastern Fars arc of Zagros mountains, Iran.” Seismica. DOI: 10.26443/seismica.v2i2.953\nView all publications →"
+  },
+  {
+    "objectID": "research.html#collaborations",
+    "href": "research.html#collaborations",
+    "title": "Research",
+    "section": "Collaborations",
+    "text": "Collaborations\nI actively collaborate with researchers at: - University of Potsdam (Germany) - Geomorphology and remote sensing - EFTAS Remote Sensing Technology (Germany) - Applied InSAR monitoring - Istanbul Technical University (Turkey) - Geodesy and tectonic deformation - GFZ German Research Centre for Geosciences - Seismology and earthquake analysis"
+  },
+  {
+    "objectID": "research.html#research-impact",
+    "href": "research.html#research-impact",
+    "title": "Research",
+    "section": "Research Impact",
+    "text": "Research Impact\nMy work contributes to: - Natural Hazard Assessment: Improved landslide and subsidence monitoring for risk evaluation - Climate Change Research: Understanding permafrost dynamics and hydrological changes - Methodological Advances: Enhanced InSAR processing techniques for challenging environments - Open Science: Development of reproducible Python workflows for the remote sensing community"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Today I am releasing NavaSAR 0.1.0a1, the first public alpha of a Python library for physics-based radar remote-sensing experiments.\nThe project grew from a practical need: many useful microwave and interferometric models are scattered across papers, books, and one-off research scripts. NavaSAR brings a focused selection of those models into a documented, testable package that can support teaching, reproducible experiments, and early-stage method development."
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
   },
   {
-    "objectID": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
-    "href": "blog/introducing-navasar/index.html#what-is-included-in-the-alpha",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "What is included in the alpha?",
-    "text": "What is included in the alpha?\nThe initial release connects several parts of the radar modeling chain:\n\ndielectric models for water, soil, vegetation, snow, ice, and material mixtures;\ncomplex SAR single-look-complex simulation and multilooking;\ninterferometric coherence, phase triplets, and closure-phase time series;\npolarimetric scattering, covariance, fading, and speckle tools;\nland-backscatter and detected-image simulations; and\nexperimental soil-moisture inversion and retrieval workflows.\n\nThe emphasis is on transparent scientific functions rather than a black-box processing system. Inputs, assumptions, and units remain visible so that a result can be inspected and challenged."
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always happy to discuss research collaborations, consulting opportunities, or answer questions about InSAR, remote sensing, and geospatial data science."
   },
   {
-    "objectID": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
-    "href": "blog/introducing-navasar/index.html#from-moisture-change-to-an-interferometric-signal",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "From moisture change to an interferometric signal",
-    "text": "From moisture change to an interferometric signal\nThe figure below summarizes one simulation workflow. A temporary soil-moisture increase changes the dielectric response and the simulated SLC amplitude. The corresponding interferometric network develops a phase response and a non-zero closure-phase step.\n\n\n\nA NavaSAR simulation linking a soil-moisture event to SLC amplitude, interferometric phase, and closure phase.\n\n\nClosure phase is particularly interesting because it cancels phase terms that are strictly additive around a closed interferometric loop. A remaining signal can therefore reveal non-linear changes in the scattering medium. In the soil-moisture model used here, the phase triplet depends on the ordering and magnitude of the moisture states.\n\n\n\nNon-linear phase-triplet response for asymmetric soil-moisture states.\n\n\nThese plots are simulations, not field validation. The alpha release is intended to make assumptions reproducible and provide a foundation for comparison with observations."
+    "objectID": "contact.html#professional-inquiries",
+    "href": "contact.html#professional-inquiries",
+    "title": "Contact",
+    "section": "Professional Inquiries",
+    "text": "Professional Inquiries\n📧 Email: mohseniaref@uni-potsdam.de\n📞 Phone: +49 1520 5241256\n📍 Location: Berlin, Germany"
   },
   {
-    "objectID": "blog/introducing-navasar/index.html#reproducibility-and-scope",
-    "href": "blog/introducing-navasar/index.html#reproducibility-and-scope",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "Reproducibility and scope",
-    "text": "Reproducibility and scope\nNavaSAR is released under the MIT License. The public repository contains source code, documentation, tests, and curated notebooks. Copyrighted reference PDFs and local build artifacts are deliberately excluded.\nThe package version is marked as an alpha because the API and numerical behavior may still evolve as more validation cases are added. Users should independently verify results before applying them to operational or decision-critical work."
+    "objectID": "contact.html#academic-affiliation",
+    "href": "contact.html#academic-affiliation",
+    "title": "Contact",
+    "section": "Academic Affiliation",
+    "text": "Academic Affiliation\nUniversity of Potsdam\nInstitute of Geosciences\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam, Germany\nSupervisor: Prof. Dr. Bodo Bookhagen\n📧 bodo.bookhagen@uni-potsdam.de\n☎️ +49 331 977 5779"
   },
   {
-    "objectID": "blog/introducing-navasar/index.html#try-it",
-    "href": "blog/introducing-navasar/index.html#try-it",
-    "title": "Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling",
-    "section": "Try it",
-    "text": "Try it\ngit clone https://github.com/mohseniaref/NavaSAR.git\ncd NavaSAR\npython -m pip install -e \".[notebooks,test]\"\npython -m pytest\nThe source code and documentation are available on GitHub. Feedback, reproducible test cases, and carefully scoped contributions are welcome."
+    "objectID": "contact.html#connect-on-social-media",
+    "href": "contact.html#connect-on-social-media",
+    "title": "Contact",
+    "section": "Connect on Social Media",
+    "text": "Connect on Social Media\n\n🐦 Twitter: @mohseniaref\n🦋 Bluesky: @mohseniaref\n💼 LinkedIn: Mohammad Mohseni Aref\n💻 GitHub: mohseniaref\n🎓 Google Scholar: Profile"
+  },
+  {
+    "objectID": "contact.html#collaboration-interests",
+    "href": "contact.html#collaboration-interests",
+    "title": "Contact",
+    "section": "Collaboration Interests",
+    "text": "Collaboration Interests\nI’m particularly interested in collaborating on:\n\nInSAR Applications: Deformation monitoring, atmospheric corrections, time-series analysis\nGeospatial Data Science: Large-scale satellite data processing, machine learning for Earth observation\nNatural Hazard Assessment: Landslide monitoring, subsidence analysis, earthquake deformation\nOpen Science: Reproducible workflows, open-source tool development, tutorials and training\nApplied Projects: Infrastructure monitoring, environmental assessment, climate change impacts"
+  },
+  {
+    "objectID": "contact.html#consulting-services",
+    "href": "contact.html#consulting-services",
+    "title": "Contact",
+    "section": "Consulting & Services",
+    "text": "Consulting & Services\nAvailable for:\n\nInSAR time-series analysis and interpretation\nGeospatial data processing and automation\nPython workflow development for remote sensing applications\nTechnical training and workshops on SAR interferometry\nData quality control and validation pipelines\nHPC optimization for satellite data processing"
+  },
+  {
+    "objectID": "contact.html#response-time",
+    "href": "contact.html#response-time",
+    "title": "Contact",
+    "section": "Response Time",
+    "text": "Response Time\nI typically respond to emails within 1-2 business days. For urgent matters, please indicate this in your subject line."
+  },
+  {
+    "objectID": "contact.html#office-hours",
+    "href": "contact.html#office-hours",
+    "title": "Contact",
+    "section": "Office Hours",
+    "text": "Office Hours\nFor students and collaborators at University of Potsdam:\n\nBy appointment - Please email to schedule a meeting\nVirtual meetings available via Zoom or Google Meet"
+  },
+  {
+    "objectID": "contact.html#mailing-address",
+    "href": "contact.html#mailing-address",
+    "title": "Contact",
+    "section": "Mailing Address",
+    "text": "Mailing Address\nMohammad Mohseni Aref\nInstitute of Geosciences\nUniversity of Potsdam\nKarl-Liebknecht-Str. 24-25\n14476 Potsdam\nGermany"
+  },
+  {
+    "objectID": "contact.html#open-to-opportunities",
+    "href": "contact.html#open-to-opportunities",
+    "title": "Contact",
+    "section": "Open to Opportunities",
+    "text": "Open to Opportunities\nI am actively seeking positions in:\n\nRemote sensing and Earth observation\nGeospatial data science and analytics\nResearch and development (R&D) in geodesy and geophysics\nData engineering for environmental monitoring\nAcademic and industry positions worldwide\n\n📄 View my CV | 🔬 Research Overview | 💼 Projects & Tools\n\nLooking forward to hearing from you!"
   }
 ]
