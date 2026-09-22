@@ -1,0 +1,50 @@
+---
+title: "Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency"
+date: 2026-09-23
+description: "A mathematical and visual introduction to phase unwrapping using Parvaneh notebooks."
+categories: [InSAR, Phase Unwrapping, Mathematics, Python]
+---
+
+An interferometric phase is an angle, so an instrument reports only its value modulo one turn. If the underlying phase is $\phi$, the measured wrapped phase is
+
+$$w = \operatorname{wrap}(\phi) \in [-\pi,\pi).$$
+
+The unwrapping problem is to recover a continuous phase field by estimating the missing integer $n$ in
+
+$$\phi = w + 2\pi n.$$
+
+The notebooks in [Parvaneh](https://github.com/mohseniaref/Parvaneh) make this idea concrete with small synthetic examples before applying the same reasoning to larger scenes.
+
+## Why local decisions can disagree
+
+For neighboring pixels $a$ and $b$, the shortest wrapped difference is
+
+$$g_{ab}=W(w_b-w_a).$$
+
+If every measured difference came from a smooth scalar phase, integrating these differences around a closed cell would return zero. In practice, noise and steep gradients can produce a non-zero residue:
+
+$$r = \frac{g_{\mathrm{top}}+g_{\mathrm{right}}-g_{\mathrm{bottom}}-g_{\mathrm{left}}}{2\pi}.$$
+
+The integer $r$ is a useful diagnostic: it says that at least one edge in the loop needs an integer correction. Goldstein branch cuts isolate incompatible regions, while minimum-cost-flow methods distribute integer corrections so that the residue balance is respected.
+
+## A global least-squares view
+
+Let $D$ be the edge-to-pixel incidence matrix and let $u$ be the unknown unwrapped phase. A weighted least-squares reconstruction solves
+
+$$\hat u=\arg\min_u (Du-g)^TQ(Du-g),$$
+
+with normal equations
+
+$$D^TQD\,\hat u=D^TQg.$$
+
+The `least_squares_and_weights` and `minimum_cost_flow` notebooks use four pixels so that every sign, residual, and loop can be checked by hand. This is useful because a visually plausible surface can still contain a hidden $2\pi$ offset or a path-dependent error.
+
+## Reliability is part of the solution
+
+Parvaneh also demonstrates why edge ordering matters. A simple pixel reliability score is
+
+$$S_p=\sum_{q\in N(p)}\left|W(w_q-w_p)\right|,\qquad R_p=\frac{1}{1+S_p}.$$
+
+Smooth neighborhoods have larger reliability, so a quality-guided method expands from trustworthy pixels first. The `reliability_sorting` notebook then shows a four-pixel example where two paths imply incompatible integer choices. The lesson is practical: phase unwrapping is not only “adding multiples of $2\pi$”; it is deciding which observations deserve influence and how contradictions should be paid for.
+
+The companion notebooks cover branch cuts, graph cuts, robust $L_p$ fitting, multigrid correction, space-time priors, and three-dimensional cycle flows. Together they connect the geometry of wrapped angles to reproducible numerical experiments.

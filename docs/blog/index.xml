@@ -9,8 +9,118 @@
 <link>https://mohseniaref.github.io/blog/</link>
 <atom:link href="https://mohseniaref.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.10.18</generator>
-<lastBuildDate>Fri, 11 Sep 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.39</generator>
+<lastBuildDate>Tue, 22 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>From Fuzzy Strings to Reliable Geographic Entity Resolution</title>
+  <dc:creator>Mohammad Mohseni Aref</dc:creator>
+  <link>https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Two records can refer to the same place even when spelling, transliteration, punctuation, or administrative naming differs. The challenge is that a high string score is not proof of identity. <code>fuzzy_llm_matcher</code> treats matching as a confidence problem rather than a single similarity calculation.</p>
+<section id="a-small-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-small-example">A small example</h2>
+<p>Suppose a reference table contains <code>Berlin Hauptbahnhof</code>, while an incoming table contains <code>Berlin Hbf</code>. A token-based fuzzy score may identify the right candidate. But for two records named <code>Springfield</code>, the best text match can still be wrong if the coordinates are thousands of kilometres apart.</p>
+<p>The matcher therefore combines several signals:</p>
+<p><img src="https://latex.codecogs.com/png.latex?S_%7B%5Cmathrm%7Btext%7D%7D=%5Coperatorname%7BWRatio%7D(x,y),"></p>
+<p>and, when coordinates are available, a distance score that declines to zero at a chosen maximum distance <img src="https://latex.codecogs.com/png.latex?d_%7B%5Cmax%7D">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?S_%7B%5Cmathrm%7Bgeo%7D%7D=100%5Cmax%5Cleft(0,1-%5Cfrac%7Bd(x,y)%7D%7Bd_%7B%5Cmax%7D%7D%5Cright)."></p>
+<p>The final decision is supported by the score margin to the second-best candidate, reliability rules, and—only for ambiguous cases—an optional LLM review. This separation is important: the language model can explain an uncertain pair, but deterministic scores and coordinates keep the bulk workflow inspectable.</p>
+</section>
+<section id="why-the-reliability-layer-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-reliability-layer-matters">Why the reliability layer matters</h2>
+<p>For each left-hand record, the package returns the best candidates, <code>fuzzy_score</code>, the margin to the next candidate, geographic proximity, and a label such as <code>high</code>, <code>medium_review</code>, <code>low</code>, or <code>reject</code>. A match with score 96 and a large margin is different from a score 96 where three alternatives score 95.5.</p>
+<p>The notebooks include synthetic benchmarks, company-name matching, multilingual place names, OpenStreetMap/Wikidata examples, and Iran administrative divisions. They also produce maps and reports so that accepted matches can be audited spatially instead of being trusted as an opaque join.</p>
+</section>
+<section id="a-useful-application" class="level2">
+<h2 class="anchored" data-anchor-id="a-useful-application">A useful application</h2>
+<p>Historical gazetteers often contain inconsistent names across years: abbreviations, Persian/Latin transliterations, renamed districts, and changed administrative boundaries. A practical workflow is to generate a small candidate set with fuzzy text matching, block candidates spatially, use distance and score margins to assign reliability, and send only the ambiguous remainder for review. This makes the expensive part proportional to uncertainty rather than to the size of the whole table.</p>
+<p>The broader principle is simple: similarity proposes; evidence decides.</p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2026,
+  author = {{Mohammad Mohseni Aref}},
+  title = {From {Fuzzy} {Strings} to {Reliable} {Geographic} {Entity}
+    {Resolution}},
+  date = {2026-09-23},
+  url = {https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas">
+Mohammad Mohseni Aref. 2026. <span>“From Fuzzy Strings to Reliable
+Geographic Entity Resolution.”</span> <a href="https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/">https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/</a>.
+</div></div></section></div> ]]></description>
+  <category>Python</category>
+  <category>Data Quality</category>
+  <category>Entity Resolution</category>
+  <category>Geospatial</category>
+  <guid>https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/</guid>
+  <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency</title>
+  <dc:creator>Mohammad Mohseni Aref</dc:creator>
+  <link>https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>An interferometric phase is an angle, so an instrument reports only its value modulo one turn. If the underlying phase is <img src="https://latex.codecogs.com/png.latex?%5Cphi">, the measured wrapped phase is</p>
+<p><img src="https://latex.codecogs.com/png.latex?w%20=%20%5Coperatorname%7Bwrap%7D(%5Cphi)%20%5Cin%20%5B-%5Cpi,%5Cpi)."></p>
+<p>The unwrapping problem is to recover a continuous phase field by estimating the missing integer <img src="https://latex.codecogs.com/png.latex?n"> in</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cphi%20=%20w%20+%202%5Cpi%20n."></p>
+<p>The notebooks in <a href="https://github.com/mohseniaref/Parvaneh">Parvaneh</a> make this idea concrete with small synthetic examples before applying the same reasoning to larger scenes.</p>
+<section id="why-local-decisions-can-disagree" class="level2">
+<h2 class="anchored" data-anchor-id="why-local-decisions-can-disagree">Why local decisions can disagree</h2>
+<p>For neighboring pixels <img src="https://latex.codecogs.com/png.latex?a"> and <img src="https://latex.codecogs.com/png.latex?b">, the shortest wrapped difference is</p>
+<p><img src="https://latex.codecogs.com/png.latex?g_%7Bab%7D=W(w_b-w_a)."></p>
+<p>If every measured difference came from a smooth scalar phase, integrating these differences around a closed cell would return zero. In practice, noise and steep gradients can produce a non-zero residue:</p>
+<p><img src="https://latex.codecogs.com/png.latex?r%20=%20%5Cfrac%7Bg_%7B%5Cmathrm%7Btop%7D%7D+g_%7B%5Cmathrm%7Bright%7D%7D-g_%7B%5Cmathrm%7Bbottom%7D%7D-g_%7B%5Cmathrm%7Bleft%7D%7D%7D%7B2%5Cpi%7D."></p>
+<p>The integer <img src="https://latex.codecogs.com/png.latex?r"> is a useful diagnostic: it says that at least one edge in the loop needs an integer correction. Goldstein branch cuts isolate incompatible regions, while minimum-cost-flow methods distribute integer corrections so that the residue balance is respected.</p>
+</section>
+<section id="a-global-least-squares-view" class="level2">
+<h2 class="anchored" data-anchor-id="a-global-least-squares-view">A global least-squares view</h2>
+<p>Let <img src="https://latex.codecogs.com/png.latex?D"> be the edge-to-pixel incidence matrix and let <img src="https://latex.codecogs.com/png.latex?u"> be the unknown unwrapped phase. A weighted least-squares reconstruction solves</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Chat%20u=%5Carg%5Cmin_u%20(Du-g)%5ETQ(Du-g),"></p>
+<p>with normal equations</p>
+<p><img src="https://latex.codecogs.com/png.latex?D%5ETQD%5C,%5Chat%20u=D%5ETQg."></p>
+<p>The <code>least_squares_and_weights</code> and <code>minimum_cost_flow</code> notebooks use four pixels so that every sign, residual, and loop can be checked by hand. This is useful because a visually plausible surface can still contain a hidden <img src="https://latex.codecogs.com/png.latex?2%5Cpi"> offset or a path-dependent error.</p>
+</section>
+<section id="reliability-is-part-of-the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-is-part-of-the-solution">Reliability is part of the solution</h2>
+<p>Parvaneh also demonstrates why edge ordering matters. A simple pixel reliability score is</p>
+<p><img src="https://latex.codecogs.com/png.latex?S_p=%5Csum_%7Bq%5Cin%20N(p)%7D%5Cleft%7CW(w_q-w_p)%5Cright%7C,%5Cqquad%20R_p=%5Cfrac%7B1%7D%7B1+S_p%7D."></p>
+<p>Smooth neighborhoods have larger reliability, so a quality-guided method expands from trustworthy pixels first. The <code>reliability_sorting</code> notebook then shows a four-pixel example where two paths imply incompatible integer choices. The lesson is practical: phase unwrapping is not only “adding multiples of <img src="https://latex.codecogs.com/png.latex?2%5Cpi">”; it is deciding which observations deserve influence and how contradictions should be paid for.</p>
+<p>The companion notebooks cover branch cuts, graph cuts, robust <img src="https://latex.codecogs.com/png.latex?L_p"> fitting, multigrid correction, space-time priors, and three-dimensional cycle flows. Together they connect the geometry of wrapped angles to reproducible numerical experiments.</p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2026,
+  author = {{Mohammad Mohseni Aref}},
+  title = {Phase {Unwrapping} from the {Ground} {Up:} {Residues,}
+    {Reliability,} and {Network} {Consistency}},
+  date = {2026-09-23},
+  url = {https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas">
+Mohammad Mohseni Aref. 2026. <span>“Phase Unwrapping from the Ground Up:
+Residues, Reliability, and Network Consistency.”</span> <a href="https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/">https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/</a>.
+</div></div></section></div> ]]></description>
+  <category>InSAR</category>
+  <category>Phase Unwrapping</category>
+  <category>Mathematics</category>
+  <category>Python</category>
+  <guid>https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/</guid>
+  <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling</title>
   <dc:creator>Mohammad Mohseni Aref</dc:creator>
@@ -60,7 +170,7 @@
 </section>
 <section id="try-it" class="level2">
 <h2 class="anchored" data-anchor-id="try-it">Try it</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">git</span> clone https://github.com/mohseniaref/NavaSAR.git</span>
 <span id="cb1-2"><span class="bu" style="color: null;
@@ -79,7 +189,7 @@ font-style: inherit;">".[notebooks,test]"</span></span>
 background-color: null;
 font-style: inherit;">python</span> <span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">-m</span> pytest</span></code></pre></div></div>
+font-style: inherit;">-m</span> pytest</span></code></pre></div>
 <p>The source code and documentation are available on <a href="https://github.com/mohseniaref/NavaSAR">GitHub</a>. Feedback, reproducible test cases, and carefully scoped contributions are welcome.</p>
 
 
@@ -95,7 +205,7 @@ font-style: inherit;">-m</span> pytest</span></code></pre></div></div>
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas">
 Mohammad Mohseni Aref. 2026. <span>“Introducing NavaSAR: An Open Alpha
-for Physics-Based SAR Modeling.”</span> Preprint, September 11. <a href="https://mohseniaref.github.io/blog/introducing-navasar/">https://mohseniaref.github.io/blog/introducing-navasar/</a>.
+for Physics-Based SAR Modeling.”</span> <a href="https://mohseniaref.github.io/blog/introducing-navasar/">https://mohseniaref.github.io/blog/introducing-navasar/</a>.
 </div></div></section></div> ]]></description>
   <category>SAR</category>
   <category>InSAR</category>
@@ -103,7 +213,7 @@ for Physics-Based SAR Modeling.”</span> Preprint, September 11. <a href="https
   <category>Open Source</category>
   <category>Remote Sensing</category>
   <guid>https://mohseniaref.github.io/blog/introducing-navasar/</guid>
-  <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
   <media:content url="https://mohseniaref.github.io/blog/introducing-navasar/images/closure-phase-workflow.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
@@ -132,41 +242,14 @@ for Physics-Based SAR Modeling.”</span> Preprint, September 11. <a href="https
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
 Mohammad Mohseni Aref. 2024. <span>“2D+1D Decomposition of InSAR for
-Landslide Application.”</span> Preprint, December 28. <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
+Landslide Application.”</span> <a href="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html">https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</a>.
 </div></div></section></div> ]]></description>
   <category>InSAR</category>
   <category>Landslide</category>
   <category>Remote Sensing</category>
   <guid>https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html</guid>
-  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+  <pubDate>Fri, 27 Dec 2024 23:00:00 GMT</pubDate>
   <media:content url="https://mohseniaref.github.io/blog/2d-1d-decomposition-insar/images/a1.png" medium="image" type="image/png" height="102" width="144"/>
-</item>
-<item>
-  <title>My First Blog Post</title>
-  <dc:creator>Mohammad Mohseni Aref</dc:creator>
-  <link>https://mohseniaref.github.io/blog/first-post/first-post.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.</p>
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2024,
-  author = {{Mohammad Mohseni Aref}},
-  title = {My {First} {Blog} {Post}},
-  date = {2024-12-28},
-  url = {https://mohseniaref.github.io/blog/first-post/first-post.html},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2024" class="csl-entry quarto-appendix-citeas">
-Mohammad Mohseni Aref. 2024. <span>“My First Blog Post.”</span>
-Preprint, December 28. <a href="https://mohseniaref.github.io/blog/first-post/first-post.html">https://mohseniaref.github.io/blog/first-post/first-post.html</a>.
-</div></div></section></div> ]]></description>
-  <guid>https://mohseniaref.github.io/blog/first-post/first-post.html</guid>
-  <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

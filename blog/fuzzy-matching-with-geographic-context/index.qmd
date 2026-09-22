@@ -1,0 +1,34 @@
+---
+title: "From Fuzzy Strings to Reliable Geographic Entity Resolution"
+date: 2026-09-23
+description: "An example of combining string similarity, uncertainty, language-model review, and geographic proximity."
+categories: [Python, Data Quality, Entity Resolution, Geospatial]
+---
+
+Two records can refer to the same place even when spelling, transliteration, punctuation, or administrative naming differs. The challenge is that a high string score is not proof of identity. `fuzzy_llm_matcher` treats matching as a confidence problem rather than a single similarity calculation.
+
+## A small example
+
+Suppose a reference table contains `Berlin Hauptbahnhof`, while an incoming table contains `Berlin Hbf`. A token-based fuzzy score may identify the right candidate. But for two records named `Springfield`, the best text match can still be wrong if the coordinates are thousands of kilometres apart.
+
+The matcher therefore combines several signals:
+
+$$S_{\mathrm{text}}=\operatorname{WRatio}(x,y),$$
+
+and, when coordinates are available, a distance score that declines to zero at a chosen maximum distance $d_{\max}$:
+
+$$S_{\mathrm{geo}}=100\max\left(0,1-\frac{d(x,y)}{d_{\max}}\right).$$
+
+The final decision is supported by the score margin to the second-best candidate, reliability rules, and—only for ambiguous cases—an optional LLM review. This separation is important: the language model can explain an uncertain pair, but deterministic scores and coordinates keep the bulk workflow inspectable.
+
+## Why the reliability layer matters
+
+For each left-hand record, the package returns the best candidates, `fuzzy_score`, the margin to the next candidate, geographic proximity, and a label such as `high`, `medium_review`, `low`, or `reject`. A match with score 96 and a large margin is different from a score 96 where three alternatives score 95.5.
+
+The notebooks include synthetic benchmarks, company-name matching, multilingual place names, OpenStreetMap/Wikidata examples, and Iran administrative divisions. They also produce maps and reports so that accepted matches can be audited spatially instead of being trusted as an opaque join.
+
+## A useful application
+
+Historical gazetteers often contain inconsistent names across years: abbreviations, Persian/Latin transliterations, renamed districts, and changed administrative boundaries. A practical workflow is to generate a small candidate set with fuzzy text matching, block candidates spatially, use distance and score margins to assign reliability, and send only the ambiguous remainder for review. This makes the expensive part proportional to uncertainty rather than to the size of the whole table.
+
+The broader principle is simple: similarity proposes; evidence decides.

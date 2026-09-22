@@ -6,6 +6,12 @@ description: "A list of peer-reviewed publications and conference contributions.
 
 # Publications
 
+## 2026
+- **M. Mohseni Aref and B. Bookhagen**, "Evaluation of Tropospheric Delay Correction Methods for InSAR Time-Series Analysis in the Southern Central Andes," *ESA FRINGE 2026*, Kraków, Poland.
+
+## 2025
+- **M. Mohseni Aref and H. Kamali**, "Groundwater depletion and land subsidence in the Minab Coastal Plain: Insights from InSAR time-series and aquifer modelling," *3rd ICCC Workshop: Geodesy for Climate Research*.
+
 ## 2024
 - **M. Mohseni Aref, B. Bookhagen, and R. Strecker**, "Impact of Tropospheric Delay Correction on the Quality of Landslide Mapping in the Southern Central Andes, Northwestern Argentina," *EGU General Assembly*, Vienna, Austria, Apr. 2024. [[DOI](https://doi.org/10.5194/egusphere-egu24-12522)]
 
@@ -31,6 +37,9 @@ description: "A list of peer-reviewed publications and conference contributions.
 ## 2016
 - **M. Mohseni Aref, Z. Cakir, and S. Karimzadeh**, "Interseismic accumulation across the Khoy fault from InSAR measurement," *EGU General Assembly Conference Abstracts*, vol. 18, p. 828, 2016.
 
+## 2018
+- **F.C. Çomut and M. Mohseni Aref**, "Implementation of satellite SAR interferometry for digitalization of landslide-based disaster-prone areas: A pilot study of Denizli District," *2nd National Landslide Symposium*, 2018.
+
 ## 2015
 - **T. Torres and M. Mohseni Aref**, "Monitoring of Three Case Studies of Creeping Landslides in Ecuador Using L-band SAR Interferometry (InSAR)," *2015 Fall Meeting, AGU*, San Francisco, CA, 2015.
 - **E. Khesali, H. Enayati, M. Modiri, and M. Mohseni Aref**, "Automatic Ship Detection In SINGLE-POL SAR Images Using Texture Feature In Artificial Neural Networks," *ISPRS - Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci.*, vol. XL-1-W5, pp. 395-399, Dec. 2015.
@@ -38,4 +47,3 @@ description: "A list of peer-reviewed publications and conference contributions.
 
 ## 2011
 - **M. Mohseni Aref and M. Motagh**, "InSAR time series analysis of land deformation: northwest of Iran," *International on Advances in the Science and Applications of SAR Interferometry*, Frascati (Rome), Italy, Sep. 2011.
-

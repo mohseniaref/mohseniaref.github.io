@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammad Mohseni Aref">
+<meta name="dcterms.date" content="2026-09-23">
+<meta name="description" content="An example of combining string similarity, uncertainty, language-model review, and geographic proximity.">
 
-<title>The Notebook – Mohammad Mohseni Aref</title>
+<title>From Fuzzy Strings to Reliable Geographic Entity Resolution – Mohammad Mohseni Aref</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-64300aecc15a3a0a8a2b27ae8442fc5a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-64300aecc15a3a0a8a2b27ae8442fc5a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script>
   console.log("Custom script loaded.");
 </script>
@@ -135,8 +106,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Mohammad Mohseni Aref" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -145,7 +116,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mohammad Mohseni Aref</span>
     </a>
   </div>
@@ -156,35 +127,35 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects &amp; Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -195,23 +166,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGF0YSUyMFF1YWxpdHk=">Data Quality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW50aXR5JTIwUmVzb2x1dGlvbg==">Entity Resolution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2Vvc3BhdGlhbA==">Geospatial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5TQVI=">InSAR <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFuZHNsaWRl">Landslide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWF0aGVtYXRpY3M=">Mathematics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BlbiUyMFNvdXJjZQ==">Open Source <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhhc2UlMjBVbndyYXBwaW5n">Phase Unwrapping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U0FS">SAR <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#a-small-example" id="toc-a-small-example" class="nav-link active" data-scroll-target="#a-small-example">A small example</a></li>
+  <li><a href="#why-the-reliability-layer-matters" id="toc-why-the-reliability-layer-matters" class="nav-link" data-scroll-target="#why-the-reliability-layer-matters">Why the reliability layer matters</a></li>
+  <li><a href="#a-useful-application" id="toc-a-useful-application" class="nav-link" data-scroll-target="#a-useful-application">A useful application</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Notebook</h1>
+<h1 class="title">From Fuzzy Strings to Reliable Geographic Entity Resolution</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Data Quality</div>
+    <div class="quarto-category">Entity Resolution</div>
+    <div class="quarto-category">Geospatial</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An example of combining string similarity, uncertainty, language-model review, and geographic proximity.
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -220,6 +210,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 23, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -229,192 +225,40 @@ window.Quarto = {
 </header>
 
 
+<p>Two records can refer to the same place even when spelling, transliteration, punctuation, or administrative naming differs. The challenge is that a high string score is not proof of identity. <code>fuzzy_llm_matcher</code> treats matching as a confidence problem rather than a single similarity calculation.</p>
+<section id="a-small-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-small-example">A small example</h2>
+<p>Suppose a reference table contains <code>Berlin Hauptbahnhof</code>, while an incoming table contains <code>Berlin Hbf</code>. A token-based fuzzy score may identify the right candidate. But for two records named <code>Springfield</code>, the best text match can still be wrong if the coordinates are thousands of kilometres apart.</p>
+<p>The matcher therefore combines several signals:</p>
+<p><span class="math display">\[S_{\mathrm{text}}=\operatorname{WRatio}(x,y),\]</span></p>
+<p>and, when coordinates are available, a distance score that declines to zero at a chosen maximum distance <span class="math inline">\(d_{\max}\)</span>:</p>
+<p><span class="math display">\[S_{\mathrm{geo}}=100\max\left(0,1-\frac{d(x,y)}{d_{\max}}\right).\]</span></p>
+<p>The final decision is supported by the score margin to the second-best candidate, reliability rules, and—only for ambiguous cases—an optional LLM review. This separation is important: the language model can explain an uncertain pair, but deterministic scores and coordinates keep the bulk workflow inspectable.</p>
+</section>
+<section id="why-the-reliability-layer-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-reliability-layer-matters">Why the reliability layer matters</h2>
+<p>For each left-hand record, the package returns the best candidates, <code>fuzzy_score</code>, the margin to the next candidate, geographic proximity, and a label such as <code>high</code>, <code>medium_review</code>, <code>low</code>, or <code>reject</code>. A match with score 96 and a large margin is different from a score 96 where three alternatives score 95.5.</p>
+<p>The notebooks include synthetic benchmarks, company-name matching, multilingual place names, OpenStreetMap/Wikidata examples, and Iran administrative divisions. They also produce maps and reports so that accepted matches can be audited spatially instead of being trusted as an opaque join.</p>
+</section>
+<section id="a-useful-application" class="level2">
+<h2 class="anchored" data-anchor-id="a-useful-application">A useful application</h2>
+<p>Historical gazetteers often contain inconsistent names across years: abbreviations, Persian/Latin transliterations, renamed districts, and changed administrative boundaries. A practical workflow is to generate a small candidate set with fuzzy text matching, block candidates spatially, use distance and score margins to assign reliability, and send only the ambiguous remainder for review. This makes the expensive part proportional to uncertainty rather than to the size of the whole table.</p>
+<p>The broader principle is simple: similarity proposes; evidence decides.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHl0aG9uJTJDRGF0YSUyMFF1YWxpdHklMkNFbnRpdHklMjBSZXNvbHV0aW9uJTJDR2Vvc3BhdGlhbA==" data-listing-date-sort="1790114400000" data-listing-file-modified-sort="1790119557375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<div class="thumbnail">
-<p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a></p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">From Fuzzy Strings to Reliable Geographic Entity Resolution</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFF1YWxpdHk='); return false;">
-Data Quality
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RW50aXR5JTIwUmVzb2x1dGlvbg=='); return false;">
-Entity Resolution
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R2Vvc3BhdGlhbA=='); return false;">
-Geospatial
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">An example of combining string similarity, uncertainty, language-model review, and geographic proximity.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">
-<div class="listing-date">
-Sep 23, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="SW5TQVIlMkNQaGFzZSUyMFVud3JhcHBpbmclMkNNYXRoZW1hdGljcyUyQ1B5dGhvbg==" data-listing-date-sort="1790114400000" data-listing-file-modified-sort="1790119557375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
-<div class="thumbnail">
-<p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a></p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGhhc2UlMjBVbndyYXBwaW5n'); return false;">
-Phase Unwrapping
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY3M='); return false;">
-Mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">A mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">
-<div class="listing-date">
-Sep 23, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="U0FSJTJDSW5TQVIlMkNQeXRob24lMkNPcGVuJTIwU291cmNlJTJDUmVtb3RlJTIwU2Vuc2luZw==" data-listing-date-sort="1789077600000" data-listing-file-modified-sort="1789092862215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
-<div class="thumbnail">
-<p><a href="../blog/introducing-navasar/index.html" class="no-external"></a></p><a href="../blog/introducing-navasar/index.html" class="no-external">
-<p><img loading="lazy" src="../blog/introducing-navasar/images/closure-phase-workflow.png" class="thumbnail-image"></p>
-</a><p><a href="../blog/introducing-navasar/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/introducing-navasar/index.html" class="no-external">Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/introducing-navasar/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U0FS'); return false;">
-SAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMFNvdXJjZQ=='); return false;">
-Open Source
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">
-Remote Sensing
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/introducing-navasar/index.html" class="no-external">NavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/introducing-navasar/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="SW5TQVIlMkNMYW5kc2xpZGUlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1735340400000" data-listing-file-modified-sort="1735372953918" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a></p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">
-<p><img loading="lazy" src="../blog/2d-1d-decomposition-insar/images/a1.png" class="thumbnail-image"></p>
-</a><p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">2D+1D Decomposition of InSAR for Landslide Application</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZHNsaWRl'); return false;">
-Landslide
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">
-Remote Sensing
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">An exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">
-<div class="listing-date">
-Dec 28, 2024
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2026,
   author = {{Mohammad Mohseni Aref}},
-  title = {The {Notebook}},
-  url = {https://mohseniaref.github.io/blog/},
+  title = {From {Fuzzy} {Strings} to {Reliable} {Geographic} {Entity}
+    {Resolution}},
+  date = {2026-09-23},
+  url = {https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref" class="csl-entry quarto-appendix-citeas" role="listitem">
-Mohammad Mohseni Aref. n.d. <span>“The Notebook.”</span> <a href="https://mohseniaref.github.io/blog/">https://mohseniaref.github.io/blog/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mohammad Mohseni Aref. 2026. <span>“From Fuzzy Strings to Reliable
+Geographic Entity Resolution.”</span> <a href="https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/">https://mohseniaref.github.io/blog/fuzzy-matching-with-geographic-context/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

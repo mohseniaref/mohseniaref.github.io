@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mohammad Mohseni Aref">
+<meta name="dcterms.date" content="2026-09-23">
+<meta name="description" content="A mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.">
 
-<title>The Notebook – Mohammad Mohseni Aref</title>
+<title>Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency – Mohammad Mohseni Aref</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-64300aecc15a3a0a8a2b27ae8442fc5a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-64300aecc15a3a0a8a2b27ae8442fc5a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script>
   console.log("Custom script loaded.");
 </script>
@@ -135,8 +106,8 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Mohammad Mohseni Aref" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -145,7 +116,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mohammad Mohseni Aref</span>
     </a>
   </div>
@@ -156,35 +127,35 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects &amp; Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -195,23 +166,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGF0YSUyMFF1YWxpdHk=">Data Quality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW50aXR5JTIwUmVzb2x1dGlvbg==">Entity Resolution <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2Vvc3BhdGlhbA==">Geospatial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5TQVI=">InSAR <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFuZHNsaWRl">Landslide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWF0aGVtYXRpY3M=">Mathematics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BlbiUyMFNvdXJjZQ==">Open Source <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGhhc2UlMjBVbndyYXBwaW5n">Phase Unwrapping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U0FS">SAR <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-local-decisions-can-disagree" id="toc-why-local-decisions-can-disagree" class="nav-link active" data-scroll-target="#why-local-decisions-can-disagree">Why local decisions can disagree</a></li>
+  <li><a href="#a-global-least-squares-view" id="toc-a-global-least-squares-view" class="nav-link" data-scroll-target="#a-global-least-squares-view">A global least-squares view</a></li>
+  <li><a href="#reliability-is-part-of-the-solution" id="toc-reliability-is-part-of-the-solution" class="nav-link" data-scroll-target="#reliability-is-part-of-the-solution">Reliability is part of the solution</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Notebook</h1>
+<h1 class="title">Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">InSAR</div>
+    <div class="quarto-category">Phase Unwrapping</div>
+    <div class="quarto-category">Mathematics</div>
+    <div class="quarto-category">Python</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -220,6 +210,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 23, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -229,192 +225,48 @@ window.Quarto = {
 </header>
 
 
+<p>An interferometric phase is an angle, so an instrument reports only its value modulo one turn. If the underlying phase is <span class="math inline">\(\phi\)</span>, the measured wrapped phase is</p>
+<p><span class="math display">\[w = \operatorname{wrap}(\phi) \in [-\pi,\pi).\]</span></p>
+<p>The unwrapping problem is to recover a continuous phase field by estimating the missing integer <span class="math inline">\(n\)</span> in</p>
+<p><span class="math display">\[\phi = w + 2\pi n.\]</span></p>
+<p>The notebooks in <a href="https://github.com/mohseniaref/Parvaneh">Parvaneh</a> make this idea concrete with small synthetic examples before applying the same reasoning to larger scenes.</p>
+<section id="why-local-decisions-can-disagree" class="level2">
+<h2 class="anchored" data-anchor-id="why-local-decisions-can-disagree">Why local decisions can disagree</h2>
+<p>For neighboring pixels <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, the shortest wrapped difference is</p>
+<p><span class="math display">\[g_{ab}=W(w_b-w_a).\]</span></p>
+<p>If every measured difference came from a smooth scalar phase, integrating these differences around a closed cell would return zero. In practice, noise and steep gradients can produce a non-zero residue:</p>
+<p><span class="math display">\[r = \frac{g_{\mathrm{top}}+g_{\mathrm{right}}-g_{\mathrm{bottom}}-g_{\mathrm{left}}}{2\pi}.\]</span></p>
+<p>The integer <span class="math inline">\(r\)</span> is a useful diagnostic: it says that at least one edge in the loop needs an integer correction. Goldstein branch cuts isolate incompatible regions, while minimum-cost-flow methods distribute integer corrections so that the residue balance is respected.</p>
+</section>
+<section id="a-global-least-squares-view" class="level2">
+<h2 class="anchored" data-anchor-id="a-global-least-squares-view">A global least-squares view</h2>
+<p>Let <span class="math inline">\(D\)</span> be the edge-to-pixel incidence matrix and let <span class="math inline">\(u\)</span> be the unknown unwrapped phase. A weighted least-squares reconstruction solves</p>
+<p><span class="math display">\[\hat u=\arg\min_u (Du-g)^TQ(Du-g),\]</span></p>
+<p>with normal equations</p>
+<p><span class="math display">\[D^TQD\,\hat u=D^TQg.\]</span></p>
+<p>The <code>least_squares_and_weights</code> and <code>minimum_cost_flow</code> notebooks use four pixels so that every sign, residual, and loop can be checked by hand. This is useful because a visually plausible surface can still contain a hidden <span class="math inline">\(2\pi\)</span> offset or a path-dependent error.</p>
+</section>
+<section id="reliability-is-part-of-the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-is-part-of-the-solution">Reliability is part of the solution</h2>
+<p>Parvaneh also demonstrates why edge ordering matters. A simple pixel reliability score is</p>
+<p><span class="math display">\[S_p=\sum_{q\in N(p)}\left|W(w_q-w_p)\right|,\qquad R_p=\frac{1}{1+S_p}.\]</span></p>
+<p>Smooth neighborhoods have larger reliability, so a quality-guided method expands from trustworthy pixels first. The <code>reliability_sorting</code> notebook then shows a four-pixel example where two paths imply incompatible integer choices. The lesson is practical: phase unwrapping is not only “adding multiples of <span class="math inline">\(2\pi\)</span>”; it is deciding which observations deserve influence and how contradictions should be paid for.</p>
+<p>The companion notebooks cover branch cuts, graph cuts, robust <span class="math inline">\(L_p\)</span> fitting, multigrid correction, space-time priors, and three-dimensional cycle flows. Together they connect the geometry of wrapped angles to reproducible numerical experiments.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHl0aG9uJTJDRGF0YSUyMFF1YWxpdHklMkNFbnRpdHklMjBSZXNvbHV0aW9uJTJDR2Vvc3BhdGlhbA==" data-listing-date-sort="1790114400000" data-listing-file-modified-sort="1790119557375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<div class="thumbnail">
-<p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a></p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">From Fuzzy Strings to Reliable Geographic Entity Resolution</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFF1YWxpdHk='); return false;">
-Data Quality
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RW50aXR5JTIwUmVzb2x1dGlvbg=='); return false;">
-Entity Resolution
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R2Vvc3BhdGlhbA=='); return false;">
-Geospatial
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">An example of combining string similarity, uncertainty, language-model review, and geographic proximity.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/fuzzy-matching-with-geographic-context/index.html" class="no-external">
-<div class="listing-date">
-Sep 23, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="SW5TQVIlMkNQaGFzZSUyMFVud3JhcHBpbmclMkNNYXRoZW1hdGljcyUyQ1B5dGhvbg==" data-listing-date-sort="1790114400000" data-listing-file-modified-sort="1790119557375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
-<div class="thumbnail">
-<p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a></p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">Phase Unwrapping from the Ground Up: Residues, Reliability, and Network Consistency</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGhhc2UlMjBVbndyYXBwaW5n'); return false;">
-Phase Unwrapping
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0aGVtYXRpY3M='); return false;">
-Mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">A mathematical and visual introduction to phase unwrapping using Parvaneh notebooks.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/phase-unwrapping-from-the-ground-up/index.html" class="no-external">
-<div class="listing-date">
-Sep 23, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="U0FSJTJDSW5TQVIlMkNQeXRob24lMkNPcGVuJTIwU291cmNlJTJDUmVtb3RlJTIwU2Vuc2luZw==" data-listing-date-sort="1789077600000" data-listing-file-modified-sort="1789092862215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
-<div class="thumbnail">
-<p><a href="../blog/introducing-navasar/index.html" class="no-external"></a></p><a href="../blog/introducing-navasar/index.html" class="no-external">
-<p><img loading="lazy" src="../blog/introducing-navasar/images/closure-phase-workflow.png" class="thumbnail-image"></p>
-</a><p><a href="../blog/introducing-navasar/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/introducing-navasar/index.html" class="no-external">Introducing NavaSAR: An Open Alpha for Physics-Based SAR Modeling</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/introducing-navasar/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U0FS'); return false;">
-SAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMFNvdXJjZQ=='); return false;">
-Open Source
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">
-Remote Sensing
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/introducing-navasar/index.html" class="no-external">NavaSAR 0.1.0a1 brings dielectric models, SAR simulation, InSAR closure phase, polarimetry, and soil-moisture retrieval into one tested Python research library.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/introducing-navasar/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2026
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="SW5TQVIlMkNMYW5kc2xpZGUlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1735340400000" data-listing-file-modified-sort="1735372953918" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a></p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">
-<p><img loading="lazy" src="../blog/2d-1d-decomposition-insar/images/a1.png" class="thumbnail-image"></p>
-</a><p><a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">2D+1D Decomposition of InSAR for Landslide Application</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW5TQVI='); return false;">
-InSAR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZHNsaWRl'); return false;">
-Landslide
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">
-Remote Sensing
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">An exploration of the 2D+1D decomposition technique applied to InSAR for landslide analysis.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html" class="no-external">
-<div class="listing-date">
-Dec 28, 2024
-</div>
-<div class="listing-author">
-Mohammad Mohseni Aref
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{mohseni_aref2026,
   author = {{Mohammad Mohseni Aref}},
-  title = {The {Notebook}},
-  url = {https://mohseniaref.github.io/blog/},
+  title = {Phase {Unwrapping} from the {Ground} {Up:} {Residues,}
+    {Reliability,} and {Network} {Consistency}},
+  date = {2026-09-23},
+  url = {https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref" class="csl-entry quarto-appendix-citeas" role="listitem">
-Mohammad Mohseni Aref. n.d. <span>“The Notebook.”</span> <a href="https://mohseniaref.github.io/blog/">https://mohseniaref.github.io/blog/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-mohseni_aref2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Mohammad Mohseni Aref. 2026. <span>“Phase Unwrapping from the Ground Up:
+Residues, Reliability, and Network Consistency.”</span> <a href="https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/">https://mohseniaref.github.io/blog/phase-unwrapping-from-the-ground-up/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

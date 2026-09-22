@@ -2,9 +2,10 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/fuzzy-matching-with-geographic-context/index.html",
+      "/blog/phase-unwrapping-from-the-ground-up/index.html",
       "/blog/introducing-navasar/index.html",
-      "/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html",
-      "/blog/first-post/first-post.html"
+      "/blog/2d-1d-decomposition-insar/2d-1d-decomposition-insar.html"
     ]
   }
 ]

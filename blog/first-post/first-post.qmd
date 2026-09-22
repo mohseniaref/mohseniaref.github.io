@@ -1,8 +1,0 @@
----
-title: "My First Blog Post"
-date: 2024-12-28
-description: "A brief introduction to my blog and what I plan to share here."
----
-
-This is my very first blog post! I plan to write about geosciences, academic life, and my ongoing research projects.
-
